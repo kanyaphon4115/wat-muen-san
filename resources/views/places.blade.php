@@ -59,6 +59,32 @@
     @if($tiktok)<a class="tiktok-button" href="{{ $tiktok }}" target="_blank" rel="noopener noreferrer">@else<button class="tiktok-button" type="button" aria-disabled="true" title="ยังไม่ได้ระบุลิงก์คลิป TikTok">@endif
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2h4c0 3 2 5 5 5v4a10 10 0 0 1-5-2v8a7 7 0 1 1-8-7v4a3 3 0 1 0 4 3V2Z"/></svg>รับชมคลิป TikTok <span aria-hidden="true">↗</span>@if($tiktok)</a>@else</button>@endif</div><p id="tiktok-status" role="status" hidden>ยังไม่ได้ระบุลิงก์คลิป TikTok</p></div><x-temple class="closing-temple-line" />
 </section>
+<section class="project-credits" aria-labelledby="credits-title">
+    <div class="project-credits-inner">
+        <div class="project-team">
+            <h2 id="credits-title">จัดทำโดย</h2>
+            <ul class="project-members">
+                <li><span>เสาวลักษณ์ โรจน์จุฑารักษ์</span><span>68144575</span></li>
+                <li><span>จริยา คำมน</span><span>68144511</span></li>
+                <li><span>พิริสา กลจักร์</span><span>68144553</span></li>
+                <li><span>ระมิดา ชูเดอะ</span><span>68144683</span></li>
+                <li><span>ปฐมาวดี อินทร์ไชย</span><span>68144667</span></li>
+                <li><span>สรณ์สิริ คำสุ</span><span>68144637</span></li>
+                <li><span>ศุภวิชรญ์ วงศ์ยืด</span><span>68144635</span></li>
+            </ul>
+            <p class="project-affiliation">นักศึกษาสาขานิเทศศาสตร์ คณะวิทยาการจัดการ<br>มหาวิทยาลัยราชภัฏเชียงใหม่</p>
+            <h3>ช่องทางการติดต่อผู้จัดทำ</h3>
+            <address class="project-contact">Email:
+                <a href="mailto:68144575@g.cmru.ac.th">68144575@g.cmru.ac.th</a>
+                <a href="mailto:68144553@g.cmru.ac.th">68144553@g.cmru.ac.th</a>
+            </address>
+        </div>
+        <div class="project-purpose">
+            <h2>วัตถุประสงค์ของโครงการ</h2>
+            <p>เว็บไซต์นี้จัดทำขึ้นเป็นส่วนหนึ่งของการศึกษาในรายวิชา CA 2302-68 การเล่าเรื่องข้ามสื่อ มีวัตถุประสงค์เพื่อศึกษาและนำเสนอเรื่องราวเกี่ยวกับ “ตำนานเสือเยน วัดหมื่นสาร และชุมชนวัวลาย” ผ่านแนวคิดการเล่าเรื่องข้ามสื่อ (Transmedia Storytelling) โดยนำข้อมูลด้านตำนาน ประวัติศาสตร์ ความเชื่อ และวิถีชีวิตของชุมชนมาพัฒนาและนำเสนอในรูปแบบสื่อดิจิทัล เพื่อให้ผู้ชมสามารถเรียนรู้และสำรวจเรื่องราวได้อย่างน่าสนใจ พร้อมทั้งเห็นความเชื่อมโยงระหว่างเรื่องเล่า สถานที่ และความทรงจำของชุมชน</p>
+        </div>
+    </div>
+</section>
 <dialog id="places-search-dialog" aria-labelledby="places-search-title"><form id="places-search-form"><h2 id="places-search-title">ค้นหาสถานที่</h2><label for="places-query">ชื่อสถานที่หรือคำค้นหา</label><input id="places-query" type="search" required><button type="submit">ค้นหา</button></form><p id="places-search-status" role="status"></p><ul id="places-search-results"></ul><button id="close-places-search" type="button">ปิด</button></dialog>
 @endsection
 @push('scripts')
