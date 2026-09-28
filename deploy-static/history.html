@@ -1,0 +1,2540 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c2b22">
+    <meta name="description" content="เปิดตำนานและประวัติศาสตร์ ณ วัดหมื่นสาร – ชุมชนวัวลาย สำรวจเรื่องเล่า ความทรงจำ และสถานที่สำคัญของชุมชน">
+    <title>ประวัติวัดหมื่นสาร — จากอารามเก่าสู่ศูนย์กลางชุมชน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root {
+    --green: #0c2b22;
+    --gold: #efd28c;
+    --paper: #f4ead3;
+    --brown: #69461f;
+    --serif: "Noto Serif Thai", Georgia, serif;
+    --sans: "Noto Sans Thai", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+body {
+  margin: 0;
+  overflow-x: clip;
+    color: #fff9ea;
+    background: var(--paper);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    font: inherit;
+}
+h1,
+h2,
+h3,
+p,
+blockquote {
+    margin: 0;
+}
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #e9ba58;
+    outline-offset: 6px;
+}
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    z-index: 100;
+    background: var(--green);
+    padding: 12px;
+}
+.skip-link:focus {
+    top: 10px;
+}
+.site-header {
+    height: 80px;
+    position: relative;
+    z-index: 5;
+    background:
+        radial-gradient(ellipse at 60% 0, #25413988, transparent 65%), #0b241c;
+    border-bottom: 1px solid #9e855980;
+    overflow: clip;
+}
+.site-header::before,
+.site-header::after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    width: 220px;
+    height: 170px;
+    background: url("/images/ornament.svg") center/140px;
+    opacity: 0.24;
+    pointer-events: none;
+}
+.site-header::before {
+    left: -52px;
+    transform: rotate(-22deg);
+}
+.site-header::after {
+    right: -25px;
+    transform: rotate(15deg);
+}
+.nav-container {
+    max-width: 1272px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  gap: 160px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: #f5e7c8;
+}
+.brand-icon {
+    width: 55px;
+    height: 67px;
+    color: #e5c893;
+}
+.brand strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.brand small {
+    display: block;
+    font-size: 16px;
+    color: #e9cd93;
+    line-height: 1.3;
+}
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    height: 100%;
+}
+.main-navigation a {
+    position: relative;
+    padding: 25px 10px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.main-navigation a::after {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    content: "";
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+.main-navigation a:hover::after,
+.main-navigation a[aria-current]::after {
+    transform: scaleX(1);
+}
+.main-navigation a[aria-current] {
+    color: #eac372;
+}
+.menu-toggle {
+    display: none;
+}
+.hero {
+    position: relative;
+    height: 566px;
+    min-height: 560px;
+    background-image: url('/images/wat-muen-san-hero.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    isolation: isolate;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 20, 15, 0.96) 0%,
+        rgba(2, 20, 15, 0.88) 25%,
+        rgba(2, 20, 15, 0.58) 43%,
+        rgba(2, 20, 15, 0.20) 62%,
+        rgba(2, 20, 15, 0.03) 100%
+    );
+    pointer-events: none;
+}
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1380px;
+    margin: auto;
+    padding-top: 50px;
+}
+.hero-copy {
+    width: 580px;
+    text-shadow: 0 2px 3px #0008;
+}
+.hero-heading {
+    width: 510px;
+    text-align: center;
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: -1.8px;
+    line-height: 1.1;
+}
+.hero h1 span {
+    display: block;
+  font-size: 56px;
+}
+.hero h1 span:first-child {
+  font-size: 68px;
+    line-height: 1.13;
+}
+.hero-subtitle {
+    font-family: var(--serif);
+    font-size: 27px;
+    font-weight: 600;
+  line-height: 1.5;
+    margin-top: 1px;
+    color: var(--gold);
+}
+.ornament-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c89d4e;
+    width: 395px;
+    max-width: 85%;
+    margin: 5px auto 3px;
+    text-shadow: none;
+    height: 26px;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, #c89d4e);
+}
+.ornament-divider::after {
+    transform: rotate(180deg);
+}
+.ornament-divider span {
+    font-size: 26px;
+    line-height: 1;
+}
+.hero blockquote {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.47;
+    margin: 5px 0 12px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+}
+.hero-description {
+    font-size: 16px;
+    line-height: 1.47;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  margin-top: 14px;
+}
+.ornate-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    isolation: isolate;
+    border: 1px solid #ddb96e;
+    background: linear-gradient(180deg, #64400f, #3a200c);
+    box-shadow:
+        inset 0 0 0 3px #432608,
+        inset 0 0 0 4px #b38c48,
+        0 3px 6px #0004;
+    border-radius: 24px;
+    color: #fff5dc;
+    transition:
+        transform 0.25s,
+        filter 0.25s,
+        box-shadow 0.25s;
+    font-family: var(--serif);
+    text-shadow: 0 1px 2px #0008;
+}
+.ornate-button::before,
+.ornate-button::after {
+    content: "◇";
+    font-size: 29px;
+    color: #d8ae59;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    left: -9px;
+    z-index: -1;
+}
+.ornate-button::after {
+    left: auto;
+    right: -9px;
+}
+.ornate-button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow:
+        inset 0 0 0 3px #432608,
+        inset 0 0 0 4px #b38c48,
+        0 5px 18px #c89c4233;
+}
+.ornate-button span {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    line-height: 1;
+}
+.primary-button {
+    min-width: 232px;
+    height: 51px;
+    padding: 0 23px;
+    font-size: 23px;
+    background: linear-gradient(170deg, #bc903d, #815b21 60%, #b48a3c);
+    box-shadow:
+        inset 0 0 0 3px #aa8136,
+        inset 0 0 0 4px #d0a54e,
+        0 3px 8px #0004;
+}
+.action-flower {
+    font-size: 42px;
+    color: #9d7936;
+    text-shadow: 1px 1px #deb26d55;
+}
+.explore {
+  position: relative;
+  overflow-x: clip;
+    isolation: isolate;
+    min-height: 378px;
+    padding: 0 24px 28px;
+    color: var(--brown);
+    background-color: var(--paper);
+    background-image: url("/images/paper.svg");
+    background-size: 200px;
+    scroll-margin-top: 20px;
+}
+.explore::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: -47px;
+    height: 55px;
+    background: var(--paper) url("/images/paper.svg");
+    clip-path: polygon(
+        0 0,
+        1% 19%,
+        2% 23%,
+        3% 40%,
+        4% 41%,
+        5% 59%,
+        6% 64%,
+        7% 77%,
+        8% 59%,
+        9% 66%,
+        10% 68%,
+        11% 77%,
+        12% 67%,
+        13% 80%,
+        14% 94%,
+        15% 71%,
+        16% 73%,
+        17% 68%,
+        18% 54%,
+        19% 66%,
+        20% 61%,
+        21% 56%,
+        22% 64%,
+        23% 54%,
+        24% 72%,
+        25% 67%,
+        26% 78%,
+        27% 73%,
+        28% 60%,
+        29% 68%,
+        30% 55%,
+        31% 61%,
+        32% 47%,
+        33% 49%,
+        34% 58%,
+        35% 43%,
+        36% 52%,
+        37% 45%,
+        38% 54%,
+        39% 39%,
+        40% 50%,
+        41% 41%,
+        42% 46%,
+        43% 39%,
+        44% 48%,
+        45% 31%,
+        46% 44%,
+        47% 40%,
+        48% 48%,
+        49% 35%,
+        50% 42%,
+        51% 36%,
+        52% 41%,
+        53% 32%,
+        54% 41%,
+        55% 29%,
+        56% 37%,
+        57% 30%,
+        58% 38%,
+        59% 30%,
+        60% 38%,
+        61% 33%,
+        62% 45%,
+        63% 35%,
+        64% 42%,
+        65% 37%,
+        66% 42%,
+        67% 33%,
+        68% 45%,
+        69% 35%,
+        70% 43%,
+        71% 37%,
+        72% 52%,
+        73% 40%,
+        74% 50%,
+        75% 44%,
+        76% 56%,
+        77% 47%,
+        78% 56%,
+        79% 45%,
+        80% 58%,
+        81% 54%,
+        82% 66%,
+        83% 56%,
+        84% 64%,
+        85% 58%,
+        86% 72%,
+        87% 66%,
+        88% 84%,
+        89% 78%,
+        90% 89%,
+        91% 78%,
+        92% 89%,
+        93% 70%,
+        94% 74%,
+        95% 59%,
+        96% 63%,
+        97% 39%,
+        98% 45%,
+        99% 30%,
+        100% 15%,
+        100% 100%,
+        0 100%
+    );
+}
+.explore-container {
+    max-width: 1252px;
+    margin: auto;
+    position: relative;
+}
+.section-heading {
+    text-align: center;
+  margin-bottom: 14px;
+}
+.section-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.heading-icon {
+    height: 48px;
+    width: 43px;
+    color: #86602c;
+}
+.heading-flower {
+    color: #b38c4a;
+    font-size: 26px;
+}
+.section-heading p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #4d4535;
+}
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+.story-card {
+    height: 255px;
+    border-radius: 12px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 79px 32px 17px;
+    color: #fff9e9;
+    background-image:
+        linear-gradient(90deg, #140f08e8, #140f0899 55%, #140f0826),
+        var(--card-image, linear-gradient(135deg, #14211a, #8b6536));
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 3px 5px #4b351c40;
+    border: 1px solid #98754555;
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+.story-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 19px #4b351c45;
+}
+.story-card.history {
+    background-image:
+        linear-gradient(90deg, #201b12bd, #201b1270 60%, #201b1210),
+        var(--card-image, linear-gradient(135deg, #3d3928, #ba9b66));
+}
+.story-card.places {
+    background-image:
+        linear-gradient(90deg, #242512bd, #24251260 65%, #24251210),
+        var(--card-image, linear-gradient(135deg, #5b6140, #b99964));
+}
+.story-card h3 {
+    font-family: var(--serif);
+    font-size: 27px;
+    line-height: 1.45;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+    text-shadow: 0 2px 4px #0009;
+}
+.story-card p {
+    font-size: 15.5px;
+    line-height: 1.5;
+    margin-top: 3px;
+    white-space: nowrap;
+    text-shadow: 0 1px 3px #000;
+}
+.card-button {
+    display: flex;
+    width: 201px;
+    height: 45px;
+    font-size: 17px;
+    margin: 17px auto 0;
+    gap: 17px;
+}
+.history .card-button {
+    background: linear-gradient(#214937, #0c2b22);
+    box-shadow:
+        inset 0 0 0 3px #123528,
+        inset 0 0 0 4px #b38c48;
+}
+.number-badge {
+    position: absolute;
+    left: 33px;
+    top: 11px;
+    width: 60px;
+    height: 60px;
+    background: #755218;
+    border: 1px solid #dcb36c;
+    border-radius: 18px;
+    transform: rotate(45deg);
+    box-shadow:
+        inset 0 0 0 3px #614415,
+        inset 0 0 0 4px #c89d4e,
+        0 1px 4px #0008;
+}
+.number-badge::before,
+.number-badge::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid #c69b4c;
+    border-radius: 15px;
+    transform: rotate(22.5deg);
+}
+.number-badge::after {
+    transform: rotate(-22.5deg);
+}
+.number-badge span {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: rotate(-45deg);
+    font-family: Georgia, serif;
+    font-size: 29px;
+    color: #ffe3a1;
+}
+.background-temple {
+    position: absolute;
+    z-index: -1;
+    color: #a77a3d;
+    opacity: 0.22;
+    bottom: 0;
+    width: 200px;
+    height: 285px;
+    pointer-events: none;
+}
+.temple-left {
+    left: -43px;
+    transform: rotate(-6deg);
+}
+.temple-right {
+    right: -34px;
+    height: 335px;
+}
+.landscape {
+    position: absolute;
+    z-index: -1;
+    inset: 10px 0 0;
+    overflow: hidden;
+    opacity: 0.12;
+    pointer-events: none;
+}
+.landscape::before,
+.landscape::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #b18a51;
+    clip-path: polygon(
+        0 20%,
+        5% 12%,
+        10% 17%,
+        17% 5%,
+        22% 0,
+        28% 12%,
+        33% 9%,
+        41% 20%,
+        48% 15%,
+        55% 20%,
+        63% 10%,
+        70% 14%,
+        75% 5%,
+        79% 10%,
+        84% 1%,
+        89% 12%,
+        95% 9%,
+        100% 20%,
+        100% 26%,
+        92% 18%,
+        85% 19%,
+        77% 17%,
+        69% 23%,
+        60% 20%,
+        53% 28%,
+        43% 25%,
+        32% 18%,
+        23% 12%,
+        14% 25%,
+        7% 20%,
+        0 30%
+    );
+}
+.landscape::after {
+    transform: translateY(23px) scaleX(-1);
+    opacity: 0.5;
+}
+.topic-page {
+    min-height: calc(100svh - 80px);
+    padding: 90px 24px;
+    text-align: center;
+    color: var(--brown);
+    background: var(--paper) url("/images/paper.svg");
+}
+.topic-page h1 {
+    font-family: var(--serif);
+    font-size: 40px;
+}
+.topic-icon {
+    height: 90px;
+    width: 80px;
+}
+.topic-page p {
+    margin: 25px 0;
+}
+.topic-page .primary-button {
+    font-size: 18px;
+}
+@media (max-width: 1399px) {
+    .nav-container {
+        margin: 0 5%;
+        gap: 7%;
+    }
+    .main-navigation {
+        gap: 20px;
+    }
+    .hero-inner {
+        margin: 0 5%;
+    }
+    .story-card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .story-card h3 {
+        font-size: 25px;
+    }
+    .story-card p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1199px) {
+    .nav-container {
+        gap: 30px;
+        margin: 0 30px;
+    }
+    .brand strong {
+        font-size: 17px;
+    }
+    .brand small {
+        font-size: 14px;
+    }
+    .brand-icon {
+        width: 45px;
+    }
+    .main-navigation {
+        gap: 12px;
+        margin-left: auto;
+    }
+    .main-navigation a {
+        font-size: 14px;
+        padding-inline: 5px;
+    }
+    .hero-inner {
+        margin: 0 40px;
+    }
+    .story-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 850px;
+        margin: auto;
+    }
+    .story-card {
+        padding-left: 32px;
+    }
+    .story-card h3 {
+        font-size: 27px;
+    }
+    .story-card p {
+        font-size: 15px;
+    }
+    .section-heading h2 {
+        font-size: 35px;
+    }
+    .explore {
+        padding-bottom: 35px;
+    }
+}
+@media (max-width: 768px) {
+  .site-header::before,
+  .site-header::after {
+    display: none;
+  }
+    .site-header {
+        height: 76px;
+        overflow: visible;
+    }
+    .nav-container {
+        margin: 0 20px;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    .brand {
+        gap: 8px;
+    }
+    .brand-icon {
+        width: 40px;
+        height: 55px;
+    }
+    .brand strong {
+        font-size: 16px;
+    }
+    .brand small {
+        font-size: 12px;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid #b5975455;
+        border-radius: 5px;
+        color: var(--gold);
+        flex-shrink: 0;
+    }
+    .menu-toggle span {
+        width: 21px;
+        height: 2px;
+        background: currentColor;
+        transition:
+            transform 0.2s,
+            opacity 0.2s;
+    }
+    .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: -20px;
+        right: -20px;
+        height: auto;
+        margin: 0;
+        background: #0c2b22;
+        border-bottom: 1px solid #b59754;
+        padding: 10px 24px 18px;
+        box-shadow: 0 12px 20px #0004;
+    }
+    .main-navigation.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .main-navigation a::after {
+        bottom: 6px;
+        right: auto;
+        width: 65px;
+        left: 10px;
+    }
+    .hero {
+        height: auto;
+        min-height: 615px;
+    }
+    .hero-inner {
+        margin: 0;
+        padding: calc(100vw * 668 / 1268 + 24px) 24px 67px;
+    }
+    .hero-copy {
+        max-width: 580px;
+        width: 100%;
+        margin: auto;
+    }
+    .hero-heading {
+        width: 100%;
+    }
+    .hero h1 span:first-child {
+        font-size: 54px;
+    }
+    .hero h1 span {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+    .hero-subtitle {
+        font-size: 21px;
+        margin-top: 8px;
+    }
+    .ornament-divider {
+        margin-top: 9px;
+    }
+    .hero blockquote {
+        font-size: 20px;
+        white-space: normal;
+        line-height: 1.65;
+        letter-spacing: -0.4px;
+        margin-top: 12px;
+    }
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.75;
+        letter-spacing: 0;
+    }
+    .desktop-break {
+        display: none;
+    }
+    .hero-action {
+        margin-top: 22px;
+    }
+    .primary-button {
+        height: 49px;
+        min-width: 218px;
+        font-size: 21px;
+    }
+    .action-flower {
+        font-size: 35px;
+    }
+    .explore {
+        padding: 0 20px 30px;
+    }
+    .section-heading h2 {
+        font-size: 29px;
+        gap: 9px;
+    }
+    .heading-icon {
+        width: 34px;
+        height: 43px;
+    }
+    .heading-flower {
+        font-size: 22px;
+    }
+    .section-heading p {
+        font-size: 14px;
+        max-width: 390px;
+        margin: 8px auto 0;
+    }
+    .section-heading {
+        margin-bottom: 20px;
+    }
+    .story-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 20px;
+    }
+    .story-card {
+        height: 255px;
+        padding: 79px 28px 17px;
+    }
+    .story-card h3 {
+        font-size: 27px;
+    }
+    .story-card p {
+        font-size: 14px;
+    }
+    .number-badge {
+        left: 30px;
+    }
+    .background-temple {
+        opacity: 0.15;
+    }
+    .topic-page h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 380px) {
+    .nav-container {
+        margin-inline: 12px;
+    }
+    .brand strong {
+        font-size: 14px;
+    }
+    .brand small {
+        font-size: 11px;
+    }
+    .brand-icon {
+        width: 33px;
+    }
+    .hero-inner {
+        padding-inline: 19px;
+    }
+    .hero h1 span {
+        font-size: 37px;
+    }
+    .hero h1 span:first-child {
+        font-size: 48px;
+    }
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    .hero blockquote {
+        font-size: 18px;
+    }
+    .story-card {
+        padding-inline: 20px;
+    }
+    .story-card h3 {
+        font-size: 24px;
+    }
+    .story-card p {
+        font-size: 12.5px;
+    }
+    .main-navigation {
+        left: -12px;
+        right: -12px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+    .story-card:hover,
+    .ornate-button:hover {
+        transform: none;
+    }
+}
+</style>
+        <style>.history-page {
+    --history-paper: #eee0bf;
+    --history-gold: #c99a43;
+    --history-ink: #25170f;
+    background: #06261e;
+    color: var(--history-ink);
+}
+.history-page .site-header {
+    height: 65px;
+    overflow: visible;
+    color: #f4e7c8;
+    background-color: #041b16;
+}
+.history-page .site-header::before {
+    left: 0;
+    transform: none;
+}
+.history-page .site-header::after {
+    right: 0;
+    transform: none;
+}
+.history-page .nav-container {
+    max-width: 1220px;
+    margin: auto;
+    gap: 0;
+}
+.history-page .brand-icon {
+    width: 49px;
+    height: 58px;
+}
+.history-page .brand {
+    gap: 23px;
+}
+.history-page .brand strong {
+    font-size: 17px;
+}
+.history-page .brand small {
+    font-size: 14px;
+}
+.history-page .main-navigation {
+    gap: 22px;
+    margin-left: 125px;
+    margin-right: auto;
+}
+.history-page .main-navigation a {
+    font-size: 14px;
+    padding: 19px 6px;
+}
+.history-page .main-navigation a::after {
+    bottom: 11px;
+}
+.history-page .main-navigation a[aria-current]::before {
+    content: "❖";
+    position: absolute;
+    bottom: -14px;
+    left: calc(50% - 9px);
+    color: #e7c477;
+    font-size: 23px;
+}
+.history-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #9c7635;
+    border-radius: 30px;
+    min-width: 178px;
+    width: 178px;
+    height: 37px;
+    margin-right: -36px;
+    background: #041b1680;
+}
+.history-search > button {
+    display: grid;
+    place-items: center;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    width: 37px;
+    height: 35px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.history-search svg {
+    width: 20px;
+    height: 20px;
+}
+.history-search input {
+    font: 12px var(--sans);
+    color: #fff;
+    min-width: 0;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline-offset: 5px;
+    padding: 5px 8px 5px 0;
+}
+.history-search input::placeholder {
+    color: #b8b2a0;
+}
+.history-search-results {
+    position: absolute;
+    top: 46px;
+    right: 0;
+    width: 310px;
+    max-height: 60vh;
+    overflow: auto;
+    background: #f5e9cf;
+    color: #25170f;
+    border: 1px solid #9c7635;
+    padding: 15px;
+    box-shadow: 0 4px 15px #0004;
+    z-index: 20;
+}
+.history-search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+}
+.history-search-results a {
+    display: block;
+    padding: 7px 0;
+    border-bottom: 1px solid #c99a4340;
+    font-size: 14px;
+}
+.history-search-close {
+    background: #06261e;
+    color: #f4e7c8;
+    border: 1px solid #9c7635;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.history-hero {
+    height: 210px;
+    position: relative;
+    isolation: isolate;
+    background: #302418;
+    color: #f4e1b0;
+    overflow: hidden;
+}
+.history-hero-old {
+    position: absolute;
+    inset: 0 32% 0 0;
+    z-index: -2;
+    background-size: cover;
+    background-position: center;
+    filter: sepia(0.65);
+}
+.history-hero-temple {
+    position: absolute;
+    inset: 0 0 0 44%;
+    z-index: -2;
+    background-size: cover;
+    background-position: center 36%;
+    mask-image: linear-gradient(90deg, transparent, #000 30%);
+}
+.history-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        90deg,
+        #100b08a8,
+        #25170f70 34%,
+        transparent 64%
+    );
+}
+.history-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("/images/ornament.svg") left center/155px repeat-y;
+    opacity: 0.2;
+}
+.history-hero-copy {
+    margin-left: max(9.1%, calc((100vw - 1256px) / 2));
+    width: 610px;
+    padding-top: 21px;
+    text-shadow: 0 2px 4px #0008;
+}
+.history-hero h1 {
+    font-family: var(--serif);
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -1px;
+}
+.history-subtitle {
+    font-family: var(--serif);
+    font-size: 29px;
+    line-height: 1.25;
+    margin-left: 40px;
+}
+.history-gold-divider {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #c99a43;
+    font-size: 13px;
+    line-height: 1;
+    margin: 5px 0;
+}
+.history-gold-divider span {
+    height: 1px;
+    background: linear-gradient(90deg, #c99a43, #c99a4360);
+    flex: 1;
+}
+.history-hero .history-gold-divider {
+    margin: 6px 0 7px 65px;
+    width: 490px;
+}
+.history-intro {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-left: 82px;
+    width: 540px;
+}
+.history-main-grid {
+    display: grid;
+    grid-template-columns: 235px minmax(0, 1fr);
+    align-items: stretch;
+}
+.history-sidebar {
+    position: relative;
+    isolation: isolate;
+    background: radial-gradient(ellipse at bottom, #19372a, #041b16 70%);
+    color: #f4e7c8;
+    padding: 13px 19px;
+    min-height: 515px;
+}
+.history-sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("/images/ornament.svg") left top/160px;
+    opacity: 0.14;
+    pointer-events: none;
+}
+.history-chapter-nav {
+    position: sticky;
+    top: 15px;
+    z-index: 2;
+}
+.history-chapter-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    min-height: 36px;
+    position: relative;
+    white-space: nowrap;
+}
+.chapter-number {
+    color: #e7c477;
+}
+.chapter-marker {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #e7c477;
+    border-radius: 50%;
+    background: #06261e;
+    flex-shrink: 0;
+    position: relative;
+}
+.history-chapter-nav a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    bottom: -12px;
+    left: 5px;
+    width: 1px;
+    background: #b78d3e;
+}
+.history-chapter-nav a[aria-current] {
+    color: #ffe6ab;
+}
+.history-chapter-nav a[aria-current] .chapter-marker {
+    background: #e7c477;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 4px #e7c47744;
+}
+.history-sidebar-temple {
+    position: absolute;
+    bottom: 0;
+    left: -28px;
+    width: 260px;
+    height: 230px;
+    opacity: 0.35;
+    color: #c99a43;
+    z-index: -1;
+}
+.history-paper {
+    position: relative;
+    isolation: isolate;
+    background: var(--history-paper) url("/images/paper.svg");
+    padding: 15px 14px 15px 21px;
+}
+.history-paper::before {
+    content: "";
+    position: absolute;
+    inset: -8px 0 auto;
+    height: 12px;
+    background: var(--history-paper) url("/images/paper.svg");
+    clip-path: polygon(
+        0 25%,
+        4% 45%,
+        8% 20%,
+        12% 50%,
+        17% 30%,
+        22% 48%,
+        28% 32%,
+        34% 50%,
+        40% 28%,
+        46% 42%,
+        52% 18%,
+        58% 48%,
+        64% 25%,
+        70% 45%,
+        76% 15%,
+        82% 47%,
+        88% 22%,
+        94% 48%,
+        100% 20%,
+        100% 100%,
+        0 100%
+    );
+}
+.history-paper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("/images/ornament.svg") right top/230px;
+    opacity: 0.035;
+    pointer-events: none;
+}
+.history-top-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 337px;
+    gap: 16px;
+}
+.history-origin-heading {
+    display: flex;
+    gap: 19px;
+    align-items: flex-start;
+}
+.history-origin h2 {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+.history-origin-heading p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+.history-badge {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    flex-shrink: 0;
+    background: radial-gradient(#5c3811, #301b0c);
+    border: 3px double #d9b472;
+    outline: 1px solid #997041;
+    outline-offset: 2px;
+    border-radius: 34%;
+    transform: rotate(15deg);
+    box-shadow:
+        0 0 0 5px #b98d4940,
+        inset 0 0 7px #c99a4330;
+    color: #f6d891;
+}
+.history-badge::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 1px solid #a88044;
+    border-radius: 34%;
+    transform: rotate(-30deg);
+}
+.history-badge > span {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    transform: rotate(-15deg);
+}
+.history-origin-heading > .history-badge {
+    width: 61px;
+    height: 61px;
+    margin: 3px 4px 0;
+}
+.history-origin-heading > .history-badge span {
+    font-size: 31px;
+}
+.history-era-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    list-style: none;
+    padding: 20px 0 0;
+    margin: 18px 0 0;
+    border-top: 2px solid #b79151;
+    position: relative;
+}
+.history-era-timeline::before,
+.history-era-timeline::after {
+    content: "❖";
+    position: absolute;
+    top: -14px;
+    font-size: 23px;
+    color: #a87b36;
+    left: -1px;
+    background: #f3e7cc;
+}
+.history-era-timeline::after {
+    left: auto;
+    right: -1px;
+}
+.history-era-timeline li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 10px;
+    padding-right: 8px;
+    border-right: 1px solid #bb996440;
+}
+.history-era-timeline li:last-child {
+    border: 0;
+}
+.history-era-timeline li::before {
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: 35%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #98692e;
+    border-radius: 50%;
+    background: #f3e7cc;
+    box-shadow: 0 0 0 1px #f3e7cc;
+}
+.history-art {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+.history-art-pending {
+    background: linear-gradient(135deg, #84603d24, #6f492e38);
+    border: 1px solid #ae8b5630;
+}
+.history-era-timeline .history-art {
+    height: 83px;
+}
+.history-page h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #7a2517;
+}
+.history-page h4 {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #51321e;
+}
+.history-era-timeline p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+.history-learning {
+    background: linear-gradient(110deg, #f5e9cf90, #e6c99755);
+    border: 1px solid #c7a87566;
+    border-radius: 3px;
+    padding: 15px 15px 17px;
+    box-shadow: inset 0 0 22px #b58b4130;
+    position: relative;
+}
+.history-learning::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65px;
+    height: 65px;
+    background: url("/images/ornament.svg") center/95px;
+    opacity: 0.35;
+    pointer-events: none;
+}
+.history-learning h2 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.history-learning h2 svg {
+    width: 35px;
+    height: 35px;
+    color: #95662a;
+    flex-shrink: 0;
+}
+.history-learning ul {
+    list-style: none;
+    padding: 4px 0 3px 24px;
+    margin: 8px 0 7px;
+}
+.history-learning li {
+    position: relative;
+    font-size: 13px;
+    line-height: 1.55;
+    padding: 0 0 12px 15px;
+    border-left: 1px solid #a47c44;
+}
+.history-learning li::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #f8eacb;
+    background: #936832;
+    outline: 1px solid #936832;
+}
+.history-learning li:last-child {
+    padding-bottom: 0;
+    border-left-color: transparent;
+}
+.history-learning > p {
+    font-size: 13px;
+    line-height: 1.65;
+    margin-left: 10px;
+}
+.history-card-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 9px;
+    margin-top: 14px;
+}
+.history-card {
+    background: #fff4dd48;
+    border: 1px solid #cfb88d55;
+    border-radius: 5px;
+    padding: 9px;
+    transition: transform 0.2s;
+    min-width: 0;
+}
+.history-card:hover {
+    transform: translateY(-2px);
+}
+.history-card header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 12px;
+}
+.history-card .history-badge {
+    width: 36px;
+    height: 36px;
+    margin-left: 3px;
+}
+.history-card .history-badge span {
+    font-size: 23px;
+}
+.history-card h2 {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.history-community h2 {
+    font-size: 17px;
+    letter-spacing: -0.5px;
+}
+.community-eras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+}
+.community-eras article {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr);
+    gap: 11px;
+    min-width: 0;
+}
+.community-eras article + article {
+    border-left: 1px solid #b6925540;
+    padding-left: 10px;
+}
+.community-eras .history-art {
+    height: 163px;
+}
+.community-eras h4 {
+    color: #7a2517;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #b6925540;
+    margin-bottom: 7px;
+}
+.history-card p {
+    font-size: 10.5px;
+    line-height: 1.65;
+}
+.history-card-body {
+    display: grid;
+    grid-template-columns: 39% minmax(0, 1fr);
+    gap: 12px;
+}
+.history-card-body .history-art {
+    height: 170px;
+}
+.history-card strong {
+    color: #7a2517;
+    font-weight: 600;
+}
+.manuscript-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 6px 0;
+}
+.manuscript-stats > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    background: #e7c78e70;
+    border-radius: 4px;
+    line-height: 1.2;
+}
+.manuscript-stats strong {
+    font-family: Georgia, serif;
+    color: #51321e;
+    font-size: 23px;
+}
+.manuscript-stats span {
+    font-size: 10px;
+}
+.history-stupa .history-card-body {
+    grid-template-columns: 39% minmax(0, 1fr);
+}
+.history-dark-band {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 106px 0.8fr 0.95fr;
+    gap: 18px;
+    padding: 19px 16px 18px;
+    background: linear-gradient(#071e19e6, #211a11eb), url("/images/paper.svg");
+    color: #f4e7c8;
+    min-height: 227px;
+}
+.history-dark-band::before {
+    content: "";
+    position: absolute;
+    inset: -10px 0 auto;
+    height: 17px;
+    background: #eee0bf url("/images/paper.svg");
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 65%,
+        97% 43%,
+        93% 65%,
+        88% 33%,
+        83% 51%,
+        78% 30%,
+        73% 70%,
+        68% 42%,
+        63% 65%,
+        59% 30%,
+        55% 53%,
+        50% 32%,
+        45% 66%,
+        40% 44%,
+        35% 66%,
+        30% 38%,
+        25% 70%,
+        21% 44%,
+        17% 64%,
+        12% 39%,
+        8% 68%,
+        3% 40%,
+        0 60%
+    );
+}
+.history-dark-band::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("/images/ornament.svg") center/170px;
+    opacity: 0.075;
+    pointer-events: none;
+}
+.history-dark-story {
+    min-width: 0;
+}
+.history-dark-story header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a1824644;
+}
+.history-dark-story .history-badge {
+    width: 39px;
+    height: 39px;
+    background: #4b3b1c;
+}
+.history-dark-story .history-badge span {
+    font-size: 25px;
+}
+.history-dark-story h2 {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.history-dark-story:first-child h2 {
+    color: #ebca79;
+}
+.dark-story-body {
+    display: grid;
+    grid-template-columns: 42% minmax(0, 1fr);
+    gap: 11px;
+}
+.dark-story-body .history-art {
+    height: 139px;
+    border-radius: 2px;
+}
+.history-dark-band .history-art-pending {
+    background: linear-gradient(135deg, #907c6135, #a38c604a);
+}
+.history-dark-band p {
+    font-size: 10px;
+    line-height: 1.65;
+}
+.history-dark-band h3 {
+    font-size: 12px;
+    color: #e7c477;
+    font-weight: 500;
+}
+.history-dark-band strong {
+    font-weight: 600;
+    color: #fff2d4;
+}
+.history-hospital .dark-story-body {
+    grid-template-columns: 35% minmax(0, 1fr);
+}
+.history-route {
+    margin-top: 29px;
+    background: #3c2d19aa;
+    border: 1px solid #a47a3870;
+    box-shadow: inset 0 0 0 3px #1b20176b;
+    padding: 9px 6px;
+    text-align: center;
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        100% 5%,
+        100% 95%,
+        95% 100%,
+        5% 100%,
+        0 95%,
+        0 5%
+    );
+}
+.history-route h3 {
+    border-bottom: 1px solid #a47a3866;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
+}
+.history-route ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1.5;
+}
+.history-route li:not(:last-child)::after {
+    content: "↓";
+    display: block;
+    color: #d8b268;
+    line-height: 1.25;
+}
+.history-page [data-history-section] {
+    scroll-margin-top: 18px;
+}
+@media (max-width: 1399px) {
+    .history-page .nav-container {
+        margin: 0 4%;
+    }
+    .history-page .main-navigation {
+        margin-left: auto;
+        margin-right: 35px;
+        gap: 14px;
+    }
+    .history-page .brand {
+        gap: 12px;
+    }
+    .history-search {
+        margin-right: 0;
+        min-width: 160px;
+        width: 160px;
+    }
+    .history-main-grid {
+        grid-template-columns: 215px minmax(0, 1fr);
+    }
+    .history-sidebar {
+        padding-inline: 12px;
+    }
+    .history-paper {
+        padding-left: 14px;
+    }
+    .history-top-row {
+        grid-template-columns: minmax(0, 1fr) 285px;
+        gap: 12px;
+    }
+    .history-learning {
+        padding: 12px;
+    }
+    .history-learning h2 {
+        font-size: 16px;
+    }
+    .history-learning li,
+    .history-learning > p {
+        font-size: 12px;
+    }
+    .history-origin h2 {
+        font-size: 25px;
+    }
+    .history-origin-heading p {
+        font-size: 12px;
+    }
+    .history-era-timeline {
+        gap: 8px;
+    }
+    .history-era-timeline li {
+        grid-template-columns: 50px minmax(0, 1fr);
+        gap: 7px;
+    }
+    .history-era-timeline p {
+        font-size: 9px;
+    }
+    .history-card-row {
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+    .community-eras article {
+        grid-template-columns: 60px minmax(0, 1fr);
+        gap: 7px;
+    }
+    .history-card h2 {
+        font-size: 15px;
+    }
+    .history-community h2 {
+        font-size: 14px;
+    }
+    .history-card p {
+        font-size: 10px;
+    }
+    .history-card-body {
+        gap: 8px;
+    }
+    .history-dark-band {
+        gap: 12px;
+        grid-template-columns: 1.05fr 1fr 95px 0.9fr 1fr;
+    }
+    .history-dark-story h2 {
+        font-size: 13px;
+    }
+    .history-dark-story header {
+        gap: 8px;
+    }
+}
+@media (max-width: 1199px) {
+    .history-page .nav-container {
+        margin: 0 24px;
+    }
+    .history-page .brand strong {
+        font-size: 15px;
+    }
+    .history-page .brand small {
+        font-size: 12px;
+    }
+    .history-page .brand-icon {
+        width: 39px;
+    }
+    .history-page .main-navigation {
+        gap: 7px;
+        margin-right: 15px;
+    }
+    .history-page .main-navigation a {
+        font-size: 12px;
+    }
+    .history-search {
+        width: 140px;
+        min-width: 140px;
+    }
+    .history-hero-copy {
+        margin-left: 6%;
+    }
+    .history-main-grid {
+        grid-template-columns: 200px minmax(0, 1fr);
+    }
+    .history-sidebar {
+        padding-inline: 10px;
+    }
+    .history-chapter-nav a {
+        font-size: 12px;
+        gap: 7px;
+    }
+    .history-top-row {
+        grid-template-columns: 1fr;
+    }
+    .history-learning {
+        margin-top: 4px;
+    }
+    .history-card-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .history-community {
+        grid-column: 1/-1;
+    }
+    .history-origin-heading p {
+        font-size: 13px;
+    }
+    .history-era-timeline li {
+        grid-template-columns: 55px minmax(0, 1fr);
+    }
+    .history-era-timeline p {
+        font-size: 11px;
+    }
+    .history-card p {
+        font-size: 12px;
+    }
+    .community-eras article {
+        grid-template-columns: 85px minmax(0, 1fr);
+    }
+    .history-card h2 {
+        font-size: 18px;
+    }
+    .history-dark-band {
+        grid-template-columns: 1fr 1fr;
+    }
+    .history-route {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+    }
+    .history-dark-story h2 {
+        font-size: 19px;
+    }
+    .history-dark-band p {
+        font-size: 13px;
+    }
+    .history-dark-band h3 {
+        font-size: 15px;
+    }
+    .history-dark-band .history-art {
+        height: 180px;
+    }
+    .history-route ol {
+        font-size: 13px;
+    }
+    .history-era-timeline {
+        margin-top: 20px;
+    }
+    .history-sidebar-temple {
+        width: 200px;
+        left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .history-page .site-header {
+        height: 76px;
+    }
+    .history-page .nav-container {
+        margin: 0 15px;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+    .history-page .brand {
+        gap: 7px;
+    }
+    .history-page .brand strong {
+        font-size: 13px;
+    }
+    .history-page .brand small {
+        font-size: 10px;
+    }
+    .history-page .brand-icon {
+        width: 31px;
+        height: 47px;
+    }
+    .history-page .menu-toggle {
+        width: 34px;
+        height: 35px;
+        order: 3;
+    }
+    .history-page .main-navigation {
+        margin: 0;
+        top: 76px;
+        left: -15px;
+        right: -15px;
+    }
+    .history-page .main-navigation a {
+        font-size: 16px;
+        padding: 13px 10px;
+    }
+    .history-page .main-navigation a::after {
+        bottom: 6px;
+    }
+    .history-page .main-navigation a[aria-current]::before {
+        display: none;
+    }
+    .history-search {
+        order: 2;
+        width: 36px;
+        min-width: 36px;
+        height: 35px;
+        margin-left: auto;
+    }
+    .history-search > button {
+        width: 34px;
+    }
+    .history-search input {
+        width: 0;
+        padding: 0;
+    }
+    .history-search:focus-within {
+        position: absolute;
+        right: 43px;
+        width: calc(100% - 43px);
+        z-index: 6;
+        background: #041b16;
+    }
+    .history-search:focus-within input {
+        width: 100%;
+        padding-right: 10px;
+    }
+    .history-search-results {
+        width: min(310px, calc(100vw - 40px));
+        right: -40px;
+    }
+    .history-hero {
+        height: auto;
+        min-height: 255px;
+    }
+    .history-hero-copy {
+        margin: 0;
+        padding: 30px 22px 24px;
+        width: 100%;
+    }
+    .history-hero-temple {
+        left: 20%;
+        background-position: 60% center;
+        opacity: 0.6;
+    }
+    .history-hero::before {
+        background: linear-gradient(90deg, #100b08e0, #25170f90);
+    }
+    .history-hero h1 {
+        font-size: 36px;
+        line-height: 1.45;
+    }
+    .history-subtitle {
+        font-size: 21px;
+        margin-left: 0;
+        line-height: 1.5;
+    }
+    .history-hero .history-gold-divider {
+        width: 100%;
+        margin: 9px 0;
+    }
+    .history-intro {
+        font-size: 13px;
+        margin: 0;
+        width: 100%;
+        line-height: 1.7;
+    }
+    .history-desktop-break {
+        display: none;
+    }
+    .history-main-grid {
+        display: block;
+    }
+    .history-sidebar {
+        min-height: 0;
+        padding: 12px 16px;
+    }
+    .history-chapter-nav {
+        position: static;
+        display: flex;
+        overflow-x: auto;
+        gap: 18px;
+        padding: 4px 3px;
+        scrollbar-width: thin;
+        scrollbar-color: #b78d3e #06261e;
+    }
+    .history-chapter-nav a {
+        flex-shrink: 0;
+        font-size: 13px;
+        min-height: 35px;
+    }
+    .history-chapter-nav a::after {
+        display: none;
+    }
+    .history-sidebar-temple {
+        display: none;
+    }
+    .history-paper {
+        padding: 20px 16px;
+    }
+    .history-paper::before {
+        display: none;
+    }
+    .history-origin-heading {
+        gap: 14px;
+    }
+    .history-origin-heading > .history-badge {
+        width: 45px;
+        height: 45px;
+        margin: 4px 1px;
+    }
+    .history-origin-heading > .history-badge span {
+        font-size: 27px;
+    }
+    .history-origin h2 {
+        font-size: 23px;
+        line-height: 1.5;
+    }
+    .history-origin-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .history-era-timeline {
+        display: block;
+        border-top: 0;
+        border-left: 1px solid #b79151;
+        margin: 20px 0 20px 10px;
+        padding: 0 0 0 20px;
+    }
+    .history-era-timeline::before,
+    .history-era-timeline::after {
+        display: none;
+    }
+    .history-era-timeline li {
+        grid-template-columns: 80px minmax(0, 1fr);
+        gap: 13px;
+        margin-bottom: 22px;
+        border: 0;
+        padding: 0;
+    }
+    .history-era-timeline li::before {
+        left: -27px;
+        top: 6px;
+    }
+    .history-era-timeline .history-art {
+        height: 105px;
+    }
+    .history-era-timeline p {
+        font-size: 13px;
+    }
+    .history-page h3 {
+        font-size: 16px;
+    }
+    .history-page h4 {
+        font-size: 14px;
+    }
+    .history-learning h2 {
+        font-size: 18px;
+        white-space: normal;
+    }
+    .history-learning li,
+    .history-learning > p {
+        font-size: 14px;
+    }
+    .history-learning {
+        padding: 18px 15px;
+    }
+    .history-card-row {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 20px;
+    }
+    .history-community {
+        grid-column: auto;
+    }
+    .history-card {
+        padding: 13px;
+    }
+    .history-card h2 {
+        font-size: 19px;
+    }
+    .history-card header {
+        gap: 12px;
+    }
+    .community-eras {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .community-eras article {
+        grid-template-columns: 90px minmax(0, 1fr);
+        gap: 13px;
+    }
+    .community-eras article + article {
+        border-left: 0;
+        border-top: 1px solid #b6925540;
+        padding: 15px 0 0;
+    }
+    .history-card p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+    .history-card-body,
+    .history-stupa .history-card-body {
+        grid-template-columns: 34% minmax(0, 1fr);
+        gap: 12px;
+    }
+    .history-card-body .history-art {
+        height: 100%;
+        min-height: 185px;
+    }
+    .history-dark-band {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+    .history-dark-story h2 {
+        font-size: 19px;
+    }
+    .history-dark-story header {
+        gap: 15px;
+    }
+    .history-dark-band h3 {
+        font-size: 15px;
+    }
+    .history-dark-band p {
+        font-size: 13px;
+    }
+    .history-route {
+        grid-column: auto;
+        grid-row: auto;
+        max-width: 230px;
+        width: 100%;
+        justify-self: center;
+        padding: 15px;
+    }
+    .history-route ol {
+        font-size: 14px;
+    }
+    .history-route li:not(:last-child)::after {
+        line-height: 1.7;
+    }
+    .history-dark-band .history-art {
+        height: 190px;
+    }
+    .history-page main {
+        overflow-x: clip;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .history-card:hover {
+        transform: none;
+    }
+}
+</style>
+</head>
+<body class="history-page">
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="/" aria-label="วัดหมื่นสาร – หน้าแรก">
+                <svg class="brand-icon" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+                <span><strong>เปิดตำนานและประวัติศาสตร์</strong><small>ณ วัดหมื่นสาร - ชุมชนวัวลาย</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="เปิดเมนู"><span></span><span></span><span></span></button>
+            <nav id="main-navigation" class="main-navigation" aria-label="เมนูหลัก">
+                                    <a href="/" >หน้าแรก</a>
+                                    <a href="/tiger-legend" >ตำนานเสือเย็น</a>
+                                    <a href="/history"  aria-current="page" >ประวัติวัดและชุมชน</a>
+                                    <a href="/places" >สถานที่สำคัญ</a>
+                            </nav>
+                <form class="history-search" role="search" aria-label="ค้นหาประวัติในหน้านี้">
+        <button type="submit" aria-label="ค้นหา"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button>
+        <input id="history-query" type="search" aria-label="คำค้นหา" placeholder="ค้นหาข้อมูล..." autocomplete="off" required>
+        <div class="history-search-results" hidden><p role="status"></p><ul></ul><button class="history-search-close" type="button">ปิดผลการค้นหา</button></div>
+    </form>
+        </div>
+    </header>
+    <main id="main">        <section class="history-hero" aria-labelledby="history-title">
+        <div class="history-hero-old" aria-hidden="true" style="background-image: url('/images/รูป1.png')"></div>
+        <div class="history-hero-temple" aria-hidden="true" style="background-image: url('/images/wat-muen-san-hero.png')"></div>
+        <div class="history-hero-copy">
+            <h1 id="history-title">ประวัติวัดหมื่นสาร</h1>
+            <p class="history-subtitle">จากอารามเก่าสู่ศูนย์กลางชุมชน</p>
+            <div class="history-gold-divider" aria-hidden="true">⋄<span></span>⋄</div>
+            <p class="history-intro">เรื่องราวของวัดหมื่นสารและชุมชนวัวลาย ที่สะท้อนความเปลี่ยนแปลงของเชียงใหม่<br class="history-desktop-break">ตั้งแต่อดีตจนถึงปัจจุบัน ผ่านศาสนา ผู้คน สงคราม และภูมิปัญญาท้องถิ่น</p>
+        </div>
+    </section>
+    <div class="history-main-grid">
+        <aside class="history-sidebar">
+            <nav aria-label="หัวข้อประวัติศาสตร์" class="history-chapter-nav">
+                                    <a href="#history-07"  aria-current="location" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">07</span>จุดเริ่มต้นของวัดหมื่นสาร</a>
+                                    <a href="#history-08" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">08</span>การก่อเกิดของชุมชน</a>
+                                    <a href="#history-09" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">09</span>คลังความรู้ใบลาน</a>
+                                    <a href="#history-10" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">10</span>สูปวิสุทธิราษฎร์วิชัย</a>
+                                    <a href="#history-11" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">11</span>สงครามโลกครั้งที่ 2</a>
+                                    <a href="#history-12" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">12</span>โรงพยาบาลทหารญี่ปุ่น</a>
+                                    <a href="#history-13" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">13</span>พิพิธภัณฑ์ทหารญี่ปุ่น</a>
+                                    <a href="#history-14" ><span class="chapter-marker" aria-hidden="true"></span><span class="chapter-number">14</span>เครื่องเงินวัวลาย</a>
+                            </nav>
+            <svg class="history-sidebar-temple" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+        </aside>
+        <div class="history-paper">
+            <div class="history-top-row">
+                <section id="history-07" class="history-origin" data-history-section aria-labelledby="history-heading-07">
+                    <div class="history-origin-heading"><span class="history-badge" aria-hidden="true"><span>07</span></span>
+<div><h2 id="history-heading-07">จุดเริ่มต้นของวัดหมื่นสาร</h2>
+                        <p>วัดหมื่นสาร เป็นวัดเก่าแก่ที่มีความเป็นมายาวนานตั้งแต่สมัยราชวงศ์มังราย</p>
+                        <p>สันนิษฐานว่าสร้างขึ้นในรัชสมัยของ พญาสามฝั่งแกน กษัตริย์องค์ที่ 8 แห่งราชวงศ์มังราย</p>
+                        <p>ในช่วงแรก วัดหมื่นสารนับถือพระพุทธศาสนานิกายลังกาวงศ์ และมีความสัมพันธ์อันดีกับวัดสวนดอก</p>
+                    </div></div>
+                    <ol class="history-era-timeline">
+                        <li><img class="history-art" src="/images/history/history-1981.jpg" alt="ภาพประกอบสมัยพญาสามฝั่งแกน" loading="lazy" decoding="async">
+<div><h3>พ.ศ. 1981</h3><h4>สมัยพญาสามฝั่งแกน</h4><p>สันนิษฐานว่าสร้างวัดหมื่นสารในรัชสมัยของพญาสามฝั่งแกน กษัตริย์องค์ที่ 8 แห่งราชวงศ์มังราย</p></div></li>
+                        <li><img class="history-art" src="/images/history/history-tilokaraj.jpg" alt="ภาพประกอบสมัยพระเจ้าติโลกราช" loading="lazy" decoding="async">
+<div><h3>สมัยพระเจ้าติโลกราช</h3><p>มีบันทึกในตำนานมูลศาสนาว่า ได้มีการสร้างวิหารขึ้น พร้อมอัญเชิญ “พระศิลาเจ้า” จากวัดป่าแดง มาประดิษฐานเพื่อความเจริญรุ่งเรือง</p></div></li>
+                        <li><img class="history-art" src="/images/history/history-2031.jpg" alt="ภาพประกอบสมัยพญายอดเชียงเมือง" loading="lazy" decoding="async">
+<div><h3>พ.ศ. 2031</h3><h4>สมัยพญายอดเชียงเมือง</h4><p>นิมนต์พระมหาพุทธญาณเถรฯ มาดำรงตำแหน่งเจ้าอาวาส</p></div></li>
+                        <li><img class="history-art" src="/images/history/history-2065.jpg" alt="เอกสารประวัติศาสตร์สมัยพระเมืองแก้ว" loading="lazy" decoding="async">
+<div><h3>พ.ศ. 2065</h3><h4>สมัยพระเมืองแก้ว</h4><p>มีหลักฐานกล่าวถึงการสร้างวิหารขึ้นเป็นครั้งแรก</p></div></li>
+                    </ol>
+                </section>
+                <aside class="history-learning" aria-labelledby="learning-title">
+                    <h2 id="learning-title"><svg viewBox="0 0 40 36" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 32C13 27 6 28 2 29V4c6-2 12-1 18 3 6-4 12-5 18-3v25c-4-1-11-2-18 3Zm0 0V7M6 6v19c5-1 9 0 11 2"/></svg>วัดหมื่นสารในฐานะแหล่งเรียนรู้</h2>
+                    <div class="history-gold-divider" aria-hidden="true"><span></span>❖</div>
+                    <ul><li>แหล่งเรียนรู้อักษรล้านนา</li><li>ศูนย์กลางการแปลราชสาส์นจากต่างเมือง</li><li>แหล่งเก็บรักษาความรู้และเอกสารของชุมชน</li></ul>
+                    <p>สะท้อนถึงบทบาทของวัดต่อการศึกษาและ<br>วิถีชีวิตของคนเชียงใหม่มาตั้งแต่อดีต</p>
+                </aside>
+            </div>
+            <div class="history-card-row">
+                <section id="history-08" class="history-card history-community" data-history-section aria-labelledby="history-heading-08">
+                    <header><span class="history-badge" aria-hidden="true"><span>08</span></span>
+<h2 id="history-heading-08">การก่อเกิดของชุมชนหมื่นสารและบ้านวัวลาย</h2></header>
+                    <div class="community-eras">
+                        <article><img class="history-art" src="/images/history/history-community-chedi.jpg" alt="เจดีย์เก่า" loading="lazy" decoding="async">
+<div><h3>พ.ศ. 2101 – 2317</h3><h4>ยุคพม่าปกครอง</h4><p>แม้หลักฐานในยุคนี้จะค่อนข้างน้อย แต่พบร่องรอยศิลปะพม่าปรากฏบนเจดีย์ของวัด จึงเชื่อได้ว่าวัดยังคงได้รับการบำรุงรักษาอย่างต่อเนื่อง</p></div></article>
+                        <article><img class="history-art" src="/images/ยุคฟื้นฟูบ้านเมือง.jpg" alt="ยุคฟื้นฟูบ้านเมือง พ.ศ. 2342" loading="lazy" decoding="async"><div><h3>พ.ศ. 2342</h3><h4>ยุคฟื้นฟูบ้านเมือง</h4><p>ในสมัยรัตนโกสินทร์ มีการกวาดต้อนผู้คนที่มีฝีมือเครื่องเงินจากหมู่บ้านคง พื้นที่ลุ่มน้ำสาละวิน ให้มาตั้งถิ่นฐานรอบวัดหมื่นสาร จึงเกิดเป็นชุมชน “บ้านวัวลาย” หรือ “บ้านงัวลาย” และทำให้วัดหมื่นสารกลายเป็นศูนย์กลางของชุมชน</p></div></article>
+                    </div>
+                </section>
+                <section id="history-09" class="history-card history-manuscripts" data-history-section aria-labelledby="history-heading-09">
+                    <header><span class="history-badge" aria-hidden="true"><span>09</span></span>
+<h2 id="history-heading-09">คลังความรู้ใบลาน</h2></header>
+                    <div class="history-card-body"><img class="history-art" src="/images/history/history-palm-leaf.jpg" alt="คัมภีร์ใบลานเก่าแก่" loading="lazy" decoding="async">
+<div><h3>พ.ศ. 2520</h3><p>สถาบันวิจัยสังคม มหาวิทยาลัยเชียงใหม่ สำรวจพบคัมภีร์ใบลานเก่าแก่ของวัดถึง</p><div class="manuscript-stats"><div><strong>163</strong><span>รายการ</span></div><div><strong>815</strong><span>ผูก</span></div></div><p>โดยมีเอกสารบางชิ้นระบุปี จ.ศ. 1187 หรือ พ.ศ. 2368 มีอายุกว่า 200 ปี สิ่งเหล่านี้ช่วยยืนยันบทบาทของวัดหมื่นสารในฐานะแหล่งเก็บรักษาประวัติศาสตร์และความรู้ของชุมชน</p></div></div>
+                </section>
+                <section id="history-10" class="history-card history-stupa" data-history-section aria-labelledby="history-heading-10">
+                    <header><span class="history-badge" aria-hidden="true"><span>10</span></span>
+<h2 id="history-heading-10">สูปวิสุทธิราษฎร์วิชัย</h2></header>
+                    <div class="history-card-body"><img class="history-art" src="/images/history/history-stupa.jpg" alt="สถูปสีขาวภายในวัด" loading="lazy" decoding="async">
+<div><p>วัดหมื่นสารมีความเกี่ยวพันกับ <strong>ครูบาศรีวิชัย คนบุญแห่งล้านนา</strong> หลังจากท่านมรณภาพในปี พ.ศ. 2481 อัฐิธาตุของท่านได้ถูกแบ่งออกเป็น 7 ส่วน สำหรับวัดหมื่นสาร มีการสร้างสถูปบรรจุอัฐิครูบาศรีวิชัย และทำพิธีบรรจุอย่างเป็นทางการเมื่อวันที่ <strong>28 พฤษภาคม พ.ศ. 2496</strong> กลายเป็นสิ่งศักดิ์สิทธิ์คู่ชุมชนมาจนถึงปัจจุบัน</p></div></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="history-dark-band">
+        <section id="history-11" class="history-dark-story" data-history-section aria-labelledby="history-heading-11"><header><span class="history-badge" aria-hidden="true"><span>11</span></span>
+<h2 id="history-heading-11">หน้าประวัติศาสตร์สงครามโลกครั้งที่ 2</h2></header><div class="dark-story-body"><img class="history-art" src="/images/history/history-japanese-field-hospital.jpg" alt="ภาพเก่าโรงพยาบาลสนามทหารญี่ปุ่น" loading="lazy" decoding="async">
+<div><h3>โรงพยาบาลสนามทหารญี่ปุ่น</h3><p>ในช่วงปลายสงครามโลกครั้งที่ 2 พ.ศ. 2482–2488 วัดหมื่นสารได้กลายเป็นพื้นที่สำคัญ เมื่อกองทัพญี่ปุ่นเข้ายึดพื้นที่วัดเพื่อใช้เป็น <strong>สถานพยาบาลสนามและโรงเก็บศพ</strong></p></div></div></section>
+        <section id="history-12" class="history-dark-story history-hospital" data-history-section aria-labelledby="history-heading-12"><header><span class="history-badge" aria-hidden="true"><span>12</span></span>
+<h2 id="history-heading-12">โรงพยาบาลทหารญี่ปุ่น และเส้นทางสายสุดท้าย</h2></header><div class="dark-story-body"><img class="history-art" src="/images/history/history-japanese-hospital.jpg" alt="อาคารโรงพยาบาลทหารญี่ปุ่นในอดีต" loading="lazy" decoding="async">
+<div><h3>การเป็นที่ตั้งของ “โรงพยาบาลทหารญี่ปุ่น”</h3><p>จากไม้ไผ่มุงใบตองตึง ภายในมีแคร่ไม้ไผ่สำหรับทหารที่บาดเจ็บและป่วย พร้อมหมอและพยาบาลทหารประมาณ 20–30 คน เมื่อมีทหารเสียชีวิต ศพจะถูกนำใส่เปลไว้ที่โรงเก็บศพ ก่อนหามด้วยรถเข็นไม้ไผ่สองล้อ ไปยังสุสานช้างคลาน</p></div></div></section>
+        <aside class="history-route" aria-label="เส้นทางสายสุดท้าย"><h3>เส้นทาง</h3><ol><li>ถนนวัวลาย</li><li>ถนนราชเชียงแสน</li><li>ถนนระแกง</li><li>สามแยกหล่าย</li><li>สถานที่ฌาปนกิจ</li></ol></aside>
+        <section id="history-13" class="history-dark-story" data-history-section aria-labelledby="history-heading-13"><header><span class="history-badge" aria-hidden="true"><span>13</span></span>
+<h2 id="history-heading-13">อนุสรณ์สถานและพิพิธภัณฑ์ทหารญี่ปุ่น</h2></header><div class="dark-story-body"><img class="history-art" src="/images/history/history-japanese-museum.jpg" alt="อนุสรณ์สถานและพิพิธภัณฑ์ทหารญี่ปุ่น" loading="lazy" decoding="async">
+<div><p>หลังสงครามสิ้นสุดลง ทายาทของทหารญี่ปุ่นได้เดินทางมาเคารพดวงวิญญาณของบิดา จึงเกิดการจัดทำรูปปั้นวิญญาณ และมีสถานที่เก็บคำจารึกให้เป็นพิพิธภัณฑ์ทหารญี่ปุ่นช่วงสงครามโลกครั้งที่ 2 จัดแสดงสิ่งของเครื่องใช้ อาหาร และจดหมายเหตุในยุคสงคราม</p></div></div></section>
+        <section id="history-14" class="history-dark-story" data-history-section aria-labelledby="history-heading-14"><header><span class="history-badge" aria-hidden="true"><span>14</span></span>
+<h2 id="history-heading-14">เครื่องเงินวัวลาย – ภูมิปัญญาที่ไม่มีวันตาย</h2></header><div class="dark-story-body"><img class="history-art" src="/images/history/history-silverware.jpg" alt="มือช่างกำลังทำเครื่องเงินวัวลาย" loading="lazy" decoding="async">
+<div><p>หากเดินออกจากวัดหมื่นสารเข้าสู่ชุมชนวัวลาย จะพบว่างานเครื่องเงินคือวิถีชีวิตและภูมิปัญญาของคนในชุมชนหมื่นสาร – วัวลาย</p><h3>เส้นทางท่องเที่ยวเชิงวิถีชีวิต</h3><p>ถนนวัวลาย ซอย 1, 3 และ 4 พบร้านและบ้านของช่างเครื่องเงิน เช่น สล่าเครื่องเงินแม่บัว, สุภาพ, นิลศิลป์, อ้ายพร, อ้ายจันทร์, คุณเล็ก กลายเป็นพื้นที่เรียนรู้เกี่ยวกับศิลปะหัตถกรรม</p></div></div></section>
+    </div>
+</main>
+    <script>const toggle = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".main-navigation");
+function closeMenu() {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "เปิดเมนู");
+    navigation.classList.remove("is-open");
+}
+toggle.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "ปิดเมนู" : "เปิดเมนู");
+    navigation.classList.toggle("is-open", open);
+});
+navigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+});
+document.addEventListener("keydown", (event) => {
+    if (
+        event.key === "Escape" &&
+        toggle.getAttribute("aria-expanded") === "true"
+    ) {
+        closeMenu();
+        toggle.focus();
+    }
+});
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".nav-container")) closeMenu();
+});
+window.matchMedia("(min-width: 769px)").addEventListener("change", closeMenu);
+</script>
+        <script>(() => {
+    const sections = [...document.querySelectorAll("[data-history-section]")];
+    const links = [...document.querySelectorAll(".history-chapter-nav a")];
+    let scheduled = false;
+    let selectedChapter = null;
+    function updateChapter() {
+        scheduled = false;
+        if (selectedChapter) return;
+        const threshold = Math.min(innerHeight * 0.35, 220);
+        let active = sections[0];
+        for (const section of sections) {
+            if (section.getBoundingClientRect().top <= threshold)
+                active = section;
+        }
+        for (const link of links) {
+            if (link.hash === `#${active.id}`)
+                link.setAttribute("aria-current", "location");
+            else link.removeAttribute("aria-current");
+        }
+    }
+    window.addEventListener(
+        "scroll",
+        () => {
+            if (!scheduled) {
+                scheduled = true;
+                requestAnimationFrame(updateChapter);
+            }
+        },
+        { passive: true },
+    );
+    for (const link of links)
+        link.addEventListener("click", () => {
+            selectedChapter = link.hash;
+            links.forEach((item) => item.removeAttribute("aria-current"));
+            link.setAttribute("aria-current", "location");
+        });
+    for (const type of ["wheel", "touchstart"])
+        window.addEventListener(type, () => { selectedChapter = null; }, { passive: true });
+    window.addEventListener("keydown", event => {
+        if (["ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End", " "].includes(event.key)) selectedChapter = null;
+    });
+    updateChapter();
+    const form = document.querySelector(".history-search");
+    const input = form.querySelector("input");
+    const results = form.querySelector(".history-search-results");
+    form.querySelector("button[type=submit]").addEventListener("click", () =>
+        input.focus(),
+    );
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const query = input.value.trim().toLocaleLowerCase("th");
+        if (!query) return;
+        const matches = sections.filter((section) =>
+            section.textContent.toLocaleLowerCase("th").includes(query),
+        );
+        results.hidden = false;
+        results.querySelector("p").textContent = matches.length
+            ? `พบ ${matches.length} หัวข้อ`
+            : "ไม่พบข้อมูลที่ค้นหา";
+        const list = results.querySelector("ul");
+        list.replaceChildren();
+        for (const section of matches) {
+            const item = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = `#${section.id}`;
+            link.textContent = section.querySelector("h2").textContent;
+            link.addEventListener("click", () => {
+                results.hidden = true;
+            });
+            item.append(link);
+            list.append(item);
+        }
+    });
+    form.querySelector(".history-search-close").addEventListener(
+        "click",
+        () => {
+            results.hidden = true;
+            input.focus();
+        },
+    );
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") results.hidden = true;
+    });
+    document.addEventListener("click", (event) => {
+        if (!form.contains(event.target)) results.hidden = true;
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c2b22">
+    <meta name="description" content="เปิดตำนานและประวัติศาสตร์ ณ วัดหมื่นสาร – ชุมชนวัวลาย สำรวจเรื่องเล่า ความทรงจำ และสถานที่สำคัญของชุมชน">
+    <title>แผนที่วัฒนธรรมชุมชนหมื่นสาร | สถานที่สำคัญ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root {
+    --green: #0c2b22;
+    --gold: #efd28c;
+    --paper: #f4ead3;
+    --brown: #69461f;
+    --serif: "Noto Serif Thai", Georgia, serif;
+    --sans: "Noto Sans Thai", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+body {
+  margin: 0;
+  overflow-x: clip;
+    color: #fff9ea;
+    background: var(--paper);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    font: inherit;
+}
+h1,
+h2,
+h3,
+p,
+blockquote {
+    margin: 0;
+}
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #e9ba58;
+    outline-offset: 6px;
+}
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    z-index: 100;
+    background: var(--green);
+    padding: 12px;
+}
+.skip-link:focus {
+    top: 10px;
+}
+.site-header {
+    height: 80px;
+    position: relative;
+    z-index: 5;
+    background:
+        radial-gradient(ellipse at 60% 0, #25413988, transparent 65%), #0b241c;
+    border-bottom: 1px solid #9e855980;
+    overflow: clip;
+}
+.site-header::before,
+.site-header::after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    width: 220px;
+    height: 170px;
+    background: url("/images/ornament.svg") center/140px;
+    opacity: 0.24;
+    pointer-events: none;
+}
+.site-header::before {
+    left: -52px;
+    transform: rotate(-22deg);
+}
+.site-header::after {
+    right: -25px;
+    transform: rotate(15deg);
+}
+.nav-container {
+    max-width: 1272px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  gap: 160px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: #f5e7c8;
+}
+.brand-icon {
+    width: 55px;
+    height: 67px;
+    color: #e5c893;
+}
+.brand strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.brand small {
+    display: block;
+    font-size: 16px;
+    color: #e9cd93;
+    line-height: 1.3;
+}
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    height: 100%;
+}
+.main-navigation a {
+    position: relative;
+    padding: 25px 10px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.main-navigation a::after {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    content: "";
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+.main-navigation a:hover::after,
+.main-navigation a[aria-current]::after {
+    transform: scaleX(1);
+}
+.main-navigation a[aria-current] {
+    color: #eac372;
+}
+.menu-toggle {
+    display: none;
+}
+.hero {
+    position: relative;
+    height: 566px;
+    min-height: 560px;
+    background-image: url('/images/wat-muen-san-hero.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    isolation: isolate;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 20, 15, 0.96) 0%,
+        rgba(2, 20, 15, 0.88) 25%,
+        rgba(2, 20, 15, 0.58) 43%,
+        rgba(2, 20, 15, 0.20) 62%,
+        rgba(2, 20, 15, 0.03) 100%
+    );
+    pointer-events: none;
+}
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1380px;
+    margin: auto;
+    padding-top: 50px;
+}
+.hero-copy {
+    width: 580px;
+    text-shadow: 0 2px 3px #0008;
+}
+.hero-heading {
+    width: 510px;
+    text-align: center;
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: -1.8px;
+    line-height: 1.1;
+}
+.hero h1 span {
+    display: block;
+  font-size: 56px;
+}
+.hero h1 span:first-child {
+  font-size: 68px;
+    line-height: 1.13;
+}
+.hero-subtitle {
+    font-family: var(--serif);
+    font-size: 27px;
+    font-weight: 600;
+  line-height: 1.5;
+    margin-top: 1px;
+    color: var(--gold);
+}
+.ornament-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c89d4e;
+    width: 395px;
+    max-width: 85%;
+    margin: 5px auto 3px;
+    text-shadow: none;
+    height: 26px;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, #c89d4e);
+}
+.ornament-divider::after {
+    transform: rotate(180deg);
+}
+.ornament-divider span {
+    font-size: 26px;
+    line-height: 1;
+}
+.hero blockquote {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.47;
+    margin: 5px 0 12px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+}
+.hero-description {
+    font-size: 16px;
+    line-height: 1.47;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  margin-top: 14px;
+}
+.ornate-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    isolation: isolate;
+    border: 1px solid #ddb96e;
+    background: linear-gradient(180deg, #64400f, #3a200c);
+    box-shadow:
+        inset 0 0 0 3px #432608,
+        inset 0 0 0 4px #b38c48,
+        0 3px 6px #0004;
+    border-radius: 24px;
+    color: #fff5dc;
+    transition:
+        transform 0.25s,
+        filter 0.25s,
+        box-shadow 0.25s;
+    font-family: var(--serif);
+    text-shadow: 0 1px 2px #0008;
+}
+.ornate-button::before,
+.ornate-button::after {
+    content: "◇";
+    font-size: 29px;
+    color: #d8ae59;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    left: -9px;
+    z-index: -1;
+}
+.ornate-button::after {
+    left: auto;
+    right: -9px;
+}
+.ornate-button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow:
+        inset 0 0 0 3px #432608,
+        inset 0 0 0 4px #b38c48,
+        0 5px 18px #c89c4233;
+}
+.ornate-button span {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    line-height: 1;
+}
+.primary-button {
+    min-width: 232px;
+    height: 51px;
+    padding: 0 23px;
+    font-size: 23px;
+    background: linear-gradient(170deg, #bc903d, #815b21 60%, #b48a3c);
+    box-shadow:
+        inset 0 0 0 3px #aa8136,
+        inset 0 0 0 4px #d0a54e,
+        0 3px 8px #0004;
+}
+.action-flower {
+    font-size: 42px;
+    color: #9d7936;
+    text-shadow: 1px 1px #deb26d55;
+}
+.explore {
+  position: relative;
+  overflow-x: clip;
+    isolation: isolate;
+    min-height: 378px;
+    padding: 0 24px 28px;
+    color: var(--brown);
+    background-color: var(--paper);
+    background-image: url("/images/paper.svg");
+    background-size: 200px;
+    scroll-margin-top: 20px;
+}
+.explore::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: -47px;
+    height: 55px;
+    background: var(--paper) url("/images/paper.svg");
+    clip-path: polygon(
+        0 0,
+        1% 19%,
+        2% 23%,
+        3% 40%,
+        4% 41%,
+        5% 59%,
+        6% 64%,
+        7% 77%,
+        8% 59%,
+        9% 66%,
+        10% 68%,
+        11% 77%,
+        12% 67%,
+        13% 80%,
+        14% 94%,
+        15% 71%,
+        16% 73%,
+        17% 68%,
+        18% 54%,
+        19% 66%,
+        20% 61%,
+        21% 56%,
+        22% 64%,
+        23% 54%,
+        24% 72%,
+        25% 67%,
+        26% 78%,
+        27% 73%,
+        28% 60%,
+        29% 68%,
+        30% 55%,
+        31% 61%,
+        32% 47%,
+        33% 49%,
+        34% 58%,
+        35% 43%,
+        36% 52%,
+        37% 45%,
+        38% 54%,
+        39% 39%,
+        40% 50%,
+        41% 41%,
+        42% 46%,
+        43% 39%,
+        44% 48%,
+        45% 31%,
+        46% 44%,
+        47% 40%,
+        48% 48%,
+        49% 35%,
+        50% 42%,
+        51% 36%,
+        52% 41%,
+        53% 32%,
+        54% 41%,
+        55% 29%,
+        56% 37%,
+        57% 30%,
+        58% 38%,
+        59% 30%,
+        60% 38%,
+        61% 33%,
+        62% 45%,
+        63% 35%,
+        64% 42%,
+        65% 37%,
+        66% 42%,
+        67% 33%,
+        68% 45%,
+        69% 35%,
+        70% 43%,
+        71% 37%,
+        72% 52%,
+        73% 40%,
+        74% 50%,
+        75% 44%,
+        76% 56%,
+        77% 47%,
+        78% 56%,
+        79% 45%,
+        80% 58%,
+        81% 54%,
+        82% 66%,
+        83% 56%,
+        84% 64%,
+        85% 58%,
+        86% 72%,
+        87% 66%,
+        88% 84%,
+        89% 78%,
+        90% 89%,
+        91% 78%,
+        92% 89%,
+        93% 70%,
+        94% 74%,
+        95% 59%,
+        96% 63%,
+        97% 39%,
+        98% 45%,
+        99% 30%,
+        100% 15%,
+        100% 100%,
+        0 100%
+    );
+}
+.explore-container {
+    max-width: 1252px;
+    margin: auto;
+    position: relative;
+}
+.section-heading {
+    text-align: center;
+  margin-bottom: 14px;
+}
+.section-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.heading-icon {
+    height: 48px;
+    width: 43px;
+    color: #86602c;
+}
+.heading-flower {
+    color: #b38c4a;
+    font-size: 26px;
+}
+.section-heading p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #4d4535;
+}
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+.story-card {
+    height: 255px;
+    border-radius: 12px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 79px 32px 17px;
+    color: #fff9e9;
+    background-image:
+        linear-gradient(90deg, #140f08e8, #140f0899 55%, #140f0826),
+        var(--card-image, linear-gradient(135deg, #14211a, #8b6536));
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 3px 5px #4b351c40;
+    border: 1px solid #98754555;
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+.story-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 19px #4b351c45;
+}
+.story-card.history {
+    background-image:
+        linear-gradient(90deg, #201b12bd, #201b1270 60%, #201b1210),
+        var(--card-image, linear-gradient(135deg, #3d3928, #ba9b66));
+}
+.story-card.places {
+    background-image:
+        linear-gradient(90deg, #242512bd, #24251260 65%, #24251210),
+        var(--card-image, linear-gradient(135deg, #5b6140, #b99964));
+}
+.story-card h3 {
+    font-family: var(--serif);
+    font-size: 27px;
+    line-height: 1.45;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+    text-shadow: 0 2px 4px #0009;
+}
+.story-card p {
+    font-size: 15.5px;
+    line-height: 1.5;
+    margin-top: 3px;
+    white-space: nowrap;
+    text-shadow: 0 1px 3px #000;
+}
+.card-button {
+    display: flex;
+    width: 201px;
+    height: 45px;
+    font-size: 17px;
+    margin: 17px auto 0;
+    gap: 17px;
+}
+.history .card-button {
+    background: linear-gradient(#214937, #0c2b22);
+    box-shadow:
+        inset 0 0 0 3px #123528,
+        inset 0 0 0 4px #b38c48;
+}
+.number-badge {
+    position: absolute;
+    left: 33px;
+    top: 11px;
+    width: 60px;
+    height: 60px;
+    background: #755218;
+    border: 1px solid #dcb36c;
+    border-radius: 18px;
+    transform: rotate(45deg);
+    box-shadow:
+        inset 0 0 0 3px #614415,
+        inset 0 0 0 4px #c89d4e,
+        0 1px 4px #0008;
+}
+.number-badge::before,
+.number-badge::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid #c69b4c;
+    border-radius: 15px;
+    transform: rotate(22.5deg);
+}
+.number-badge::after {
+    transform: rotate(-22.5deg);
+}
+.number-badge span {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: rotate(-45deg);
+    font-family: Georgia, serif;
+    font-size: 29px;
+    color: #ffe3a1;
+}
+.background-temple {
+    position: absolute;
+    z-index: -1;
+    color: #a77a3d;
+    opacity: 0.22;
+    bottom: 0;
+    width: 200px;
+    height: 285px;
+    pointer-events: none;
+}
+.temple-left {
+    left: -43px;
+    transform: rotate(-6deg);
+}
+.temple-right {
+    right: -34px;
+    height: 335px;
+}
+.landscape {
+    position: absolute;
+    z-index: -1;
+    inset: 10px 0 0;
+    overflow: hidden;
+    opacity: 0.12;
+    pointer-events: none;
+}
+.landscape::before,
+.landscape::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #b18a51;
+    clip-path: polygon(
+        0 20%,
+        5% 12%,
+        10% 17%,
+        17% 5%,
+        22% 0,
+        28% 12%,
+        33% 9%,
+        41% 20%,
+        48% 15%,
+        55% 20%,
+        63% 10%,
+        70% 14%,
+        75% 5%,
+        79% 10%,
+        84% 1%,
+        89% 12%,
+        95% 9%,
+        100% 20%,
+        100% 26%,
+        92% 18%,
+        85% 19%,
+        77% 17%,
+        69% 23%,
+        60% 20%,
+        53% 28%,
+        43% 25%,
+        32% 18%,
+        23% 12%,
+        14% 25%,
+        7% 20%,
+        0 30%
+    );
+}
+.landscape::after {
+    transform: translateY(23px) scaleX(-1);
+    opacity: 0.5;
+}
+.topic-page {
+    min-height: calc(100svh - 80px);
+    padding: 90px 24px;
+    text-align: center;
+    color: var(--brown);
+    background: var(--paper) url("/images/paper.svg");
+}
+.topic-page h1 {
+    font-family: var(--serif);
+    font-size: 40px;
+}
+.topic-icon {
+    height: 90px;
+    width: 80px;
+}
+.topic-page p {
+    margin: 25px 0;
+}
+.topic-page .primary-button {
+    font-size: 18px;
+}
+@media (max-width: 1399px) {
+    .nav-container {
+        margin: 0 5%;
+        gap: 7%;
+    }
+    .main-navigation {
+        gap: 20px;
+    }
+    .hero-inner {
+        margin: 0 5%;
+    }
+    .story-card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .story-card h3 {
+        font-size: 25px;
+    }
+    .story-card p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1199px) {
+    .nav-container {
+        gap: 30px;
+        margin: 0 30px;
+    }
+    .brand strong {
+        font-size: 17px;
+    }
+    .brand small {
+        font-size: 14px;
+    }
+    .brand-icon {
+        width: 45px;
+    }
+    .main-navigation {
+        gap: 12px;
+        margin-left: auto;
+    }
+    .main-navigation a {
+        font-size: 14px;
+        padding-inline: 5px;
+    }
+    .hero-inner {
+        margin: 0 40px;
+    }
+    .story-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 850px;
+        margin: auto;
+    }
+    .story-card {
+        padding-left: 32px;
+    }
+    .story-card h3 {
+        font-size: 27px;
+    }
+    .story-card p {
+        font-size: 15px;
+    }
+    .section-heading h2 {
+        font-size: 35px;
+    }
+    .explore {
+        padding-bottom: 35px;
+    }
+}
+@media (max-width: 768px) {
+  .site-header::before,
+  .site-header::after {
+    display: none;
+  }
+    .site-header {
+        height: 76px;
+        overflow: visible;
+    }
+    .nav-container {
+        margin: 0 20px;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    .brand {
+        gap: 8px;
+    }
+    .brand-icon {
+        width: 40px;
+        height: 55px;
+    }
+    .brand strong {
+        font-size: 16px;
+    }
+    .brand small {
+        font-size: 12px;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid #b5975455;
+        border-radius: 5px;
+        color: var(--gold);
+        flex-shrink: 0;
+    }
+    .menu-toggle span {
+        width: 21px;
+        height: 2px;
+        background: currentColor;
+        transition:
+            transform 0.2s,
+            opacity 0.2s;
+    }
+    .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: -20px;
+        right: -20px;
+        height: auto;
+        margin: 0;
+        background: #0c2b22;
+        border-bottom: 1px solid #b59754;
+        padding: 10px 24px 18px;
+        box-shadow: 0 12px 20px #0004;
+    }
+    .main-navigation.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .main-navigation a::after {
+        bottom: 6px;
+        right: auto;
+        width: 65px;
+        left: 10px;
+    }
+    .hero {
+        height: auto;
+        min-height: 615px;
+    }
+    .hero-inner {
+        margin: 0;
+        padding: calc(100vw * 668 / 1268 + 24px) 24px 67px;
+    }
+    .hero-copy {
+        max-width: 580px;
+        width: 100%;
+        margin: auto;
+    }
+    .hero-heading {
+        width: 100%;
+    }
+    .hero h1 span:first-child {
+        font-size: 54px;
+    }
+    .hero h1 span {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+    .hero-subtitle {
+        font-size: 21px;
+        margin-top: 8px;
+    }
+    .ornament-divider {
+        margin-top: 9px;
+    }
+    .hero blockquote {
+        font-size: 20px;
+        white-space: normal;
+        line-height: 1.65;
+        letter-spacing: -0.4px;
+        margin-top: 12px;
+    }
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.75;
+        letter-spacing: 0;
+    }
+    .desktop-break {
+        display: none;
+    }
+    .hero-action {
+        margin-top: 22px;
+    }
+    .primary-button {
+        height: 49px;
+        min-width: 218px;
+        font-size: 21px;
+    }
+    .action-flower {
+        font-size: 35px;
+    }
+    .explore {
+        padding: 0 20px 30px;
+    }
+    .section-heading h2 {
+        font-size: 29px;
+        gap: 9px;
+    }
+    .heading-icon {
+        width: 34px;
+        height: 43px;
+    }
+    .heading-flower {
+        font-size: 22px;
+    }
+    .section-heading p {
+        font-size: 14px;
+        max-width: 390px;
+        margin: 8px auto 0;
+    }
+    .section-heading {
+        margin-bottom: 20px;
+    }
+    .story-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 20px;
+    }
+    .story-card {
+        height: 255px;
+        padding: 79px 28px 17px;
+    }
+    .story-card h3 {
+        font-size: 27px;
+    }
+    .story-card p {
+        font-size: 14px;
+    }
+    .number-badge {
+        left: 30px;
+    }
+    .background-temple {
+        opacity: 0.15;
+    }
+    .topic-page h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 380px) {
+    .nav-container {
+        margin-inline: 12px;
+    }
+    .brand strong {
+        font-size: 14px;
+    }
+    .brand small {
+        font-size: 11px;
+    }
+    .brand-icon {
+        width: 33px;
+    }
+    .hero-inner {
+        padding-inline: 19px;
+    }
+    .hero h1 span {
+        font-size: 37px;
+    }
+    .hero h1 span:first-child {
+        font-size: 48px;
+    }
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    .hero blockquote {
+        font-size: 18px;
+    }
+    .story-card {
+        padding-inline: 20px;
+    }
+    .story-card h3 {
+        font-size: 24px;
+    }
+    .story-card p {
+        font-size: 12.5px;
+    }
+    .main-navigation {
+        left: -12px;
+        right: -12px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+    .story-card:hover,
+    .ornate-button:hover {
+        transform: none;
+    }
+}
+</style>
+    <style>.places-page {
+    background: #f4ead5;
+    color: #14231b;
+}
+.places-page .site-header {
+    height: 74px;
+    background: #06271f;
+    overflow: visible;
+}
+.places-page .site-header::before,
+.places-page .site-header::after {
+    display: none;
+}
+.places-page .nav-container {
+    max-width: none;
+    margin: 0 3.6% 0 7%;
+    gap: 0;
+}
+.places-page .brand {
+    gap: 22px;
+}
+.places-page .brand-icon {
+    height: 62px;
+    width: 48px;
+}
+.places-page .brand strong {
+    font-size: 19px;
+    font-weight: 500;
+}
+.places-page .brand small {
+    font-size: 17px;
+}
+.places-page .main-navigation {
+    gap: 35px;
+    margin-left: 115px;
+    color: #fff5e4;
+}
+.places-page .main-navigation a {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 24px 6px;
+}
+.places-page .main-navigation a::after {
+    bottom: 10px;
+}
+.places-page .main-navigation a[aria-current]::before {
+    content: "❖";
+    position: absolute;
+    bottom: -13px;
+    left: calc(50% - 10px);
+    font-size: 25px;
+    color: #d8ac59;
+}
+.places-search-button {
+    margin-left: auto;
+    border: 1px solid #c5a361;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    width: 47px;
+    height: 47px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.places-search-button svg {
+    width: 27px;
+    height: 27px;
+}
+.cultural-map {
+    height: 659px;
+    position: relative;
+    isolation: isolate;
+    background: #f4ead5 url("/images/paper.svg");
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 450px;
+    gap: 20px;
+    padding: 0 20px 0 0;
+}
+.map-canvas {
+    position: relative;
+    min-width: 0;
+    height: 100%;
+    isolation: isolate;
+}
+.map-heading {
+    position: absolute;
+    left: 4.3%;
+    top: 34px;
+    z-index: 3;
+}
+.map-heading h1 {
+    font-family: var(--sans);
+    font-size: 52px;
+    line-height: 1.13;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    color: #10271e;
+}
+.map-heading h1 span {
+    display: block;
+    color: #563116;
+    font-size: 43px;
+    line-height: 1.25;
+}
+.map-heading p {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-top: 17px;
+    color: #181c16;
+}
+.map-landscape,
+.map-paths {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+.map-temple {
+    position: absolute;
+    left: 44%;
+    top: 34.5%;
+    width: 32%;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map-temple img {
+    width: 100%;
+    height: 208px;
+    object-fit: cover;
+    mask-image: radial-gradient(ellipse, #000 52%, transparent 73%);
+}
+.map-temple > span {
+    margin-top: -2px;
+    padding: 4px 32px;
+    border: 1px solid #d3a458;
+    background: linear-gradient(#fbe9bd, #ebce95);
+    box-shadow: 0 4px 9px #79522326;
+    font: 600 21px var(--serif);
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        100% 25%,
+        100% 75%,
+        95% 100%,
+        5% 100%,
+        0 75%,
+        0 25%
+    );
+    white-space: nowrap;
+}
+.location-card {
+    position: absolute;
+    width: 21%;
+    height: 178px;
+    padding: 0;
+    border: 0;
+    border-radius: 18px;
+    background: #f5dfad;
+    box-shadow: 0 5px 15px #462d1433;
+    cursor: pointer;
+    text-align: center;
+    color: #171b12;
+    font: 500 18px var(--sans);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    isolation: isolate;
+}
+.location-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px #462d1445;
+}
+.location-card[aria-pressed="true"] {
+    box-shadow:
+        0 0 0 2px #d3a95b70,
+        0 5px 15px #462d1433;
+}
+.location-card > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 141px;
+    object-fit: cover;
+    border: 4px solid #fffaef;
+    border-radius: 18px 18px 11px 11px;
+}
+.location-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 55px;
+    padding: 14px 8px 9px;
+    background: linear-gradient(110deg, #fff0cc, #f2d9a8);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+}
+.location-label small {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.map-pin {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(130deg, #863615, #591803);
+    border: 3px solid #fff1ce;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    color: #fff;
+    font: 600 19px var(--sans);
+    flex-shrink: 0;
+}
+.map-pin > span {
+    transform: rotate(45deg);
+}
+.location-label .map-pin {
+    position: absolute;
+    left: 15px;
+    top: -27px;
+}
+.location-h1 {
+    left: 49%;
+    top: 36px;
+    height: 169px;
+}
+.location-h2 {
+    left: 29%;
+    top: 456px;
+}
+.location-h3 {
+    left: 77%;
+    top: 211px;
+    width: 19.5%;
+    height: 195px;
+}
+.location-h3 .location-label {
+    min-height: 72px;
+    padding-top: 16px;
+}
+.location-h4 {
+    left: 17.6%;
+    top: 251px;
+}
+.location-h5 {
+    left: 69%;
+    top: 456px;
+}
+.map-temple-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 135px;
+    height: 250px;
+    color: #c6a365;
+    opacity: 0.17;
+    z-index: -1;
+}
+.place-detail {
+    align-self: start;
+    margin-top: 28px;
+    height: 609px;
+    padding: 18px 26px 19px;
+    background: #fffaf0e8;
+    border: 1px solid #f8ebd8;
+    border-radius: 19px;
+    box-shadow: 0 8px 25px #50371421;
+    color: #151b16;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.place-detail[hidden] {
+    display: none;
+}
+.place-detail header {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    min-height: 60px;
+    margin-bottom: 0;
+}
+.detail-pin {
+    width: 46px;
+    height: 46px;
+    border: 0;
+    margin: 0 4px 5px 5px;
+    font-size: 20px;
+}
+.place-detail h2 {
+    font: 600 31px var(--sans);
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+    padding-right: 10px;
+}
+.detail-close {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    background: transparent;
+    border: 0;
+    color: #182019;
+    font-size: 33px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+}
+.detail-main-image {
+    display: block;
+    width: 100%;
+    height: 238px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.detail-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+    margin-top: 9px;
+}
+.detail-thumbnails button {
+    height: 82px;
+    min-width: 0;
+    border: 0;
+    padding: 0;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+.detail-thumbnails button[aria-pressed="true"] {
+    outline: 3px solid #b98d43;
+    outline-offset: 2px;
+}
+.detail-thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.place-detail #detail-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2d241b;
+    margin: 17px 0 17px;
+}
+.detail-cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 60px;
+    border: 1px solid #c8953b;
+    border-radius: 19px;
+    color: #fff0d6;
+    background: linear-gradient(120deg, #8d390d, #541a0b);
+    font-size: 23px;
+    box-shadow: inset 0 0 0 1px #d8ab4b55;
+}
+.detail-cta svg {
+    width: 35px;
+    height: 35px;
+}
+.detail-cta > span:last-child {
+    font-size: 30px;
+}
+.detail-cta:hover {
+    filter: brightness(1.12);
+}
+#detail-subtitle {
+    font-size: 14px;
+    margin: -3px 0 7px 75px;
+}
+.places-closing {
+    position: relative;
+    isolation: isolate;
+    height: 291px;
+    background: #06271f;
+    color: #fff2ca;
+    overflow: hidden;
+}
+.closing-temple {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+    mask-image: linear-gradient(90deg, #000 60%, transparent 100%);
+    z-index: -1;
+}
+.places-closing::before {
+    content: "";
+    position: absolute;
+    left: 39%;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background: url("/images/ornament.svg") center/135px;
+    opacity: 0.2;
+    z-index: -1;
+}
+.closing-copy {
+    margin-left: 48%;
+    padding: 19px 3% 20px 0;
+    text-align: center;
+}
+.closing-copy h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.45;
+    white-space: nowrap;
+}
+.closing-divider {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: #c99a43;
+    max-width: 445px;
+    margin: 6px auto;
+}
+.closing-divider span {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, #c99a43);
+}
+.closing-divider span:last-child {
+    transform: rotate(180deg);
+}
+.closing-copy > p {
+    font-size: 18px;
+    line-height: 1.45;
+    color: #fff9e7;
+}
+.closing-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 21px;
+}
+.closing-actions button,
+.closing-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 55px;
+    padding: 0 28px;
+    border: 1px solid #e2be71;
+    border-radius: 40px;
+    background: linear-gradient(120deg, #f0d398, #dfbd80);
+    color: #171e12;
+    font: 18px var(--sans);
+    cursor: pointer;
+    white-space: nowrap;
+}
+.closing-actions #restart-map > span {
+    font-size: 37px;
+    line-height: 1;
+}
+.closing-actions .tiktok-button {
+    background: #000b;
+    color: #fff;
+}
+.tiktok-button svg {
+    width: 31px;
+    height: 31px;
+}
+.tiktok-button > span {
+    font-size: 24px;
+}
+.closing-temple-line {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 155px;
+    height: 220px;
+    color: #bf9343;
+    opacity: 0.28;
+    z-index: -1;
+}
+#tiktok-status {
+    font-size: 13px;
+    margin-top: 5px;
+}
+#places-search-dialog {
+    background: #fff6e5;
+    color: #16251b;
+    border: 1px solid #bf9753;
+    border-radius: 16px;
+    padding: 25px;
+    width: min(470px, calc(100% - 32px));
+    font-family: var(--sans);
+}
+#places-search-dialog::backdrop {
+    background: #041710c9;
+}
+#places-search-dialog h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#places-search-dialog label {
+    display: block;
+    margin-bottom: 6px;
+}
+#places-search-dialog input {
+    font: inherit;
+    width: 70%;
+    padding: 9px;
+    border: 1px solid #bda16f;
+    border-radius: 6px;
+}
+#places-search-dialog button {
+    font: inherit;
+    background: #06271f;
+    color: #fff2ca;
+    border: 1px solid #bda16f;
+    padding: 9px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#places-search-results {
+    list-style: none;
+    padding: 0;
+    max-height: 40vh;
+    overflow: auto;
+}
+#places-search-results li {
+    margin: 8px 0;
+}
+#places-search-results button {
+    width: 100%;
+    text-align: left;
+}
+#places-search-status {
+    margin-top: 12px;
+}
+@media (min-width: 1600px) {
+    .cultural-map {
+        grid-template-columns: minmax(0, 1fr) 450px;
+    }
+    .map-canvas {
+        max-width: 1200px;
+    }
+    .closing-copy h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1399px) {
+    .places-page .nav-container {
+        margin: 0 4%;
+    }
+    .places-page .main-navigation {
+        margin-left: auto;
+        gap: 18px;
+    }
+    .places-search-button {
+        margin-left: 35px;
+    }
+    .places-page .brand strong {
+        font-size: 17px;
+    }
+    .places-page .brand small {
+        font-size: 14px;
+    }
+    .cultural-map {
+        grid-template-columns: minmax(0, 1fr) 385px;
+        gap: 12px;
+        padding-right: 15px;
+    }
+    .map-heading h1 {
+        font-size: 42px;
+    }
+    .map-heading h1 span {
+        font-size: 35px;
+    }
+    .map-heading p {
+        font-size: 16px;
+    }
+    .place-detail {
+        padding-inline: 19px;
+    }
+    .place-detail h2 {
+        font-size: 27px;
+    }
+    .place-detail header {
+        gap: 14px;
+    }
+    .place-detail #detail-description {
+        font-size: 16px;
+    }
+    .detail-cta {
+        font-size: 20px;
+        gap: 16px;
+    }
+    .location-card {
+        font-size: 15px;
+    }
+    .location-label small {
+        font-size: 12px;
+    }
+    .location-label .map-pin {
+        left: 10px;
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+    .map-temple {
+        left: 42%;
+        width: 35%;
+    }
+    .map-temple > span {
+        font-size: 18px;
+        padding-inline: 25px;
+    }
+    .closing-copy h2 {
+        font-size: 19px;
+    }
+    .closing-copy > p {
+        font-size: 17px;
+    }
+    .closing-actions {
+        gap: 15px;
+    }
+    .closing-actions button,
+    .closing-actions a {
+        padding-inline: 20px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+    .cultural-map {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 0 20px 25px;
+        gap: 0;
+    }
+    .map-canvas {
+        height: 660px;
+    }
+    .place-detail {
+        margin: 10px auto 0;
+        width: 450px;
+        height: auto;
+        min-height: 609px;
+    }
+    .places-page .main-navigation {
+        gap: 8px;
+    }
+    .places-page .main-navigation a {
+        font-size: 14px;
+    }
+    .places-page .brand {
+        gap: 8px;
+    }
+    .places-search-button {
+        margin-left: 16px;
+        width: 38px;
+        height: 38px;
+    }
+    .places-closing {
+        height: 300px;
+    }
+    .closing-copy {
+        margin-left: 40%;
+        padding-right: 20px;
+    }
+    .closing-copy h2 {
+        white-space: normal;
+    }
+    .closing-actions {
+        gap: 10px;
+    }
+    .closing-actions button,
+    .closing-actions a {
+        padding-inline: 15px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .places-page .site-header {
+        height: 76px;
+    }
+    .places-page .nav-container {
+        margin: 0 15px;
+        gap: 8px;
+    }
+    .places-page .brand {
+        gap: 8px;
+    }
+    .places-page .brand-icon {
+        width: 33px;
+        height: 48px;
+    }
+    .places-page .brand strong {
+        font-size: 13px;
+    }
+    .places-page .brand small {
+        font-size: 11px;
+    }
+    .places-page .menu-toggle {
+        order: 3;
+        width: 36px;
+        height: 36px;
+    }
+    .places-search-button {
+        order: 2;
+        margin-left: auto;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+    .places-search-button svg {
+        width: 21px;
+        height: 21px;
+    }
+    .places-page .main-navigation {
+        margin: 0;
+        gap: 0;
+        left: -15px;
+        right: -15px;
+        top: 76px;
+    }
+    .places-page .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .places-page .main-navigation a::after {
+        bottom: 6px;
+    }
+    .places-page .main-navigation a[aria-current]::before {
+        display: none;
+    }
+    .cultural-map {
+        height: auto;
+        display: block;
+        padding: 0 20px 25px;
+    }
+    .map-canvas {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 30px 0 0;
+    }
+    .map-heading {
+        position: static;
+        align-self: stretch;
+    }
+    .map-heading h1 {
+        font-size: 39px;
+        letter-spacing: -1px;
+    }
+    .map-heading h1 span {
+        font-size: 34px;
+    }
+    .map-heading p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 12px;
+    }
+    .map-landscape {
+        opacity: 0.6;
+    }
+    .map-paths {
+        display: none;
+    }
+    .map-temple {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: 235px;
+        margin-bottom: 7px;
+    }
+    .map-temple img {
+        height: 205px;
+    }
+    .map-temple > span {
+        font-size: 21px;
+    }
+    .location-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        max-width: 380px;
+        height: 225px;
+        font-size: 19px;
+    }
+    .location-card > img {
+        height: 184px;
+    }
+    .location-label {
+        min-height: 62px;
+    }
+    .location-h3 .location-label {
+        min-height: 68px;
+    }
+    .location-label small {
+        font-size: 15px;
+    }
+    .location-label .map-pin {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        left: 16px;
+        top: -29px;
+    }
+    .map-temple-line {
+        display: none;
+    }
+    .place-detail {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        min-height: 0;
+        margin: 30px auto 0;
+        padding: 18px;
+    }
+    .place-detail header {
+        min-height: 63px;
+        gap: 13px;
+    }
+    .place-detail h2 {
+        font-size: 26px;
+        padding-right: 18px;
+    }
+    .detail-close {
+        right: 12px;
+        top: 13px;
+        font-size: 29px;
+    }
+    .detail-main-image {
+        height: 215px;
+    }
+    .detail-thumbnails button {
+        height: 67px;
+    }
+    .place-detail #detail-description {
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 17px 0;
+    }
+    .detail-cta {
+        font-size: 20px;
+        gap: 16px;
+        min-height: 56px;
+    }
+    .detail-cta svg {
+        width: 29px;
+    }
+    .places-closing {
+        height: auto;
+        min-height: 540px;
+        padding-top: 205px;
+    }
+    .closing-temple {
+        width: 100%;
+        height: 245px;
+        object-position: center;
+        mask-image: linear-gradient(180deg, #000 65%, transparent 100%);
+    }
+    .closing-copy {
+        margin: 0;
+        padding: 20px 22px 28px;
+    }
+    .closing-copy h2 {
+        font-size: 20px;
+        line-height: 1.6;
+        white-space: normal;
+    }
+    .closing-copy > p {
+        font-size: 16px;
+    }
+    .closing-actions {
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 23px;
+    }
+    .closing-actions button,
+    .closing-actions a {
+        width: 100%;
+        max-width: 320px;
+        font-size: 17px;
+    }
+    .closing-temple-line {
+        opacity: 0.15;
+    }
+    .places-page main {
+        overflow-x: clip;
+    }
+    .places-closing::before {
+        left: 0;
+        width: 100%;
+    }
+}
+.project-credits {
+    padding: 56px 24px;
+    background: #f4ecd9;
+    color: #342d23;
+    border-top: 1px solid #c6ab77;
+}
+.project-credits-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 56px;
+}
+.project-credits h2 {
+    color: #653b20;
+    font-size: clamp(22px, 3vw, 28px);
+    margin: 0 0 22px;
+}
+.project-credits h3 {
+    font-size: 18px;
+    margin: 26px 0 10px;
+}
+.project-members {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.project-members li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px 16px;
+    padding: 7px 0;
+    border-bottom: 1px solid #d9cbb1;
+}
+.project-members li span:last-child {
+    font-variant-numeric: tabular-nums;
+}
+.project-affiliation,
+.project-purpose p {
+    font-size: 16px;
+    line-height: 1.95;
+}
+.project-contact {
+    font-style: normal;
+    line-height: 1.9;
+}
+.project-contact a {
+    display: block;
+    color: #714019;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+}
+.project-contact a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+@media (max-width: 760px) {
+    .project-credits { padding: 36px 20px; }
+    .project-credits-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .location-card:hover {
+        transform: none;
+    }
+}
+</style>
+</head>
+<body class="places-page">
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="/" aria-label="วัดหมื่นสาร – หน้าแรก">
+                <svg class="brand-icon" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+                <span><strong>เปิดตำนานและประวัติศาสตร์</strong><small>ณ วัดหมื่นสาร - ชุมชนวัวลาย</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="เปิดเมนู"><span></span><span></span><span></span></button>
+            <nav id="main-navigation" class="main-navigation" aria-label="เมนูหลัก">
+                                    <a href="/" >หน้าแรก</a>
+                                    <a href="/tiger-legend" >ตำนานเสือเย็น</a>
+                                    <a href="/history" >ประวัติวัดและชุมชน</a>
+                                    <a href="/places"  aria-current="page" >สถานที่สำคัญ</a>
+                            </nav>
+            <button class="places-search-button" type="button" aria-label="ค้นหาสถานที่" aria-controls="places-search-dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button>
+        </div>
+    </header>
+    <main id="main"><section class="cultural-map" id="cultural-map" aria-labelledby="map-title">
+    <div class="map-canvas">
+        <div class="map-heading"><h1 id="map-title">แผนที่วัฒนธรรม<span>ชุมชนหมื่นสาร</span></h1><p>สำรวจสถานที่สำคัญรอบวัดหมื่นสาร<br>และชุมชนวัวลาย คลิกที่แต่ละสถานที่<br>เพื่อดูข้อมูลและภาพประกอบ</p></div>
+        <svg class="map-landscape" viewBox="0 0 1045 660" aria-hidden="true"><defs><g id="map-tree"><path d="M0 40V0m0 24-14-14M0 18 14 5" stroke="#a89361" stroke-width="3"/><g fill="#92966d"><circle cx="0" cy="-5" r="17"/><circle cx="-14" cy="4" r="14"/><circle cx="13" cy="1" r="14"/></g></g><g id="map-cloud" fill="none" stroke="#d1aa68"><path d="M0 20h110c10-2 10-10 0-12-1-20-28-24-37-7-4-18-30-20-35-3-12-3-22 6-20 15H0c-7 0-8 7 0 7Z"/><path d="M35 10c10-20 32-9 24 2h25"/></g></defs><g opacity=".27"><path d="M160 594Q200 305 460 178T969 342Q1040 598 777 625T160 594" fill="#d9c8a0"/><path d="M175 610Q170 352 388 202T855 210Q1060 305 978 572" fill="none" stroke="#b8ae86" stroke-width="12"/><use href="#map-cloud" x="800" y="70"/><use href="#map-cloud" x="30" y="280"/><use href="#map-cloud" x="105" y="535"/><use href="#map-tree" x="428" y="193"/><use href="#map-tree" x="463" y="151"/><use href="#map-tree" x="392" y="231"/><use href="#map-tree" x="352" y="302"/><use href="#map-tree" x="348" y="362"/><use href="#map-tree" x="491" y="365"/><use href="#map-tree" x="738" y="140"/><use href="#map-tree" x="760" y="214"/><use href="#map-tree" x="784" y="347"/><use href="#map-tree" x="947" y="209"/><use href="#map-tree" x="1004" y="424"/><use href="#map-tree" x="957" y="514"/><use href="#map-tree" x="742" y="563"/><use href="#map-tree" x="668" y="603"/><use href="#map-tree" x="549" y="575"/><use href="#map-tree" x="238" y="545"/><use href="#map-tree" x="264" y="447"/><use href="#map-tree" x="715" y="45"/></g></svg>
+        <svg class="map-paths" viewBox="0 0 1045 660" aria-hidden="true"><g fill="none" stroke="#c9903e" stroke-width="2.5" stroke-dasharray="2 6" stroke-linecap="round" opacity=".85"><path d="M625 390Q620 235 625 145"/><path d="M625 420Q621 559 424 565"/><path d="M672 360Q820 256 910 294"/><path d="M564 368Q365 280 293 328"/><path d="M687 421Q757 472 832 560"/><path d="M297 306Q355 168 600 124T901 252"/><path d="M297 411Q297 545 404 554"/></g></svg>
+        <div class="map-temple"><img src="/images/wat-muen-san-hero.png" alt="ภาพประกอบบริเวณวัดและชุมชน"><span>วัดหมื่นสาร</span></div>
+                    <button type="button" class="location-card location-h1" data-place="H1" aria-controls="place-detail" aria-pressed="false"><img src="/images/วัวลาย.jpg" alt="รูปปั้นวัวลาย"><span class="location-label"><span class="map-pin"><span>H1</span></span><span>รูปปั้นวัวลาย</span></span></button>
+                    <button type="button" class="location-card location-h2" data-place="H2" aria-controls="place-detail" aria-pressed="true"><img src="/images/วัดหมื่น.PNG" alt="เจดีย์วัดหมื่นสาร"><span class="location-label"><span class="map-pin"><span>H2</span></span><span>เจดีย์วัดหมื่นสาร</span></span></button>
+                    <button type="button" class="location-card location-h3" data-place="H3" aria-controls="place-detail" aria-pressed="false"><img src="/images/ญี่ปุ่น.PNG" alt="พิพิธภัณฑ์ญี่ปุ่น อนุสรณ์สถานทหารญี่ปุ่น"><span class="location-label"><span class="map-pin"><span>H3</span></span><span>พิพิธภัณฑ์ญี่ปุ่น<small>อนุสรณ์สถานทหารญี่ปุ่น</small></span></span></button>
+                    <button type="button" class="location-card location-h4" data-place="H4" aria-controls="place-detail" aria-pressed="false"><img src="/images/หอศิลป์.PNG" alt="หอศิลป์สุทธิรจิตโต"><span class="location-label"><span class="map-pin"><span>H4</span></span><span>หอศิลป์สุทธิรจิตโต</span></span></button>
+                    <button type="button" class="location-card location-h5" data-place="H5" aria-controls="place-detail" aria-pressed="false"><img src="/images/ศาลา.PNG" alt="ศาสตร์เครื่องเงิน"><span class="location-label"><span class="map-pin"><span>H5</span></span><span>ศาสตร์เครื่องเงิน</span></span></button>
+                <svg class="map-temple-line" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+    </div>
+    <aside id="place-detail" class="place-detail" aria-labelledby="detail-title" tabindex="-1">
+        <header><span class="map-pin detail-pin"><span id="detail-id">H2</span></span><h2 id="detail-title">เจดีย์วัดหมื่นสาร</h2><button class="detail-close" type="button" aria-label="ปิดข้อมูลสถานที่">×</button></header>
+        <p id="detail-subtitle" hidden></p>
+        <img id="detail-main-image" class="detail-main-image" src="/images/วัดหมื่น.PNG" alt="เจดีย์วัดหมื่นสาร">
+        <div class="detail-thumbnails" aria-label="ภาพประกอบสถานที่"><button type="button" data-thumbnail="0" aria-label="ดูภาพประกอบที่ 1" aria-pressed="false"><img src="/images/wat-muen-san-hero.png" alt="ภาพประกอบบริเวณวัดและชุมชน"></button><button type="button" data-thumbnail="1" aria-label="ดูภาพประกอบที่ 2" aria-pressed="false"><img src="/images/tiger-legend/tiger-statue.png" alt="ภาพประกอบบริเวณวัดและชุมชน"></button><button type="button" data-thumbnail="2" aria-label="ดูภาพประกอบที่ 3" aria-pressed="false"><img src="/images/wat-muen-san-hero.png" alt="ภาพประกอบบริเวณวัดและชุมชน"></button></div>
+        <p id="detail-description">จุดสำคัญของตำนานเสือเย็น และเป็นบริเวณที่พบรูปปั้น “เสือคาบคน” ซึ่งยังคงปรากฏอยู่ในปัจจุบัน และสะท้อนความเชื่อของชุมชนที่ผูกพันกับเรื่องเล่าลี้ลับมายาวนาน</p>
+        <a id="detail-cta" class="detail-cta" href="/tiger-legend"><svg viewBox="0 0 40 36" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 31C13 26 6 27 2 28V4c6-2 12-1 18 3 6-4 12-5 18-3v24c-4-1-11-2-18 3Zm0 0V7M6 10l9 2m-9 5 9 2m-9 5 9 2m10-14 9-2m-9 9 9-2m-9 9 9-2"/></svg><span>อ่านตำนานเสือเย็น</span><span aria-hidden="true">→</span></a>
+    </aside>
+</section>
+<section class="places-closing" aria-labelledby="closing-quote">
+    <img class="closing-temple" src="/images/wat-muen-san-hero.png" alt="ภาพประกอบบริเวณวัดและชุมชน">
+    <div class="closing-copy"><h2 id="closing-quote">“ตำนานเสือเย็นอาจเปลี่ยนไปตามกาลเวลา<br>แต่เรื่องราว ยังคงถูกจดจำและส่งต่อผ่านสถานที่และผู้คนในชุมชน”</h2><div class="closing-divider" aria-hidden="true"><span></span>❖<span></span></div><p>แล้วเรื่องราวที่คุณได้ค้นพบ<br>จะกลายเป็นส่วนหนึ่งของความทรงจำนี้เช่นกัน</p><div class="closing-actions"><button id="restart-map" type="button"><span aria-hidden="true">↻</span>สำรวจเรื่องราวอีกครั้ง</button>
+    <a class="tiktok-button" href="https://vt.tiktok.com/ZSbMXHQUW/" target="_blank" rel="noopener noreferrer">    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2h4c0 3 2 5 5 5v4a10 10 0 0 1-5-2v8a7 7 0 1 1-8-7v4a3 3 0 1 0 4 3V2Z"/></svg>รับชมคลิป TikTok <span aria-hidden="true">↗</span></a></div><p id="tiktok-status" role="status" hidden>ยังไม่ได้ระบุลิงก์คลิป TikTok</p></div><svg class="closing-temple-line" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+</section>
+<section class="project-credits" aria-labelledby="credits-title">
+    <div class="project-credits-inner">
+        <div class="project-team">
+            <h2 id="credits-title">จัดทำโดย</h2>
+            <ul class="project-members">
+                <li><span>เสาวลักษณ์ โรจน์จุฑารักษ์</span><span>68144575</span></li>
+                <li><span>จริยา คำมน</span><span>68144511</span></li>
+                <li><span>พิริสา กลจักร์</span><span>68144553</span></li>
+                <li><span>ระมิดา ชูเดอะ</span><span>68144683</span></li>
+                <li><span>ปฐมาวดี อินทร์ไชย</span><span>68144667</span></li>
+                <li><span>สรณ์สิริ คำสุ</span><span>68144637</span></li>
+                <li><span>ศุภวิชรญ์ วงศ์ยืด</span><span>68144635</span></li>
+            </ul>
+            <p class="project-affiliation">นักศึกษาสาขานิเทศศาสตร์ คณะวิทยาการจัดการ<br>มหาวิทยาลัยราชภัฏเชียงใหม่</p>
+            <h3>ช่องทางการติดต่อผู้จัดทำ</h3>
+            <address class="project-contact">Email:
+                <a href="mailto:68144575@g.cmru.ac.th">68144575@g.cmru.ac.th</a>
+                <a href="mailto:68144553@g.cmru.ac.th">68144553@g.cmru.ac.th</a>
+            </address>
+        </div>
+        <div class="project-purpose">
+            <h2>วัตถุประสงค์ของโครงการ</h2>
+            <p>เว็บไซต์นี้จัดทำขึ้นเป็นส่วนหนึ่งของการศึกษาในรายวิชา CA 2302-68 การเล่าเรื่องข้ามสื่อ มีวัตถุประสงค์เพื่อศึกษาและนำเสนอเรื่องราวเกี่ยวกับ “ตำนานเสือเยน วัดหมื่นสาร และชุมชนวัวลาย” ผ่านแนวคิดการเล่าเรื่องข้ามสื่อ (Transmedia Storytelling) โดยนำข้อมูลด้านตำนาน ประวัติศาสตร์ ความเชื่อ และวิถีชีวิตของชุมชนมาพัฒนาและนำเสนอในรูปแบบสื่อดิจิทัล เพื่อให้ผู้ชมสามารถเรียนรู้และสำรวจเรื่องราวได้อย่างน่าสนใจ พร้อมทั้งเห็นความเชื่อมโยงระหว่างเรื่องเล่า สถานที่ และความทรงจำของชุมชน</p>
+        </div>
+    </div>
+</section>
+<dialog id="places-search-dialog" aria-labelledby="places-search-title"><form id="places-search-form"><h2 id="places-search-title">ค้นหาสถานที่</h2><label for="places-query">ชื่อสถานที่หรือคำค้นหา</label><input id="places-query" type="search" required><button type="submit">ค้นหา</button></form><p id="places-search-status" role="status"></p><ul id="places-search-results"></ul><button id="close-places-search" type="button">ปิด</button></dialog>
+</main>
+    <script>const toggle = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".main-navigation");
+function closeMenu() {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "เปิดเมนู");
+    navigation.classList.remove("is-open");
+}
+toggle.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "ปิดเมนู" : "เปิดเมนู");
+    navigation.classList.toggle("is-open", open);
+});
+navigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+});
+document.addEventListener("keydown", (event) => {
+    if (
+        event.key === "Escape" &&
+        toggle.getAttribute("aria-expanded") === "true"
+    ) {
+        closeMenu();
+        toggle.focus();
+    }
+});
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".nav-container")) closeMenu();
+});
+window.matchMedia("(min-width: 769px)").addEventListener("change", closeMenu);
+</script>
+    <script>window.culturalPlaces = JSON.parse('{\u0022H1\u0022:{\u0022title\u0022:\u0022\\u0e23\\u0e39\\u0e1b\\u0e1b\\u0e31\\u0e49\\u0e19\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22\u0022,\u0022subtitle\u0022:\u0022\u0022,\u0022image\u0022:{\u0022src\u0022:\u0022\\\/images\\\/\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22.jpg\u0022,\u0022alt\u0022:\u0022\\u0e23\\u0e39\\u0e1b\\u0e1b\\u0e31\\u0e49\\u0e19\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22\u0022},\u0022description\u0022:\u0022\\u0e08\\u0e38\\u0e14\\u0e41\\u0e25\\u0e19\\u0e14\\u0e4c\\u0e21\\u0e32\\u0e23\\u0e4c\\u0e01\\u0e17\\u0e35\\u0e48\\u0e2a\\u0e30\\u0e17\\u0e49\\u0e2d\\u0e19\\u0e2a\\u0e31\\u0e0d\\u0e25\\u0e31\\u0e01\\u0e29\\u0e13\\u0e4c\\u0e41\\u0e25\\u0e30\\u0e04\\u0e27\\u0e32\\u0e21\\u0e2a\\u0e31\\u0e21\\u0e1e\\u0e31\\u0e19\\u0e18\\u0e4c\\u0e02\\u0e2d\\u0e07\\u0e1e\\u0e37\\u0e49\\u0e19\\u0e17\\u0e35\\u0e48\\u0e01\\u0e31\\u0e1a\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22\u0022,\u0022cta\u0022:\u0022\\u0e2d\\u0e48\\u0e32\\u0e19\\u0e1b\\u0e23\\u0e30\\u0e27\\u0e31\\u0e15\\u0e34\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022,\u0022url\u0022:\u0022\\\/history#history-08\u0022,\u0022thumbnails\u0022:[{\u0022src\u0022:\u0022\\\/images\\\/\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22.jpg\u0022,\u0022alt\u0022:\u0022\\u0e23\\u0e39\\u0e1b\\u0e1b\\u0e31\\u0e49\\u0e19\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022}]},\u0022H2\u0022:{\u0022title\u0022:\u0022\\u0e40\\u0e08\\u0e14\\u0e35\\u0e22\\u0e4c\\u0e27\\u0e31\\u0e14\\u0e2b\\u0e21\\u0e37\\u0e48\\u0e19\\u0e2a\\u0e32\\u0e23\u0022,\u0022subtitle\u0022:\u0022\u0022,\u0022image\u0022:{\u0022src\u0022:\u0022\\\/images\\\/\\u0e27\\u0e31\\u0e14\\u0e2b\\u0e21\\u0e37\\u0e48\\u0e19.PNG\u0022,\u0022alt\u0022:\u0022\\u0e40\\u0e08\\u0e14\\u0e35\\u0e22\\u0e4c\\u0e27\\u0e31\\u0e14\\u0e2b\\u0e21\\u0e37\\u0e48\\u0e19\\u0e2a\\u0e32\\u0e23\u0022},\u0022description\u0022:\u0022\\u0e08\\u0e38\\u0e14\\u0e2a\\u0e33\\u0e04\\u0e31\\u0e0d\\u0e02\\u0e2d\\u0e07\\u0e15\\u0e33\\u0e19\\u0e32\\u0e19\\u0e40\\u0e2a\\u0e37\\u0e2d\\u0e40\\u0e22\\u0e47\\u0e19 \\u0e41\\u0e25\\u0e30\\u0e40\\u0e1b\\u0e47\\u0e19\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e17\\u0e35\\u0e48\\u0e1e\\u0e1a\\u0e23\\u0e39\\u0e1b\\u0e1b\\u0e31\\u0e49\\u0e19 \\u201c\\u0e40\\u0e2a\\u0e37\\u0e2d\\u0e04\\u0e32\\u0e1a\\u0e04\\u0e19\\u201d \\u0e0b\\u0e36\\u0e48\\u0e07\\u0e22\\u0e31\\u0e07\\u0e04\\u0e07\\u0e1b\\u0e23\\u0e32\\u0e01\\u0e0f\\u0e2d\\u0e22\\u0e39\\u0e48\\u0e43\\u0e19\\u0e1b\\u0e31\\u0e08\\u0e08\\u0e38\\u0e1a\\u0e31\\u0e19 \\u0e41\\u0e25\\u0e30\\u0e2a\\u0e30\\u0e17\\u0e49\\u0e2d\\u0e19\\u0e04\\u0e27\\u0e32\\u0e21\\u0e40\\u0e0a\\u0e37\\u0e48\\u0e2d\\u0e02\\u0e2d\\u0e07\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\\u0e17\\u0e35\\u0e48\\u0e1c\\u0e39\\u0e01\\u0e1e\\u0e31\\u0e19\\u0e01\\u0e31\\u0e1a\\u0e40\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e25\\u0e48\\u0e32\\u0e25\\u0e35\\u0e49\\u0e25\\u0e31\\u0e1a\\u0e21\\u0e32\\u0e22\\u0e32\\u0e27\\u0e19\\u0e32\\u0e19\u0022,\u0022cta\u0022:\u0022\\u0e2d\\u0e48\\u0e32\\u0e19\\u0e15\\u0e33\\u0e19\\u0e32\\u0e19\\u0e40\\u0e2a\\u0e37\\u0e2d\\u0e40\\u0e22\\u0e47\\u0e19\u0022,\u0022url\u0022:\u0022\\\/tiger-legend\u0022,\u0022thumbnails\u0022:[{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/tiger-legend\\\/tiger-statue.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022}]},\u0022H3\u0022:{\u0022title\u0022:\u0022\\u0e1e\\u0e34\\u0e1e\\u0e34\\u0e18\\u0e20\\u0e31\\u0e13\\u0e11\\u0e4c\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19\u0022,\u0022subtitle\u0022:\u0022\\u0e2d\\u0e19\\u0e38\\u0e2a\\u0e23\\u0e13\\u0e4c\\u0e2a\\u0e16\\u0e32\\u0e19\\u0e17\\u0e2b\\u0e32\\u0e23\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19\u0022,\u0022image\u0022:{\u0022src\u0022:\u0022\\\/images\\\/\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19.PNG\u0022,\u0022alt\u0022:\u0022\\u0e1e\\u0e34\\u0e1e\\u0e34\\u0e18\\u0e20\\u0e31\\u0e13\\u0e11\\u0e4c\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19 \\u0e2d\\u0e19\\u0e38\\u0e2a\\u0e23\\u0e13\\u0e4c\\u0e2a\\u0e16\\u0e32\\u0e19\\u0e17\\u0e2b\\u0e32\\u0e23\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19\u0022},\u0022description\u0022:\u0022\\u0e1e\\u0e37\\u0e49\\u0e19\\u0e17\\u0e35\\u0e48\\u0e40\\u0e23\\u0e35\\u0e22\\u0e19\\u0e23\\u0e39\\u0e49\\u0e40\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e23\\u0e32\\u0e27\\u0e02\\u0e2d\\u0e07\\u0e27\\u0e31\\u0e14\\u0e2b\\u0e21\\u0e37\\u0e48\\u0e19\\u0e2a\\u0e32\\u0e23\\u0e43\\u0e19\\u0e0a\\u0e48\\u0e27\\u0e07\\u0e2a\\u0e07\\u0e04\\u0e23\\u0e32\\u0e21\\u0e42\\u0e25\\u0e01\\u0e04\\u0e23\\u0e31\\u0e49\\u0e07\\u0e17\\u0e35\\u0e48 2 \\u0e41\\u0e25\\u0e30\\u0e04\\u0e27\\u0e32\\u0e21\\u0e2a\\u0e31\\u0e21\\u0e1e\\u0e31\\u0e19\\u0e18\\u0e4c\\u0e02\\u0e2d\\u0e07\\u0e1e\\u0e37\\u0e49\\u0e19\\u0e17\\u0e35\\u0e48\\u0e01\\u0e31\\u0e1a\\u0e01\\u0e2d\\u0e07\\u0e17\\u0e31\\u0e1e\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19\u0022,\u0022cta\u0022:\u0022\\u0e2d\\u0e48\\u0e32\\u0e19\\u0e1b\\u0e23\\u0e30\\u0e27\\u0e31\\u0e15\\u0e34\\u0e1e\\u0e34\\u0e1e\\u0e34\\u0e18\\u0e20\\u0e31\\u0e13\\u0e11\\u0e4c\u0022,\u0022url\u0022:\u0022\\\/history#history-13\u0022,\u0022thumbnails\u0022:[{\u0022src\u0022:\u0022\\\/images\\\/\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19.PNG\u0022,\u0022alt\u0022:\u0022\\u0e1e\\u0e34\\u0e1e\\u0e34\\u0e18\\u0e20\\u0e31\\u0e13\\u0e11\\u0e4c\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19 \\u0e2d\\u0e19\\u0e38\\u0e2a\\u0e23\\u0e13\\u0e4c\\u0e2a\\u0e16\\u0e32\\u0e19\\u0e17\\u0e2b\\u0e32\\u0e23\\u0e0d\\u0e35\\u0e48\\u0e1b\\u0e38\\u0e48\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022}]},\u0022H4\u0022:{\u0022title\u0022:\u0022\\u0e2b\\u0e2d\\u0e28\\u0e34\\u0e25\\u0e1b\\u0e4c\\u0e2a\\u0e38\\u0e17\\u0e18\\u0e34\\u0e23\\u0e08\\u0e34\\u0e15\\u0e42\\u0e15\u0022,\u0022subtitle\u0022:\u0022\u0022,\u0022image\u0022:{\u0022src\u0022:\u0022\\\/images\\\/\\u0e2b\\u0e2d\\u0e28\\u0e34\\u0e25\\u0e1b\\u0e4c.PNG\u0022,\u0022alt\u0022:\u0022\\u0e2b\\u0e2d\\u0e28\\u0e34\\u0e25\\u0e1b\\u0e4c\\u0e2a\\u0e38\\u0e17\\u0e18\\u0e34\\u0e23\\u0e08\\u0e34\\u0e15\\u0e42\\u0e15\u0022},\u0022description\u0022:\u0022\\u0e1e\\u0e37\\u0e49\\u0e19\\u0e17\\u0e35\\u0e48\\u0e08\\u0e31\\u0e14\\u0e41\\u0e2a\\u0e14\\u0e07\\u0e07\\u0e32\\u0e19\\u0e28\\u0e34\\u0e25\\u0e1b\\u0e30\\u0e41\\u0e25\\u0e30\\u0e40\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e23\\u0e32\\u0e27\\u0e17\\u0e32\\u0e07\\u0e27\\u0e31\\u0e12\\u0e19\\u0e18\\u0e23\\u0e23\\u0e21\\u0e17\\u0e35\\u0e48\\u0e40\\u0e0a\\u0e37\\u0e48\\u0e2d\\u0e21\\u0e42\\u0e22\\u0e07\\u0e27\\u0e31\\u0e14\\u0e01\\u0e31\\u0e1a\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\\u0e41\\u0e25\\u0e30\\u0e07\\u0e32\\u0e19\\u0e2a\\u0e23\\u0e49\\u0e32\\u0e07\\u0e2a\\u0e23\\u0e23\\u0e04\\u0e4c\u0022,\u0022cta\u0022:\u0022\\u0e2d\\u0e48\\u0e32\\u0e19\\u0e1b\\u0e23\\u0e30\\u0e27\\u0e31\\u0e15\\u0e34\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022,\u0022url\u0022:\u0022\\\/history\u0022,\u0022thumbnails\u0022:[{\u0022src\u0022:\u0022\\\/images\\\/\\u0e2b\\u0e2d\\u0e28\\u0e34\\u0e25\\u0e1b\\u0e4c.PNG\u0022,\u0022alt\u0022:\u0022\\u0e2b\\u0e2d\\u0e28\\u0e34\\u0e25\\u0e1b\\u0e4c\\u0e2a\\u0e38\\u0e17\\u0e18\\u0e34\\u0e23\\u0e08\\u0e34\\u0e15\\u0e42\\u0e15\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022}]},\u0022H5\u0022:{\u0022title\u0022:\u0022\\u0e28\\u0e32\\u0e2a\\u0e15\\u0e23\\u0e4c\\u0e40\\u0e04\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e07\\u0e34\\u0e19\u0022,\u0022subtitle\u0022:\u0022\u0022,\u0022image\u0022:{\u0022src\u0022:\u0022\\\/images\\\/\\u0e28\\u0e32\\u0e25\\u0e32.PNG\u0022,\u0022alt\u0022:\u0022\\u0e28\\u0e32\\u0e2a\\u0e15\\u0e23\\u0e4c\\u0e40\\u0e04\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e07\\u0e34\\u0e19\u0022},\u0022description\u0022:\u0022\\u0e40\\u0e23\\u0e35\\u0e22\\u0e19\\u0e23\\u0e39\\u0e49\\u0e20\\u0e39\\u0e21\\u0e34\\u0e1b\\u0e31\\u0e0d\\u0e0d\\u0e32\\u0e07\\u0e32\\u0e19\\u0e40\\u0e04\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e07\\u0e34\\u0e19\\u0e02\\u0e2d\\u0e07\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22 \\u0e2b\\u0e19\\u0e36\\u0e48\\u0e07\\u0e43\\u0e19\\u0e21\\u0e23\\u0e14\\u0e01\\u0e2b\\u0e31\\u0e15\\u0e16\\u0e01\\u0e23\\u0e23\\u0e21\\u0e2a\\u0e33\\u0e04\\u0e31\\u0e0d\\u0e02\\u0e2d\\u0e07\\u0e40\\u0e0a\\u0e35\\u0e22\\u0e07\\u0e43\\u0e2b\\u0e21\\u0e48\u0022,\u0022cta\u0022:\u0022\\u0e2d\\u0e48\\u0e32\\u0e19\\u0e40\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e04\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e07\\u0e34\\u0e19\\u0e27\\u0e31\\u0e27\\u0e25\\u0e32\\u0e22\u0022,\u0022url\u0022:\u0022\\\/history#history-14\u0022,\u0022thumbnails\u0022:[{\u0022src\u0022:\u0022\\\/images\\\/\\u0e28\\u0e32\\u0e25\\u0e32.PNG\u0022,\u0022alt\u0022:\u0022\\u0e28\\u0e32\\u0e2a\\u0e15\\u0e23\\u0e4c\\u0e40\\u0e04\\u0e23\\u0e37\\u0e48\\u0e2d\\u0e07\\u0e40\\u0e07\\u0e34\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022},{\u0022src\u0022:\u0022\\\/images\\\/wat-muen-san-hero.png\u0022,\u0022alt\u0022:\u0022\\u0e20\\u0e32\\u0e1e\\u0e1b\\u0e23\\u0e30\\u0e01\\u0e2d\\u0e1a\\u0e1a\\u0e23\\u0e34\\u0e40\\u0e27\\u0e13\\u0e27\\u0e31\\u0e14\\u0e41\\u0e25\\u0e30\\u0e0a\\u0e38\\u0e21\\u0e0a\\u0e19\u0022}]}}');</script>
+<script>(() => {
+    const places = window.culturalPlaces;
+    const panel = document.querySelector("#place-detail");
+    const cards = [...document.querySelectorAll("[data-place]")];
+    const mainImage = document.querySelector("#detail-main-image");
+    const thumbnailButtons = [...document.querySelectorAll("[data-thumbnail]")];
+    let selected = "H2";
+    let lastCard = cards.find((card) => card.dataset.place === selected);
+    function setImage(image, data) {
+        image.src = data.src;
+        image.alt = data.alt;
+    }
+    function selectPlace(id, focusPanel = false) {
+        if (!places[id]) return;
+        selected = id;
+        const place = places[id];
+        panel.hidden = false;
+        document.querySelector("#detail-id").textContent = id;
+        document.querySelector("#detail-title").textContent = place.title;
+        const subtitle = document.querySelector("#detail-subtitle");
+        subtitle.textContent = place.subtitle;
+        subtitle.hidden = !place.subtitle;
+        setImage(mainImage, place.image);
+        document.querySelector("#detail-description").textContent =
+            place.description;
+        const cta = document.querySelector("#detail-cta");
+        cta.href = place.url;
+        cta.querySelector("span").textContent = place.cta;
+        thumbnailButtons.forEach((button, index) => {
+            setImage(button.querySelector("img"), place.thumbnails[index]);
+            button.setAttribute("aria-pressed", "false");
+        });
+        cards.forEach((card) =>
+            card.setAttribute(
+                "aria-pressed",
+                String(card.dataset.place === id),
+            ),
+        );
+        lastCard = cards.find((card) => card.dataset.place === id);
+        if (focusPanel) {
+            panel.focus({ preventScroll: true });
+            if (matchMedia("(max-width: 1100px)").matches)
+                panel.scrollIntoView({
+                    behavior: matchMedia("(prefers-reduced-motion: reduce)")
+                        .matches
+                        ? "instant"
+                        : "smooth",
+                    block: "start",
+                });
+        }
+    }
+    cards.forEach((card) =>
+        card.addEventListener("click", () =>
+            selectPlace(card.dataset.place, true),
+        ),
+    );
+    thumbnailButtons.forEach((button, index) =>
+        button.addEventListener("click", () => {
+            setImage(mainImage, places[selected].thumbnails[index]);
+            thumbnailButtons.forEach((item) =>
+                item.setAttribute("aria-pressed", String(item === button)),
+            );
+        }),
+    );
+    document.querySelector(".detail-close").addEventListener("click", () => {
+        panel.hidden = true;
+        cards.forEach((card) => card.setAttribute("aria-pressed", "false"));
+        lastCard.focus({ preventScroll: true });
+    });
+    document.querySelector("#restart-map").addEventListener("click", () => {
+        selectPlace("H2");
+        document
+            .querySelector("#cultural-map")
+            .scrollIntoView({
+                behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+                    ? "instant"
+                    : "smooth",
+            });
+        lastCard.focus({ preventScroll: true });
+    });
+    const unavailableTikTok = document.querySelector(
+        ".tiktok-button[aria-disabled]",
+    );
+    unavailableTikTok?.addEventListener("click", () => {
+        document.querySelector("#tiktok-status").hidden = false;
+    });
+    const dialog = document.querySelector("#places-search-dialog");
+    const queryInput = document.querySelector("#places-query");
+    document
+        .querySelector(".places-search-button")
+        .addEventListener("click", () => {
+            dialog.showModal();
+            queryInput.focus();
+        });
+    document
+        .querySelector("#close-places-search")
+        .addEventListener("click", () => dialog.close());
+    document
+        .querySelector("#places-search-form")
+        .addEventListener("submit", (event) => {
+            event.preventDefault();
+            const query = queryInput.value.trim().toLocaleLowerCase("th");
+            const list = document.querySelector("#places-search-results");
+            list.replaceChildren();
+            if (!query) return;
+            const matches = Object.entries(places).filter(([id, place]) =>
+                `${id} ${place.title} ${place.subtitle} ${place.description}`
+                    .toLocaleLowerCase("th")
+                    .includes(query),
+            );
+            document.querySelector("#places-search-status").textContent =
+                matches.length
+                    ? `พบ ${matches.length} สถานที่`
+                    : "ไม่พบสถานที่ที่ค้นหา";
+            matches.forEach(([id, place]) => {
+                const li = document.createElement("li");
+                const button = document.createElement("button");
+                button.type = "button";
+                button.textContent = `${id} ${place.title}`;
+                button.addEventListener("click", () => {
+                    dialog.close();
+                    selectPlace(id, true);
+                });
+                li.append(button);
+                list.append(li);
+            });
+        });
+})();
+</script>
+</body>
+</html>

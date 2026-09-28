@@ -1,0 +1,2225 @@
+﻿
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c2b22">
+    <meta name="description" content="เปิดตำนานและประวัติศาสตร์ ณ วัดหมื่นสาร – ชุมชนวัวลาย สำรวจเรื่องเล่า ความทรงจำ และสถานที่สำคัญของชุมชน">
+    <title>ตำนานเสือเย็น | วัดหมื่นสาร – ชุมชนวัวลาย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root {
+    --green: #0c2b22;
+    --gold: #efd28c;
+    --paper: #f4ead3;
+    --brown: #69461f;
+    --serif: "Noto Serif Thai", Georgia, serif;
+    --sans: "Noto Sans Thai", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+body {
+  margin: 0;
+  overflow-x: clip;
+    color: #fff9ea;
+    background: var(--paper);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    font: inherit;
+}
+h1,
+h2,
+h3,
+p,
+blockquote {
+    margin: 0;
+}
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #e9ba58;
+    outline-offset: 6px;
+}
+.skip-link {
+    position: fixed;
+    top: -100px;
+    left: 20px;
+    z-index: 100;
+    background: var(--green);
+    padding: 12px;
+}
+.skip-link:focus {
+    top: 10px;
+}
+.site-header {
+    height: 80px;
+    position: relative;
+    z-index: 5;
+    background:
+        radial-gradient(ellipse at 60% 0, #25413988, transparent 65%), #0b241c;
+    border-bottom: 1px solid #9e855980;
+    overflow: clip;
+}
+.site-header::before,
+.site-header::after {
+    content: "";
+    position: absolute;
+    top: -38px;
+    width: 220px;
+    height: 170px;
+    background: url("/images/ornament.svg") center/140px;
+    opacity: 0.24;
+    pointer-events: none;
+}
+.site-header::before {
+    left: -52px;
+    transform: rotate(-22deg);
+}
+.site-header::after {
+    right: -25px;
+    transform: rotate(15deg);
+}
+.nav-container {
+    max-width: 1272px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  gap: 160px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: #f5e7c8;
+}
+.brand-icon {
+    width: 55px;
+    height: 67px;
+    color: #e5c893;
+}
+.brand strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.brand small {
+    display: block;
+    font-size: 16px;
+    color: #e9cd93;
+    line-height: 1.3;
+}
+.main-navigation {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    height: 100%;
+}
+.main-navigation a {
+    position: relative;
+    padding: 25px 10px 23px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.main-navigation a::after {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    content: "";
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+.main-navigation a:hover::after,
+.main-navigation a[aria-current]::after {
+    transform: scaleX(1);
+}
+.main-navigation a[aria-current] {
+    color: #eac372;
+}
+.menu-toggle {
+    display: none;
+}
+.hero {
+    position: relative;
+    height: 566px;
+    min-height: 560px;
+    background-image: url('/images/wat-muen-san-hero.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    isolation: isolate;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(2, 20, 15, 0.96) 0%,
+        rgba(2, 20, 15, 0.88) 25%,
+        rgba(2, 20, 15, 0.58) 43%,
+        rgba(2, 20, 15, 0.20) 62%,
+        rgba(2, 20, 15, 0.03) 100%
+    );
+    pointer-events: none;
+}
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1380px;
+    margin: auto;
+    padding-top: 50px;
+}
+.hero-copy {
+    width: 580px;
+    text-shadow: 0 2px 3px #0008;
+}
+.hero-heading {
+    width: 510px;
+    text-align: center;
+}
+.hero h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: -1.8px;
+    line-height: 1.1;
+}
+.hero h1 span {
+    display: block;
+  font-size: 56px;
+}
+.hero h1 span:first-child {
+  font-size: 68px;
+    line-height: 1.13;
+}
+.hero-subtitle {
+    font-family: var(--serif);
+    font-size: 27px;
+    font-weight: 600;
+  line-height: 1.5;
+    margin-top: 1px;
+    color: var(--gold);
+}
+.ornament-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c89d4e;
+    width: 395px;
+    max-width: 85%;
+    margin: 5px auto 3px;
+    text-shadow: none;
+    height: 26px;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, #c89d4e);
+}
+.ornament-divider::after {
+    transform: rotate(180deg);
+}
+.ornament-divider span {
+    font-size: 26px;
+    line-height: 1;
+}
+.hero blockquote {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.47;
+    margin: 5px 0 12px;
+    letter-spacing: -0.6px;
+    white-space: nowrap;
+}
+.hero-description {
+    font-size: 16px;
+    line-height: 1.47;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+}
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  margin-top: 14px;
+}
+.ornate-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    isolation: isolate;
+    border: 1px solid #ddb96e;
+    background: linear-gradient(180deg, #64400f, #3a200c);
+    box-shadow:
+        inset 0 0 0 3px #432608,
+        inset 0 0 0 4px #b38c48,
+        0 3px 6px #0004;
+    border-radius: 24px;
+    color: #fff5dc;
+    transition:
+        transform 0.25s,
+        filter 0.25s,
+        box-shadow 0.25s;
+    font-family: var(--serif);
+    text-shadow: 0 1px 2px #0008;
+}
+.ornate-button::before,
+.ornate-button::after {
+    content: "◇";
+    font-size: 29px;
+    color: #d8ae59;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    left: -9px;
+    z-index: -1;
+}
+.ornate-button::after {
+    left: auto;
+    right: -9px;
+}
+.ornate-button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow:
+        inset 0 0 0 3px #432608,
+        inset 0 0 0 4px #b38c48,
+        0 5px 18px #c89c4233;
+}
+.ornate-button span {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    line-height: 1;
+}
+.primary-button {
+    min-width: 232px;
+    height: 51px;
+    padding: 0 23px;
+    font-size: 23px;
+    background: linear-gradient(170deg, #bc903d, #815b21 60%, #b48a3c);
+    box-shadow:
+        inset 0 0 0 3px #aa8136,
+        inset 0 0 0 4px #d0a54e,
+        0 3px 8px #0004;
+}
+.action-flower {
+    font-size: 42px;
+    color: #9d7936;
+    text-shadow: 1px 1px #deb26d55;
+}
+.explore {
+  position: relative;
+  overflow-x: clip;
+    isolation: isolate;
+    min-height: 378px;
+    padding: 0 24px 28px;
+    color: var(--brown);
+    background-color: var(--paper);
+    background-image: url("/images/paper.svg");
+    background-size: 200px;
+    scroll-margin-top: 20px;
+}
+.explore::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: -47px;
+    height: 55px;
+    background: var(--paper) url("/images/paper.svg");
+    clip-path: polygon(
+        0 0,
+        1% 19%,
+        2% 23%,
+        3% 40%,
+        4% 41%,
+        5% 59%,
+        6% 64%,
+        7% 77%,
+        8% 59%,
+        9% 66%,
+        10% 68%,
+        11% 77%,
+        12% 67%,
+        13% 80%,
+        14% 94%,
+        15% 71%,
+        16% 73%,
+        17% 68%,
+        18% 54%,
+        19% 66%,
+        20% 61%,
+        21% 56%,
+        22% 64%,
+        23% 54%,
+        24% 72%,
+        25% 67%,
+        26% 78%,
+        27% 73%,
+        28% 60%,
+        29% 68%,
+        30% 55%,
+        31% 61%,
+        32% 47%,
+        33% 49%,
+        34% 58%,
+        35% 43%,
+        36% 52%,
+        37% 45%,
+        38% 54%,
+        39% 39%,
+        40% 50%,
+        41% 41%,
+        42% 46%,
+        43% 39%,
+        44% 48%,
+        45% 31%,
+        46% 44%,
+        47% 40%,
+        48% 48%,
+        49% 35%,
+        50% 42%,
+        51% 36%,
+        52% 41%,
+        53% 32%,
+        54% 41%,
+        55% 29%,
+        56% 37%,
+        57% 30%,
+        58% 38%,
+        59% 30%,
+        60% 38%,
+        61% 33%,
+        62% 45%,
+        63% 35%,
+        64% 42%,
+        65% 37%,
+        66% 42%,
+        67% 33%,
+        68% 45%,
+        69% 35%,
+        70% 43%,
+        71% 37%,
+        72% 52%,
+        73% 40%,
+        74% 50%,
+        75% 44%,
+        76% 56%,
+        77% 47%,
+        78% 56%,
+        79% 45%,
+        80% 58%,
+        81% 54%,
+        82% 66%,
+        83% 56%,
+        84% 64%,
+        85% 58%,
+        86% 72%,
+        87% 66%,
+        88% 84%,
+        89% 78%,
+        90% 89%,
+        91% 78%,
+        92% 89%,
+        93% 70%,
+        94% 74%,
+        95% 59%,
+        96% 63%,
+        97% 39%,
+        98% 45%,
+        99% 30%,
+        100% 15%,
+        100% 100%,
+        0 100%
+    );
+}
+.explore-container {
+    max-width: 1252px;
+    margin: auto;
+    position: relative;
+}
+.section-heading {
+    text-align: center;
+  margin-bottom: 14px;
+}
+.section-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.heading-icon {
+    height: 48px;
+    width: 43px;
+    color: #86602c;
+}
+.heading-flower {
+    color: #b38c4a;
+    font-size: 26px;
+}
+.section-heading p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #4d4535;
+}
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+.story-card {
+    height: 255px;
+    border-radius: 12px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 79px 32px 17px;
+    color: #fff9e9;
+    background-image:
+        linear-gradient(90deg, #140f08e8, #140f0899 55%, #140f0826),
+        var(--card-image, linear-gradient(135deg, #14211a, #8b6536));
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 3px 5px #4b351c40;
+    border: 1px solid #98754555;
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+.story-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 19px #4b351c45;
+}
+.story-card.history {
+    background-image:
+        linear-gradient(90deg, #201b12bd, #201b1270 60%, #201b1210),
+        var(--card-image, linear-gradient(135deg, #3d3928, #ba9b66));
+}
+.story-card.places {
+    background-image:
+        linear-gradient(90deg, #242512bd, #24251260 65%, #24251210),
+        var(--card-image, linear-gradient(135deg, #5b6140, #b99964));
+}
+.story-card h3 {
+    font-family: var(--serif);
+    font-size: 27px;
+    line-height: 1.45;
+    font-weight: 600;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+    text-shadow: 0 2px 4px #0009;
+}
+.story-card p {
+    font-size: 15.5px;
+    line-height: 1.5;
+    margin-top: 3px;
+    white-space: nowrap;
+    text-shadow: 0 1px 3px #000;
+}
+.card-button {
+    display: flex;
+    width: 201px;
+    height: 45px;
+    font-size: 17px;
+    margin: 17px auto 0;
+    gap: 17px;
+}
+.history .card-button {
+    background: linear-gradient(#214937, #0c2b22);
+    box-shadow:
+        inset 0 0 0 3px #123528,
+        inset 0 0 0 4px #b38c48;
+}
+.number-badge {
+    position: absolute;
+    left: 33px;
+    top: 11px;
+    width: 60px;
+    height: 60px;
+    background: #755218;
+    border: 1px solid #dcb36c;
+    border-radius: 18px;
+    transform: rotate(45deg);
+    box-shadow:
+        inset 0 0 0 3px #614415,
+        inset 0 0 0 4px #c89d4e,
+        0 1px 4px #0008;
+}
+.number-badge::before,
+.number-badge::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid #c69b4c;
+    border-radius: 15px;
+    transform: rotate(22.5deg);
+}
+.number-badge::after {
+    transform: rotate(-22.5deg);
+}
+.number-badge span {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: rotate(-45deg);
+    font-family: Georgia, serif;
+    font-size: 29px;
+    color: #ffe3a1;
+}
+.background-temple {
+    position: absolute;
+    z-index: -1;
+    color: #a77a3d;
+    opacity: 0.22;
+    bottom: 0;
+    width: 200px;
+    height: 285px;
+    pointer-events: none;
+}
+.temple-left {
+    left: -43px;
+    transform: rotate(-6deg);
+}
+.temple-right {
+    right: -34px;
+    height: 335px;
+}
+.landscape {
+    position: absolute;
+    z-index: -1;
+    inset: 10px 0 0;
+    overflow: hidden;
+    opacity: 0.12;
+    pointer-events: none;
+}
+.landscape::before,
+.landscape::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #b18a51;
+    clip-path: polygon(
+        0 20%,
+        5% 12%,
+        10% 17%,
+        17% 5%,
+        22% 0,
+        28% 12%,
+        33% 9%,
+        41% 20%,
+        48% 15%,
+        55% 20%,
+        63% 10%,
+        70% 14%,
+        75% 5%,
+        79% 10%,
+        84% 1%,
+        89% 12%,
+        95% 9%,
+        100% 20%,
+        100% 26%,
+        92% 18%,
+        85% 19%,
+        77% 17%,
+        69% 23%,
+        60% 20%,
+        53% 28%,
+        43% 25%,
+        32% 18%,
+        23% 12%,
+        14% 25%,
+        7% 20%,
+        0 30%
+    );
+}
+.landscape::after {
+    transform: translateY(23px) scaleX(-1);
+    opacity: 0.5;
+}
+.topic-page {
+    min-height: calc(100svh - 80px);
+    padding: 90px 24px;
+    text-align: center;
+    color: var(--brown);
+    background: var(--paper) url("/images/paper.svg");
+}
+.topic-page h1 {
+    font-family: var(--serif);
+    font-size: 40px;
+}
+.topic-icon {
+    height: 90px;
+    width: 80px;
+}
+.topic-page p {
+    margin: 25px 0;
+}
+.topic-page .primary-button {
+    font-size: 18px;
+}
+@media (max-width: 1399px) {
+    .nav-container {
+        margin: 0 5%;
+        gap: 7%;
+    }
+    .main-navigation {
+        gap: 20px;
+    }
+    .hero-inner {
+        margin: 0 5%;
+    }
+    .story-card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .story-card h3 {
+        font-size: 25px;
+    }
+    .story-card p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1199px) {
+    .nav-container {
+        gap: 30px;
+        margin: 0 30px;
+    }
+    .brand strong {
+        font-size: 17px;
+    }
+    .brand small {
+        font-size: 14px;
+    }
+    .brand-icon {
+        width: 45px;
+    }
+    .main-navigation {
+        gap: 12px;
+        margin-left: auto;
+    }
+    .main-navigation a {
+        font-size: 14px;
+        padding-inline: 5px;
+    }
+    .hero-inner {
+        margin: 0 40px;
+    }
+    .story-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 850px;
+        margin: auto;
+    }
+    .story-card {
+        padding-left: 32px;
+    }
+    .story-card h3 {
+        font-size: 27px;
+    }
+    .story-card p {
+        font-size: 15px;
+    }
+    .section-heading h2 {
+        font-size: 35px;
+    }
+    .explore {
+        padding-bottom: 35px;
+    }
+}
+@media (max-width: 768px) {
+  .site-header::before,
+  .site-header::after {
+    display: none;
+  }
+    .site-header {
+        height: 76px;
+        overflow: visible;
+    }
+    .nav-container {
+        margin: 0 20px;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    .brand {
+        gap: 8px;
+    }
+    .brand-icon {
+        width: 40px;
+        height: 55px;
+    }
+    .brand strong {
+        font-size: 16px;
+    }
+    .brand small {
+        font-size: 12px;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid #b5975455;
+        border-radius: 5px;
+        color: var(--gold);
+        flex-shrink: 0;
+    }
+    .menu-toggle span {
+        width: 21px;
+        height: 2px;
+        background: currentColor;
+        transition:
+            transform 0.2s,
+            opacity 0.2s;
+    }
+    .menu-toggle[aria-expanded="true"] span:first-child {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle[aria-expanded="true"] span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: -20px;
+        right: -20px;
+        height: auto;
+        margin: 0;
+        background: #0c2b22;
+        border-bottom: 1px solid #b59754;
+        padding: 10px 24px 18px;
+        box-shadow: 0 12px 20px #0004;
+    }
+    .main-navigation.is-open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+    .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .main-navigation a::after {
+        bottom: 6px;
+        right: auto;
+        width: 65px;
+        left: 10px;
+    }
+    .hero {
+        height: auto;
+        min-height: 615px;
+    }
+    .hero-inner {
+        margin: 0;
+        padding: calc(100vw * 668 / 1268 + 24px) 24px 67px;
+    }
+    .hero-copy {
+        max-width: 580px;
+        width: 100%;
+        margin: auto;
+    }
+    .hero-heading {
+        width: 100%;
+    }
+    .hero h1 span:first-child {
+        font-size: 54px;
+    }
+    .hero h1 span {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+    .hero-subtitle {
+        font-size: 21px;
+        margin-top: 8px;
+    }
+    .ornament-divider {
+        margin-top: 9px;
+    }
+    .hero blockquote {
+        font-size: 20px;
+        white-space: normal;
+        line-height: 1.65;
+        letter-spacing: -0.4px;
+        margin-top: 12px;
+    }
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.75;
+        letter-spacing: 0;
+    }
+    .desktop-break {
+        display: none;
+    }
+    .hero-action {
+        margin-top: 22px;
+    }
+    .primary-button {
+        height: 49px;
+        min-width: 218px;
+        font-size: 21px;
+    }
+    .action-flower {
+        font-size: 35px;
+    }
+    .explore {
+        padding: 0 20px 30px;
+    }
+    .section-heading h2 {
+        font-size: 29px;
+        gap: 9px;
+    }
+    .heading-icon {
+        width: 34px;
+        height: 43px;
+    }
+    .heading-flower {
+        font-size: 22px;
+    }
+    .section-heading p {
+        font-size: 14px;
+        max-width: 390px;
+        margin: 8px auto 0;
+    }
+    .section-heading {
+        margin-bottom: 20px;
+    }
+    .story-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 20px;
+    }
+    .story-card {
+        height: 255px;
+        padding: 79px 28px 17px;
+    }
+    .story-card h3 {
+        font-size: 27px;
+    }
+    .story-card p {
+        font-size: 14px;
+    }
+    .number-badge {
+        left: 30px;
+    }
+    .background-temple {
+        opacity: 0.15;
+    }
+    .topic-page h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 380px) {
+    .nav-container {
+        margin-inline: 12px;
+    }
+    .brand strong {
+        font-size: 14px;
+    }
+    .brand small {
+        font-size: 11px;
+    }
+    .brand-icon {
+        width: 33px;
+    }
+    .hero-inner {
+        padding-inline: 19px;
+    }
+    .hero h1 span {
+        font-size: 37px;
+    }
+    .hero h1 span:first-child {
+        font-size: 48px;
+    }
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    .hero blockquote {
+        font-size: 18px;
+    }
+    .story-card {
+        padding-inline: 20px;
+    }
+    .story-card h3 {
+        font-size: 24px;
+    }
+    .story-card p {
+        font-size: 12.5px;
+    }
+    .main-navigation {
+        left: -12px;
+        right: -12px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+    .story-card:hover,
+    .ornate-button:hover {
+        transform: none;
+    }
+}
+</style>
+        <style>.legend-page {
+    --legend-paper: #f2e4c4;
+    --legend-ink: #30180d;
+    background: #061f18;
+    color: var(--legend-ink);
+}
+.legend-page main { overflow-x: clip; }
+.legend-page .site-header::before,
+.legend-page .site-header::after { transform: none; }
+.legend-page .site-header {
+  color: #fff5da;
+    height: 68px;
+    background-color: #06251d;
+    overflow: visible;
+}
+.legend-page .site-header::before { left: 0; }
+.legend-page .site-header::after { right: 0; }
+.legend-page .nav-container {
+    max-width: 1340px;
+    margin: auto;
+    gap: 0;
+}
+.legend-page .brand-icon {
+    height: 59px;
+    width: 49px;
+}
+.legend-page .brand strong {
+    font-size: 18px;
+}
+.legend-page .brand small {
+    font-size: 15px;
+}
+.legend-page .main-navigation {
+  margin-left: 200px;
+  margin-right: auto;
+    gap: 24px;
+}
+.legend-page .main-navigation a {
+    font-size: 14px;
+    padding: 21px 8px;
+}
+.legend-page .main-navigation a::after {
+    bottom: 14px;
+}
+.legend-page .main-navigation a[aria-current]::before {
+    content: "❖";
+    position: absolute;
+    bottom: -12px;
+    left: calc(50% - 9px);
+    color: #efd38c;
+    font-size: 23px;
+    z-index: 2;
+}
+.legend-search-button {
+    width: 118px;
+    height: 37px;
+    flex-shrink: 0;
+    border: 1px solid #826631;
+    border-radius: 30px;
+    background: #031914aa;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    cursor: pointer;
+}
+.legend-search-button svg {
+    width: 21px;
+    height: 21px;
+}
+.legend-hero {
+    min-height: 316px;
+    position: relative;
+    isolation: isolate;
+    color: #f6dfab;
+    background-color: #100e0b;
+    background-image:
+        linear-gradient(90deg, #0009, transparent 50%, #0003),
+        var(--legend-art, none);
+    background-position: center;
+    background-size: cover;
+}
+.legend-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: url("/images/ornament.svg") right top/140px repeat-y;
+    opacity: 0.18;
+}
+.legend-hero-inner {
+    max-width: 1296px;
+    min-height: 316px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 17px;
+}
+.legend-introduction {
+    width: 480px;
+}
+.legend-title-group {
+    width: 360px;
+    margin-left: 52px;
+}
+.legend-title-group h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    line-height: 1.02;
+}
+.legend-title-group h1 span {
+    display: block;
+    font-size: 42px;
+}
+.legend-title-group h1 strong {
+    display: block;
+    font-size: 88px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.legend-title-group > p {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 1.4;
+}
+.legend-divider {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #d3a64c;
+    font-size: 17px;
+    line-height: 1;
+    margin: 5px 0 10px;
+}
+.legend-divider span {
+    height: 1px;
+    background: linear-gradient(90deg, #d3a64c, #d3a64c80);
+    flex: 1;
+}
+.legend-lead {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #fff9e8;
+}
+.legend-intro-copy {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #fff9e8;
+    margin-top: 2px;
+}
+.legend-quote {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+    width: 200px;
+    align-self: center;
+    margin-right: -85px;
+}
+.legend-quote > span {
+    display: block;
+    font-style: normal;
+    font-size: 17px;
+    margin: 14px auto;
+    color: #d3b46c;
+}
+.legend-paper {
+    position: relative;
+    isolation: isolate;
+    background: var(--legend-paper) url("/images/paper.svg");
+    color: var(--legend-ink);
+    padding: 16px 4.5% 0;
+}
+.legend-paper::before {
+    content: "";
+    position: absolute;
+    inset: -17px 0 auto;
+    height: 23px;
+    background: var(--legend-paper) url("/images/paper.svg");
+    clip-path: polygon(
+        0 25%,
+        2% 45%,
+        3% 30%,
+        5% 70%,
+        7% 48%,
+        9% 66%,
+        11% 55%,
+        14% 73%,
+        17% 51%,
+        20% 59%,
+        24% 48%,
+        27% 55%,
+        31% 34%,
+        34% 57%,
+        37% 42%,
+        40% 59%,
+        43% 32%,
+        47% 48%,
+        50% 37%,
+        53% 48%,
+        56% 32%,
+        59% 44%,
+        62% 25%,
+        65% 46%,
+        68% 33%,
+        72% 53%,
+        75% 42%,
+        78% 61%,
+        81% 40%,
+        85% 66%,
+        88% 48%,
+        91% 56%,
+        94% 37%,
+        97% 50%,
+        100% 32%,
+        100% 100%,
+        0 100%
+    );
+}
+.legend-paper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("/images/ornament.svg") left top/185px repeat-y;
+    opacity: 0.1;
+    pointer-events: none;
+}
+.legend-paper-temple {
+    position: absolute;
+    left: 43%;
+    top: -5px;
+    width: 280px;
+    height: 300px;
+    opacity: 0.07;
+    color: #835927;
+    z-index: -1;
+}
+.legend-stories {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 22px;
+    max-width: 1400px;
+    margin: auto;
+}
+.legend-section-header {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    min-height: 40px;
+    margin-bottom: 8px;
+}
+.legend-section-header h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.part-badge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-width: 106px;
+    color: #fff5dc;
+    font-size: 17px;
+    background: linear-gradient(#893b1c, #5c190d);
+    border: 1px solid #9b6129;
+    outline: 1px solid #be9558;
+    outline-offset: 2px;
+    box-shadow: inset 0 0 0 2px #c4985555;
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        97% 14%,
+        100% 20%,
+        97% 80%,
+        95% 100%,
+        5% 100%,
+        3% 83%,
+        0 76%,
+        3% 15%
+    );
+}
+.section-rule {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #986830;
+}
+.section-rule::before,
+.section-rule::after {
+    content: "";
+    height: 1px;
+    background: #af8b55;
+    flex: 1;
+}
+.legend-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+.legend-card {
+    background: #fffae94f;
+    border: 1px solid #d0b98940;
+    border-radius: 5px;
+    overflow: hidden;
+    scroll-margin-top: 20px;
+    box-shadow: 0 2px 4px #6c422008;
+}
+.legend-scene {
+    height: 124px;
+    position: relative;
+    background-color: #241b12;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: center;
+}
+.scene-number {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    display: grid;
+    place-items: center;
+    width: 33px;
+    height: 35px;
+    color: #fff1bd;
+    font-family: var(--serif);
+    font-size: 23px;
+    border: 1px solid #ddb864;
+    border-radius: 45% 45% 40% 40%;
+    background: #603108e6;
+    box-shadow: 0 0 0 2px #30180d80;
+}
+.legend-card-copy {
+    padding: 8px 13px 12px;
+}
+.legend-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+.legend-card:last-child h3 {
+    color: #762415;
+}
+.legend-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #51422e;
+}
+.legend-card p + p {
+    margin-top: 5px;
+}
+.legend-card strong {
+    color: #30180d;
+}
+.legend-part-two {
+    position: relative;
+    isolation: isolate;
+}
+.legend-part-two .legend-section-header {
+    gap: 17px;
+}
+.legend-part-two h2 {
+    font-size: 23px;
+}
+.second-version-art {
+    position: absolute;
+    transform: translateX(20px);
+    right: -69px;
+    top: 0;
+    bottom: 0;
+    width: 43%;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: 25% center;
+    z-index: -1;
+    mask-image: linear-gradient(90deg, transparent, #000 18%);
+}
+.version-events {
+    list-style: none;
+    margin: 13px 110px 20px 20px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.version-events li {
+    position: relative;
+    padding: 0 0 17px 20px;
+    border-left: 1px solid #987245;
+}
+.version-events li:last-child {
+    border-left-color: transparent;
+    padding-bottom: 0;
+}
+.version-events li::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #f5e5bb;
+    border-radius: 50%;
+    outline: 1px solid #8c5f2d;
+    background: #885a28;
+}
+.version-events strong {
+    color: #792e1c;
+}
+.legend-culture {
+    display: grid;
+    grid-template-columns: 1.12fr 1fr 1.16fr;
+    gap: 20px;
+    max-width: 1420px;
+    margin: 15px auto 0;
+    padding: 14px 0 16px;
+    border-top: 9px solid #b4966540;
+}
+.belief-visual {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: center;
+}
+.belief-visual h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    line-height: 1.4;
+    text-align: center;
+    color: #775028;
+    white-space: nowrap;
+}
+.belief-visual h2 strong {
+    display: block;
+    font-size: 39px;
+    color: #731f14;
+}
+.belief-visual h2 span {
+    display: block;
+    font-size: 20px;
+    color: #9f773f;
+    margin-top: 3px;
+}
+.buffalo-art {
+    height: 160px;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(
+        90deg,
+        transparent,
+        #000 12%,
+        #000 90%,
+        transparent
+    );
+}
+.legend-culture h2:not(#belief-title) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+.legend-culture p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #544631;
+}
+.legend-culture p + p {
+    margin-top: 4px;
+}
+.belief-copy {
+    position: relative;
+    padding-left: 40px;
+}
+.rice-ornament {
+    position: absolute;
+    left: -4px;
+    top: -5px;
+    font-family: Georgia, serif;
+    font-size: 57px;
+    color: #98642b;
+    transform: rotate(-35deg);
+}
+.present-trace {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+.trace-art {
+    position: relative;
+    min-height: 150px;
+}
+.trace-temple {
+    height: 100%;
+    width: 55%;
+    background: var(--scene-art, none) center/cover;
+}
+.trace-statue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 76%;
+    height: 70%;
+    background: var(--scene-art, none) center/cover;
+    border-radius: 5px;
+}
+.trace-temple-icon {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 42px;
+    height: 49px;
+    color: #916029;
+}
+.legend-timeline {
+    background: #061f18;
+    position: relative;
+    isolation: isolate;
+    color: #fff5da;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 28px;
+    padding: 18px max(4.5%, calc((100vw - 1400px) / 2)) 16px;
+    min-height: 175px;
+}
+.legend-timeline::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/images/ornament.svg") left center/180px;
+    opacity: 0.12;
+    z-index: -1;
+    pointer-events: none;
+}
+.legend-timeline header {
+    text-align: center;
+    padding-top: 8px;
+    color: #efd38c;
+}
+.legend-timeline h2 {
+    font:
+        34px Georgia,
+        serif;
+}
+.legend-timeline header p {
+    font-family: var(--serif);
+    font-size: 21px;
+    white-space: nowrap;
+}
+.legend-timeline .legend-divider {
+    max-width: 200px;
+    margin: 15px auto 0;
+}
+.legend-timeline ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+.legend-timeline li {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.legend-timeline li:not(:last-child)::after {
+    content: "──❖─";
+    position: absolute;
+    top: 44px;
+    left: calc(50% + 57px);
+    width: calc(100% - 85px);
+    color: #c79b4b;
+    white-space: nowrap;
+    font-size: 17px;
+    pointer-events: none;
+}
+.legend-timeline a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.timeline-picture {
+    width: 106px;
+    height: 106px;
+    max-width: 100%;
+    border: 1px solid #ddb461;
+    border-radius: 50%;
+    display: block;
+    background-color: #151b14;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 3px #0002;
+}
+.legend-timeline a:hover .timeline-picture {
+    outline: 2px solid #cda24e;
+    outline-offset: 3px;
+}
+.legend-timeline li:first-child .timeline-picture {
+    background-position: 60% center;
+}
+.legend-search-dialog {
+    width: min(520px, calc(100% - 32px));
+    border: 1px solid #b58c44;
+    border-radius: 8px;
+    background: var(--legend-paper);
+    color: #30180d;
+    padding: 25px;
+    font-family: var(--sans);
+}
+.legend-search-dialog::backdrop {
+    background: #00130dcc;
+}
+.legend-search-dialog h2 {
+    font-family: var(--serif);
+    margin-bottom: 15px;
+}
+.legend-search-dialog label {
+    display: block;
+    margin-bottom: 5px;
+}
+.search-fields {
+    display: flex;
+    gap: 8px;
+}
+.search-fields input {
+    min-width: 0;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #9e7b42;
+    border-radius: 4px;
+    font: inherit;
+}
+.legend-search-dialog button {
+    padding: 9px 14px;
+    background: #06251d;
+    color: #f8e6bf;
+    border: 1px solid #9e7b42;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.legend-search-dialog ul {
+    padding-left: 20px;
+    max-height: 40vh;
+    overflow: auto;
+}
+.legend-search-dialog li {
+    margin: 10px 0;
+}
+.legend-search-dialog a {
+    text-decoration: underline;
+}
+.legend-search-dialog #search-status {
+    margin-top: 12px;
+}
+@media (max-width: 1399px) {
+    .legend-page .nav-container {
+        margin: 0 4%;
+    }
+  .legend-page .main-navigation {
+    margin-left: auto;
+        margin-right: 35px;
+        gap: 13px;
+    }
+    .legend-hero-inner {
+        margin: 0 7%;
+    }
+    .legend-quote {
+        margin-right: -35px;
+    }
+    .legend-section-header h2 {
+        font-size: 21px;
+    }
+    .legend-part-two h2 {
+        font-size: 19px;
+    }
+    .legend-section-header {
+        gap: 12px;
+    }
+    .legend-paper {
+        padding-inline: 3%;
+    }
+    .version-events {
+        margin-right: 80px;
+    }
+    .second-version-art {
+        right: -38px;
+    }
+    .legend-culture {
+        grid-template-columns: 1fr 1fr 1.1fr;
+        gap: 14px;
+    }
+    .belief-visual h2 {
+        font-size: 19px;
+    }
+    .belief-visual h2 strong {
+        font-size: 33px;
+    }
+    .present-trace {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .legend-timeline {
+        grid-template-columns: 230px 1fr;
+        gap: 15px;
+        padding-inline: 3%;
+    }
+    .legend-timeline ol {
+        gap: 20px;
+    }
+    .timeline-picture {
+        width: 94px;
+        height: 94px;
+    }
+    .legend-timeline li:not(:last-child)::after {
+        left: calc(50% + 50px);
+        top: 40px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 1199px) {
+    .legend-page .main-navigation {
+        margin-right: 20px;
+        gap: 6px;
+    }
+    .legend-page .brand strong {
+        font-size: 16px;
+    }
+    .legend-search-button {
+        width: 55px;
+    }
+    .legend-hero-inner {
+        margin: 0 5%;
+    }
+    .legend-quote {
+        margin-right: 0;
+    }
+    .legend-stories {
+        grid-template-columns: 1fr;
+    }
+    .legend-part-two {
+        min-height: 290px;
+    }
+    .legend-part-two .second-version-art {
+        right: 0;
+        width: 30%;
+    }
+    .version-events {
+        margin-right: 34%;
+        font-size: 15px;
+    }
+    .legend-culture {
+        grid-template-columns: 1fr 1fr;
+    }
+    .present-trace {
+        grid-column: 1/-1;
+        grid-template-columns: 1fr;
+    }
+    .legend-timeline {
+        grid-template-columns: 230px 1fr;
+    }
+    .legend-timeline ol {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .legend-timeline a {
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+    }
+    .legend-timeline li:not(:last-child)::after {
+        content: "";
+        left: 47px;
+        top: 94px;
+        width: 1px;
+        height: 23px;
+        background: #c79b4b;
+    }
+    .timeline-picture {
+        flex-shrink: 0;
+    }
+    .legend-timeline header {
+        align-self: start;
+        position: sticky;
+        top: 25px;
+    }
+    .legend-search-dialog {
+        max-height: 85vh;
+    }
+}
+@media (max-width: 768px) {
+    .legend-page .site-header {
+        height: 76px;
+    }
+    .legend-page .nav-container {
+        margin: 0 16px;
+        gap: 8px;
+    }
+    .legend-page .brand-icon {
+        width: 34px;
+        height: 48px;
+    }
+    .legend-page .brand strong {
+        font-size: 14px;
+    }
+    .legend-page .brand small {
+        font-size: 11px;
+    }
+    .legend-page .main-navigation {
+        margin: 0;
+        left: -16px;
+        right: -16px;
+        gap: 0;
+    }
+    .legend-page .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .legend-page .main-navigation a::after {
+        bottom: 6px;
+    }
+    .legend-page .main-navigation a[aria-current]::before {
+        display: none;
+    }
+    .legend-search-button {
+        width: 36px;
+        height: 36px;
+        padding: 7px;
+        order: 2;
+    }
+    .legend-page .menu-toggle {
+        order: 3;
+        width: 36px;
+        height: 36px;
+    }
+    .legend-hero {
+        background-position: 62% center;
+    }
+    .legend-hero-inner {
+        min-height: 0;
+        display: block;
+        margin: 0;
+        padding: 30px 22px 35px;
+        background: linear-gradient(90deg, #000c, #0004);
+    }
+    .legend-introduction {
+        width: 100%;
+        max-width: 500px;
+    }
+    .legend-title-group {
+        width: 100%;
+        margin: 0;
+    }
+    .legend-title-group h1 span {
+        font-size: 33px;
+    }
+    .legend-title-group h1 strong {
+        font-size: 71px;
+    }
+    .legend-title-group > p {
+        font-size: 24px;
+    }
+    .legend-divider {
+        max-width: 330px;
+    }
+    .legend-lead {
+        font-size: 16px;
+    }
+    .legend-intro-copy {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .legend-quote {
+        font-size: 17px;
+        width: auto;
+        margin: 20px 0 0;
+        text-align: right;
+        line-height: 1.6;
+    }
+    .legend-quote > span {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .legend-paper {
+        padding: 18px 20px 0;
+    }
+    .legend-section-header {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    .legend-section-header h2 {
+        font-size: 22px;
+        white-space: normal;
+    }
+    .part-badge {
+        min-width: 95px;
+        font-size: 16px;
+    }
+    .section-rule {
+        display: none;
+    }
+    .legend-card-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .legend-scene {
+        height: auto;
+        aspect-ratio: 2.2;
+    }
+    .legend-card-copy {
+        padding: 14px 16px 18px;
+    }
+    .legend-card h3 {
+        font-size: 19px;
+    }
+    .legend-card p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+    .legend-card p + p {
+        margin-top: 9px;
+    }
+    .legend-part-two {
+        margin-top: 12px;
+    }
+    .legend-part-two h2 {
+        font-size: 21px;
+    }
+    .version-events {
+        margin: 20px 0 15px 9px;
+        padding-right: 0;
+    }
+    .second-version-art {
+        display: none;
+    }
+    .legend-culture {
+        grid-template-columns: 1fr;
+        margin-top: 12px;
+        gap: 23px;
+        padding-bottom: 25px;
+    }
+    .belief-visual {
+        min-height: 160px;
+    }
+    .belief-visual h2 {
+        font-size: 23px;
+    }
+    .belief-visual h2 strong {
+        font-size: 39px;
+    }
+    .legend-culture p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+    .legend-culture h2:not(#belief-title) {
+        font-size: 20px;
+    }
+    .belief-copy {
+        padding-left: 35px;
+    }
+    .present-trace {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+    .legend-timeline {
+        grid-template-columns: 1fr;
+        padding: 26px 24px;
+        gap: 23px;
+    }
+    .legend-timeline header {
+        position: static;
+    }
+    .legend-timeline header p {
+        font-size: 20px;
+    }
+    .legend-timeline ol {
+        max-width: 370px;
+        width: 100%;
+        margin: auto;
+    }
+    .legend-timeline li {
+        font-size: 16px;
+    }
+    .legend-timeline a {
+        gap: 24px;
+    }
+    .legend-page .site-header::before,
+    .legend-page .site-header::after {
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .timeline-picture {
+        transition: outline-offset 0.2s;
+    }
+}
+</style>
+</head>
+<body class="legend-page">
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+    <header class="site-header">
+        <div class="nav-container">
+            <a class="brand" href="/" aria-label="วัดหมื่นสาร – หน้าแรก">
+                <svg class="brand-icon" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+                <span><strong>เปิดตำนานและประวัติศาสตร์</strong><small>ณ วัดหมื่นสาร - ชุมชนวัวลาย</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="เปิดเมนู"><span></span><span></span><span></span></button>
+            <nav id="main-navigation" class="main-navigation" aria-label="เมนูหลัก">
+                                    <a href="/" >หน้าแรก</a>
+                                    <a href="/tiger-legend"  aria-current="page" >ตำนานเสือเย็น</a>
+                                    <a href="/history" >ประวัติวัดและชุมชน</a>
+                                    <a href="/places" >สถานที่สำคัญ</a>
+                            </nav>
+                <button class="legend-search-button" type="button" aria-label="ค้นหาในเรื่องเล่า" aria-controls="legend-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button>
+        </div>
+    </header>
+    <main id="main">        <section id="legend-intro" class="legend-hero" aria-labelledby="legend-title"  style="--legend-art: url('/images/tiger-legend/hero-tiger.png')" >
+        <div class="legend-hero-inner">
+            <div class="legend-introduction">
+                <div class="legend-title-group">
+                    <h1 id="legend-title"><span>ตำนาน</span><strong>เสือเย็น</strong></h1>
+                    <p>เรื่องเล่าที่ซ่อนอยู่ในวัด</p>
+                    <div class="legend-divider" aria-hidden="true">❖<span></span>❖</div>
+                </div>
+                <p class="legend-lead">ตำนานลี้ลับแห่งล้านนา “เสือเย็น” และวิชาอาคม “ควายธนู”</p>
+                <p class="legend-intro-copy">นอกจากประวัติศาสตร์จริงแล้ว วัดหมื่นสารยังมีชื่อเสียงในฐานะฉากหลังของ “ตำนานเสือเย็น” หรือเสือสมิงตามความเชื่อล้านนา ซึ่งเรื่องเล่าถูกถ่ายทอดต่อกันมาเป็น 2 สำนวนหลัก</p>
+            </div>
+            <blockquote class="legend-quote"><span aria-hidden="true">❖────</span>เรื่องเล่าที่<br>กาลเวลาไม่อาจลบเลือน<br>ยังคงซ่อนอยู่ใน<br>วัดหมื่นสาร...<span aria-hidden="true">❖────</span></blockquote>
+        </div>
+    </section>
+
+    <div class="legend-paper">
+        <svg class="legend-paper-temple" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<g stroke="currentColor" stroke-width=".9" stroke-linejoin="round">
+<path d="M4 71h56v3H4zM9 68h46v3H9zM13 46h38v22H13z" fill="currentColor" fill-opacity=".14"/>
+<path d="M32 3v10m-3 0h6l-3-6-3 6Zm3 0L21 31h22L32 13ZM22 27h20M24 23h16M27 18h10M19 31h26v3H19zM32 28 8 49h48L32 28Z" fill="currentColor" fill-opacity=".2"/>
+<path d="m32 33-18 14h36L32 33Zm0 5-10 8h20l-10-8ZM9 49 5 43 4 37m51 12 4-6 1-6M8 50h48v3H8zM14 53h5v15h-5zM45 53h5v15h-5zM27 68V54q5-10 10 0v14M23 68V53q9-17 18 0v15M15 57h3m-3 4h3m28-4h3m-3 4h3M20 36l-6 5-3-8m33 3 6 5 3-8M29 54h6m-6 3h6m-3-7v18"/>
+</g></svg>
+        <div class="legend-stories">
+            <section class="legend-part-one" aria-labelledby="part-one-title">
+                <header class="legend-section-header"><span class="part-badge">ส่วนที่ 1</span><h2 id="part-one-title">เรื่องเล่าเสือเย็นแห่งอารามร้าง</h2><span class="section-rule" aria-hidden="true">❖</span></header>
+                <div class="legend-card-grid">
+                    <article id="abbot" class="legend-card">
+                        <div class="legend-scene"  style="--scene-art: url('/images/tiger-legend/scene-1.png')" ><span class="scene-number" aria-hidden="true">1</span></div>
+                        <div class="legend-card-copy"><h3>เจ้าอาวาสผู้แก่กล้าวิชาอาคม</h3>
+                            <p>เรื่องเล่าโบราณระบุถึงเจ้าอาวาสผู้แก่กล้าวิชาอาคมรูปหนึ่ง แต่เป็นคนไม่ชอบอาบน้ำ นานวันเข้าเณรและเด็กวัดเริ่มหายตัวไปอย่างลึกลับ จนเหลือเจ้าอาวาสอยู่เพียงรูปเดียว</p>
+                            <p>เมื่อมี พ่อค้าวัวต่าง แวะมาพักค้างคืน ก็มักจะหายตัวไป ชาวบ้านจึงต่างเตือนภัยให้ระวังเสือ</p>
+                        </div>
+                    </article>
+                    <article id="night-call" class="legend-card">
+                        <div class="legend-scene"  style="--scene-art: url('/images/tiger-legend/scene-2.png')" ><span class="scene-number" aria-hidden="true">2</span></div>
+                        <div class="legend-card-copy"><h3>เสียงเรียกในยามค่ำคืน</h3>
+                            <p>คืนหนึ่งมีพ่อค้าวัวต่างผู้มีวิชาแวะมาพัก</p>
+                            <p>เมื่อตกดึก เขาได้ยินเสียงเรียกปริศนาว่า</p>
+                            <p><strong>“พ่อออก ๆ หลับหรือยัง”</strong></p>
+                            <p>เขาจึงตอบไปว่ายังไม่หลับ พร้อมกับนั่งจักสานไม้ไผ่ทำเป็น ควายธนู และปลุกเสกเตรียมไว้</p>
+                        </div>
+                    </article>
+                    <article id="tiger-battle" class="legend-card">
+                        <div class="legend-scene"  style="--scene-art: url('/images/tiger-legend/scene-3.png')" ><span class="scene-number" aria-hidden="true">3</span></div>
+                        <div class="legend-card-copy"><h3>ควายธนูปะทะเสือเย็น</h3>
+                            <p>เมื่อเข้าตาจน พ่อค้าจึงปล่อยควายธนูออกไปต่อสู้กับเสือเย็นอย่างดุเดือด</p>
+                            <p>รุ่งเช้า ชาวบ้านจึงพบเสือนอนตายอยู่ พร้อมเศษซากกระดูกมนุษย์ที่อยู่ด้านหลังวิหาร</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="second-version" class="legend-part-two" aria-labelledby="part-two-title">
+                <header class="legend-section-header"><span class="part-badge">ส่วนที่ 2</span><h2 id="part-two-title">พ่อค้าหมูผู้ปราบเสือ</h2></header>
+                <div class="second-version-art" aria-hidden="true"  style="--scene-art: url('/images/tiger-legend/pig-merchant.png')" ></div>
+                <ol class="version-events">
+                    <li>มีการประกาศหาผู้มีอาคมมาปราบเสือร้าย</li>
+                    <li>พ่อค้าหมูคนหนึ่ง อาสาและวางอุบายเข้าไปนอนในโบสถ์</li>
+                    <li>เมื่อเสือเย็นเวียนมาถามว่า <strong>“หลับหรือยัง”</strong> ถึง 3 ครั้ง</li>
+                    <li>ในครั้งสุดท้าย พ่อค้าแกล้งทำเป็นหลับ เมื่อเสือเปิดประตูเข้ามา เขาจึงปล่อย ควายธนูไม้ไผ่ที่ปลุกเสกไว้ เข้าขวิดเสือเย็นจนถึงแก่ความตาย</li>
+                </ol>
+            </section>
+        </div>
+
+        <div class="legend-culture">
+            <section id="belief" class="belief-visual" aria-labelledby="belief-title">
+                <h2 id="belief-title">ถอดรหัสความเชื่อ<strong>“ควายธนู”</strong><span aria-hidden="true">──❖──</span></h2>
+                <div class="buffalo-art"  style="--scene-art: url('/images/tiger-legend/kwai-thanu.png')"  aria-hidden="true"></div>
+            </section>
+            <section class="belief-copy" aria-labelledby="culture-title">
+                <span class="rice-ornament" aria-hidden="true">❧</span>
+                <h2 id="culture-title">ควายธนูสะท้อนวิถีชีวิต</h2>
+                <p>ในทางคติชนวิทยา ความเชื่อเรื่องควายธนู ซึ่งสามารถทำจากไม้ไผ่สาน ดินมวลสาร ขี้ผึ้ง หรือโลหะอาถรรพ์ สะท้อนถึงสังคมเกษตรกรรมล้านนาที่ผูกพันกับวัฒนธรรมข้าวและการเลี้ยงวัวควาย</p>
+                <p>ควายธนูจึงทำหน้าที่เป็น หุ่นพยนต์ที่ใช้ปกป้องเจ้าของจากสิ่งเหนือธรรมชาติ</p>
+            </section>
+            <section id="present-trace" class="present-trace" aria-labelledby="trace-title">
+                <div><h2 id="trace-title">ร่องรอยที่ยังปรากฏในปัจจุบัน</h2>
+                    <p>แม้เรื่องเสือเย็นจะเป็น ประวัติศาสตร์บอกเล่า (Oral History) แต่ชาวบ้านเชื่อกันว่าวัดในตำนานคือวัดหมื่นสาร</p>
+                    <p>ในอดีตเคยมีรูปปั้นเสืออยู่หน้าวัด ซึ่งปัจจุบันถูกรื้อออกแล้ว</p>
+                    <p>อย่างไรก็ตาม บริเวณ เจดีย์วัดหมื่นสาร ยังคงมีรูปปั้น “เสือคาบคน” ปรากฏอยู่ เป็นวัตถุพยานที่เชื่อมโยงเรื่องเล่าลี้ลับเข้ากับพื้นที่จริง</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="legend-timeline" aria-labelledby="timeline-title">
+        <header><h2 id="timeline-title">Timeline</h2><p>จากตำนานสู่สถานที่จริง</p><div class="legend-divider" aria-hidden="true">·<span></span>❖<span></span>·</div></header>
+        <ol>
+                            <li><a href="#legend-intro"><span class="timeline-picture"  style="--scene-art: url('/images/tiger-legend/hero-tiger.png')"  aria-hidden="true"></span><span>ตำนานเสือเย็น</span></a></li>
+                            <li><a href="#night-call"><span class="timeline-picture"  style="--scene-art: url('/images/tiger-legend/scene-2.png')"  aria-hidden="true"></span><span>เรื่องเล่าพ่อค้าวัวต่าง</span></a></li>
+                            <li><a href="#belief"><span class="timeline-picture"  style="--scene-art: url('/images/tiger-legend/kwai-thanu.png')"  aria-hidden="true"></span><span>ควายธนู</span></a></li>
+                            <li><a href="#tiger-battle"><span class="timeline-picture"  style="--scene-art: url('/images/tiger-legend/scene-3.png')"  aria-hidden="true"></span><span>เสือเย็นถูกปราบ</span></a></li>
+                            <li><a href="#present-trace"><span class="timeline-picture"  style="--scene-art: url('/images/tiger-legend/tiger-statue.png')"  aria-hidden="true"></span><span>รูปปั้นเสือคาบคน</span></a></li>
+                            <li><a href="#present-trace"><span class="timeline-picture"  style="--scene-art: url('/images/tiger-legend/temple-trace.png')"  aria-hidden="true"></span><span>ร่องรอยของเรื่องเล่าในวัดหมื่นสารปัจจุบัน</span></a></li>
+                    </ol>
+    </section>
+    <dialog id="legend-search" class="legend-search-dialog" aria-labelledby="search-title">
+        <form id="legend-search-form"><h2 id="search-title">ค้นหาในเรื่องเล่า</h2><label for="legend-query">คำค้นหา</label><div class="search-fields"><input id="legend-query" type="search" required autocomplete="off"><button type="submit">ค้นหา</button></div></form>
+        <p id="search-status" role="status"></p><ul id="search-results"></ul><button class="search-close" type="button">ปิด</button>
+    </dialog>
+</main>
+    <script>const toggle = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".main-navigation");
+function closeMenu() {
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "เปิดเมนู");
+    navigation.classList.remove("is-open");
+}
+toggle.addEventListener("click", () => {
+    const open = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "ปิดเมนู" : "เปิดเมนู");
+    navigation.classList.toggle("is-open", open);
+});
+navigation.addEventListener("click", (event) => {
+    if (event.target.closest("a")) closeMenu();
+});
+document.addEventListener("keydown", (event) => {
+    if (
+        event.key === "Escape" &&
+        toggle.getAttribute("aria-expanded") === "true"
+    ) {
+        closeMenu();
+        toggle.focus();
+    }
+});
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".nav-container")) closeMenu();
+});
+window.matchMedia("(min-width: 769px)").addEventListener("change", closeMenu);
+</script>
+        <script>(() => {
+    const dialog = document.querySelector("#legend-search");
+    const trigger = document.querySelector(".legend-search-button");
+    const input = document.querySelector("#legend-query");
+    const results = document.querySelector("#search-results");
+    const status = document.querySelector("#search-status");
+    const sections = [
+        ...document.querySelectorAll("main section[id], main article[id]"),
+    ];
+    trigger.addEventListener("click", () => {
+        dialog.showModal();
+        input.focus();
+    });
+    dialog
+        .querySelector(".search-close")
+        .addEventListener("click", () => dialog.close());
+    document
+        .querySelector("#legend-search-form")
+        .addEventListener("submit", (event) => {
+            event.preventDefault();
+            results.replaceChildren();
+            const query = input.value.trim().toLocaleLowerCase("th");
+            if (!query) {
+                status.textContent = "กรุณาระบุคำค้นหา";
+                return;
+            }
+            const matches = sections.filter((section) =>
+                section.textContent.toLocaleLowerCase("th").includes(query),
+            );
+            status.textContent = matches.length
+                ? `พบ ${matches.length} ส่วนที่เกี่ยวข้อง`
+                : "ไม่พบข้อความที่ค้นหา";
+            for (const section of matches) {
+                const item = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = `#${section.id}`;
+                link.textContent =
+                    section.querySelector("h1,h2,h3").textContent;
+                link.addEventListener("click", () => dialog.close());
+                item.append(link);
+                results.append(item);
+            }
+        });
+})();
+</script>
+</body>
+</html>
