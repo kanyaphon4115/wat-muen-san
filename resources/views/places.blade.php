@@ -55,7 +55,7 @@
 </section>
 <section class="places-closing" aria-labelledby="closing-quote">
     <img class="closing-temple" src="{{ $sunset['src'] }}" alt="{{ $sunset['alt'] }}">
-    <div class="closing-copy"><h2 id="closing-quote">“ตำนานเสือเย็นอาจเปลี่ยนไปตามกาลเวลา<br>แต่เรื่องราว ยังคงถูกจดจำและส่งต่อผ่านสถานที่และผู้คนในชุมชน”</h2><div class="closing-divider" aria-hidden="true"><span></span>❖<span></span></div><p>แล้วเรื่องราวที่คุณได้ค้นพบ<br>จะกลายเป็นส่วนหนึ่งของความทรงจำนี้เช่นกัน</p><div class="closing-actions"><button id="restart-map" type="button"><span aria-hidden="true">↻</span>สำรวจเรื่องราวอีกครั้ง</button>
+    <div class="closing-copy"><h2 id="closing-quote">“ตำนานเสือเย็นอาจเปลี่ยนไปตามกาลเวลา<br>แต่เรื่องราว ยังคงถูกจดจำและส่งต่อผ่านสถานที่และผู้คนในชุมชน”</h2><div class="closing-divider" aria-hidden="true"><span></span>❖<span></span></div><p>แล้วเรื่องราวที่คุณได้ค้นพบ<br>จะกลายเป็นส่วนหนึ่งของความทรงจำนี้เช่นกัน</p><div class="closing-actions"><a id="restart-map" href="{{ route('home') }}"><span aria-hidden="true">↻</span>สำรวจเรื่องราวอีกครั้ง</a>
     @if($tiktok)<a class="tiktok-button" href="{{ $tiktok }}" target="_blank" rel="noopener noreferrer">@else<button class="tiktok-button" type="button" aria-disabled="true" title="ยังไม่ได้ระบุลิงก์คลิป TikTok">@endif
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2h4c0 3 2 5 5 5v4a10 10 0 0 1-5-2v8a7 7 0 1 1-8-7v4a3 3 0 1 0 4 3V2Z"/></svg>รับชมคลิป TikTok <span aria-hidden="true">↗</span>@if($tiktok)</a>@else</button>@endif</div><p id="tiktok-status" role="status" hidden>ยังไม่ได้ระบุลิงก์คลิป TikTok</p></div><x-temple class="closing-temple-line" />
 </section>

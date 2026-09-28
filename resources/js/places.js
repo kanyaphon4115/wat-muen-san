@@ -67,17 +67,6 @@
         cards.forEach((card) => card.setAttribute("aria-pressed", "false"));
         lastCard.focus({ preventScroll: true });
     });
-    document.querySelector("#restart-map").addEventListener("click", () => {
-        selectPlace("H2");
-        document
-            .querySelector("#cultural-map")
-            .scrollIntoView({
-                behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
-                    ? "instant"
-                    : "smooth",
-            });
-        lastCard.focus({ preventScroll: true });
-    });
     const unavailableTikTok = document.querySelector(
         ".tiktok-button[aria-disabled]",
     );
