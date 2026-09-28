@@ -1,0 +1,1009 @@
+.legend-page {
+    --legend-paper: #f2e4c4;
+    --legend-ink: #30180d;
+    background: #061f18;
+    color: var(--legend-ink);
+}
+.legend-page main { overflow-x: clip; }
+.legend-page .site-header::before,
+.legend-page .site-header::after { transform: none; }
+.legend-page .site-header {
+  color: #fff5da;
+    height: 68px;
+    background-color: #06251d;
+    overflow: visible;
+}
+.legend-page .site-header::before { left: 0; }
+.legend-page .site-header::after { right: 0; }
+.legend-page .nav-container {
+    max-width: 1340px;
+    margin: auto;
+    gap: 0;
+}
+.legend-page .brand-icon {
+    height: 59px;
+    width: 49px;
+}
+.legend-page .brand strong {
+    font-size: 18px;
+}
+.legend-page .brand small {
+    font-size: 15px;
+}
+.legend-page .main-navigation {
+  margin-left: 200px;
+  margin-right: auto;
+    gap: 24px;
+}
+.legend-page .main-navigation a {
+    font-size: 14px;
+    padding: 21px 8px;
+}
+.legend-page .main-navigation a::after {
+    bottom: 14px;
+}
+.legend-page .main-navigation a[aria-current]::before {
+    content: "❖";
+    position: absolute;
+    bottom: -12px;
+    left: calc(50% - 9px);
+    color: #efd38c;
+    font-size: 23px;
+    z-index: 2;
+}
+.legend-search-button {
+    width: 118px;
+    height: 37px;
+    flex-shrink: 0;
+    border: 1px solid #826631;
+    border-radius: 30px;
+    background: #031914aa;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    cursor: pointer;
+}
+.legend-search-button svg {
+    width: 21px;
+    height: 21px;
+}
+.legend-hero {
+    min-height: 316px;
+    position: relative;
+    isolation: isolate;
+    color: #f6dfab;
+    background-color: #100e0b;
+    background-image:
+        linear-gradient(90deg, #0009, transparent 50%, #0003),
+        var(--legend-art, none);
+    background-position: center;
+    background-size: cover;
+}
+.legend-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: url("/images/ornament.svg") right top/140px repeat-y;
+    opacity: 0.18;
+}
+.legend-hero-inner {
+    max-width: 1296px;
+    min-height: 316px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 17px;
+}
+.legend-introduction {
+    width: 480px;
+}
+.legend-title-group {
+    width: 360px;
+    margin-left: 52px;
+}
+.legend-title-group h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    line-height: 1.02;
+}
+.legend-title-group h1 span {
+    display: block;
+    font-size: 42px;
+}
+.legend-title-group h1 strong {
+    display: block;
+    font-size: 88px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.legend-title-group > p {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 1.4;
+}
+.legend-divider {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #d3a64c;
+    font-size: 17px;
+    line-height: 1;
+    margin: 5px 0 10px;
+}
+.legend-divider span {
+    height: 1px;
+    background: linear-gradient(90deg, #d3a64c, #d3a64c80);
+    flex: 1;
+}
+.legend-lead {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #fff9e8;
+}
+.legend-intro-copy {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #fff9e8;
+    margin-top: 2px;
+}
+.legend-quote {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+    width: 200px;
+    align-self: center;
+    margin-right: -85px;
+}
+.legend-quote > span {
+    display: block;
+    font-style: normal;
+    font-size: 17px;
+    margin: 14px auto;
+    color: #d3b46c;
+}
+.legend-paper {
+    position: relative;
+    isolation: isolate;
+    background: var(--legend-paper) url("/images/paper.svg");
+    color: var(--legend-ink);
+    padding: 16px 4.5% 0;
+}
+.legend-paper::before {
+    content: "";
+    position: absolute;
+    inset: -17px 0 auto;
+    height: 23px;
+    background: var(--legend-paper) url("/images/paper.svg");
+    clip-path: polygon(
+        0 25%,
+        2% 45%,
+        3% 30%,
+        5% 70%,
+        7% 48%,
+        9% 66%,
+        11% 55%,
+        14% 73%,
+        17% 51%,
+        20% 59%,
+        24% 48%,
+        27% 55%,
+        31% 34%,
+        34% 57%,
+        37% 42%,
+        40% 59%,
+        43% 32%,
+        47% 48%,
+        50% 37%,
+        53% 48%,
+        56% 32%,
+        59% 44%,
+        62% 25%,
+        65% 46%,
+        68% 33%,
+        72% 53%,
+        75% 42%,
+        78% 61%,
+        81% 40%,
+        85% 66%,
+        88% 48%,
+        91% 56%,
+        94% 37%,
+        97% 50%,
+        100% 32%,
+        100% 100%,
+        0 100%
+    );
+}
+.legend-paper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("/images/ornament.svg") left top/185px repeat-y;
+    opacity: 0.1;
+    pointer-events: none;
+}
+.legend-paper-temple {
+    position: absolute;
+    left: 43%;
+    top: -5px;
+    width: 280px;
+    height: 300px;
+    opacity: 0.07;
+    color: #835927;
+    z-index: -1;
+}
+.legend-stories {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 22px;
+    max-width: 1400px;
+    margin: auto;
+}
+.legend-section-header {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    min-height: 40px;
+    margin-bottom: 8px;
+}
+.legend-section-header h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.part-badge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-width: 106px;
+    color: #fff5dc;
+    font-size: 17px;
+    background: linear-gradient(#893b1c, #5c190d);
+    border: 1px solid #9b6129;
+    outline: 1px solid #be9558;
+    outline-offset: 2px;
+    box-shadow: inset 0 0 0 2px #c4985555;
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        97% 14%,
+        100% 20%,
+        97% 80%,
+        95% 100%,
+        5% 100%,
+        3% 83%,
+        0 76%,
+        3% 15%
+    );
+}
+.section-rule {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #986830;
+}
+.section-rule::before,
+.section-rule::after {
+    content: "";
+    height: 1px;
+    background: #af8b55;
+    flex: 1;
+}
+.legend-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+.legend-card {
+    background: #fffae94f;
+    border: 1px solid #d0b98940;
+    border-radius: 5px;
+    overflow: hidden;
+    scroll-margin-top: 20px;
+    box-shadow: 0 2px 4px #6c422008;
+}
+.legend-scene {
+    height: 124px;
+    position: relative;
+    background-color: #241b12;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: center;
+}
+.scene-number {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    display: grid;
+    place-items: center;
+    width: 33px;
+    height: 35px;
+    color: #fff1bd;
+    font-family: var(--serif);
+    font-size: 23px;
+    border: 1px solid #ddb864;
+    border-radius: 45% 45% 40% 40%;
+    background: #603108e6;
+    box-shadow: 0 0 0 2px #30180d80;
+}
+.legend-card-copy {
+    padding: 8px 13px 12px;
+}
+.legend-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+.legend-card:last-child h3 {
+    color: #762415;
+}
+.legend-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #51422e;
+}
+.legend-card p + p {
+    margin-top: 5px;
+}
+.legend-card strong {
+    color: #30180d;
+}
+.legend-part-two {
+    position: relative;
+    isolation: isolate;
+}
+.legend-part-two .legend-section-header {
+    gap: 17px;
+}
+.legend-part-two h2 {
+    font-size: 23px;
+}
+.second-version-art {
+    position: absolute;
+    transform: translateX(20px);
+    right: -69px;
+    top: 0;
+    bottom: 0;
+    width: 43%;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: 25% center;
+    z-index: -1;
+    mask-image: linear-gradient(90deg, transparent, #000 18%);
+}
+.version-events {
+    list-style: none;
+    margin: 13px 110px 20px 20px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.version-events li {
+    position: relative;
+    padding: 0 0 17px 20px;
+    border-left: 1px solid #987245;
+}
+.version-events li:last-child {
+    border-left-color: transparent;
+    padding-bottom: 0;
+}
+.version-events li::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #f5e5bb;
+    border-radius: 50%;
+    outline: 1px solid #8c5f2d;
+    background: #885a28;
+}
+.version-events strong {
+    color: #792e1c;
+}
+.legend-culture {
+    display: grid;
+    grid-template-columns: 1.12fr 1fr 1.16fr;
+    gap: 20px;
+    max-width: 1420px;
+    margin: 15px auto 0;
+    padding: 14px 0 16px;
+    border-top: 9px solid #b4966540;
+}
+.belief-visual {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: center;
+}
+.belief-visual h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    line-height: 1.4;
+    text-align: center;
+    color: #775028;
+    white-space: nowrap;
+}
+.belief-visual h2 strong {
+    display: block;
+    font-size: 39px;
+    color: #731f14;
+}
+.belief-visual h2 span {
+    display: block;
+    font-size: 20px;
+    color: #9f773f;
+    margin-top: 3px;
+}
+.buffalo-art {
+    height: 160px;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(
+        90deg,
+        transparent,
+        #000 12%,
+        #000 90%,
+        transparent
+    );
+}
+.legend-culture h2:not(#belief-title) {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+.legend-culture p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #544631;
+}
+.legend-culture p + p {
+    margin-top: 4px;
+}
+.belief-copy {
+    position: relative;
+    padding-left: 40px;
+}
+.rice-ornament {
+    position: absolute;
+    left: -4px;
+    top: -5px;
+    font-family: Georgia, serif;
+    font-size: 57px;
+    color: #98642b;
+    transform: rotate(-35deg);
+}
+.present-trace {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+.trace-art {
+    position: relative;
+    min-height: 150px;
+}
+.trace-temple {
+    height: 100%;
+    width: 55%;
+    background: var(--scene-art, none) center/cover;
+}
+.trace-statue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 76%;
+    height: 70%;
+    background: var(--scene-art, none) center/cover;
+    border-radius: 5px;
+}
+.trace-temple-icon {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 42px;
+    height: 49px;
+    color: #916029;
+}
+.legend-timeline {
+    background: #061f18;
+    position: relative;
+    isolation: isolate;
+    color: #fff5da;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 28px;
+    padding: 18px max(4.5%, calc((100vw - 1400px) / 2)) 16px;
+    min-height: 175px;
+}
+.legend-timeline::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/images/ornament.svg") left center/180px;
+    opacity: 0.12;
+    z-index: -1;
+    pointer-events: none;
+}
+.legend-timeline header {
+    text-align: center;
+    padding-top: 8px;
+    color: #efd38c;
+}
+.legend-timeline h2 {
+    font:
+        34px Georgia,
+        serif;
+}
+.legend-timeline header p {
+    font-family: var(--serif);
+    font-size: 21px;
+    white-space: nowrap;
+}
+.legend-timeline .legend-divider {
+    max-width: 200px;
+    margin: 15px auto 0;
+}
+.legend-timeline ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+.legend-timeline li {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.legend-timeline li:not(:last-child)::after {
+    content: "──❖─";
+    position: absolute;
+    top: 44px;
+    left: calc(50% + 57px);
+    width: calc(100% - 85px);
+    color: #c79b4b;
+    white-space: nowrap;
+    font-size: 17px;
+    pointer-events: none;
+}
+.legend-timeline a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.timeline-picture {
+    width: 106px;
+    height: 106px;
+    max-width: 100%;
+    border: 1px solid #ddb461;
+    border-radius: 50%;
+    display: block;
+    background-color: #151b14;
+    background-image: var(--scene-art, none);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 3px #0002;
+}
+.legend-timeline a:hover .timeline-picture {
+    outline: 2px solid #cda24e;
+    outline-offset: 3px;
+}
+.legend-timeline li:first-child .timeline-picture {
+    background-position: 60% center;
+}
+.legend-search-dialog {
+    width: min(520px, calc(100% - 32px));
+    border: 1px solid #b58c44;
+    border-radius: 8px;
+    background: var(--legend-paper);
+    color: #30180d;
+    padding: 25px;
+    font-family: var(--sans);
+}
+.legend-search-dialog::backdrop {
+    background: #00130dcc;
+}
+.legend-search-dialog h2 {
+    font-family: var(--serif);
+    margin-bottom: 15px;
+}
+.legend-search-dialog label {
+    display: block;
+    margin-bottom: 5px;
+}
+.search-fields {
+    display: flex;
+    gap: 8px;
+}
+.search-fields input {
+    min-width: 0;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #9e7b42;
+    border-radius: 4px;
+    font: inherit;
+}
+.legend-search-dialog button {
+    padding: 9px 14px;
+    background: #06251d;
+    color: #f8e6bf;
+    border: 1px solid #9e7b42;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.legend-search-dialog ul {
+    padding-left: 20px;
+    max-height: 40vh;
+    overflow: auto;
+}
+.legend-search-dialog li {
+    margin: 10px 0;
+}
+.legend-search-dialog a {
+    text-decoration: underline;
+}
+.legend-search-dialog #search-status {
+    margin-top: 12px;
+}
+@media (max-width: 1399px) {
+    .legend-page .nav-container {
+        margin: 0 4%;
+    }
+  .legend-page .main-navigation {
+    margin-left: auto;
+        margin-right: 35px;
+        gap: 13px;
+    }
+    .legend-hero-inner {
+        margin: 0 7%;
+    }
+    .legend-quote {
+        margin-right: -35px;
+    }
+    .legend-section-header h2 {
+        font-size: 21px;
+    }
+    .legend-part-two h2 {
+        font-size: 19px;
+    }
+    .legend-section-header {
+        gap: 12px;
+    }
+    .legend-paper {
+        padding-inline: 3%;
+    }
+    .version-events {
+        margin-right: 80px;
+    }
+    .second-version-art {
+        right: -38px;
+    }
+    .legend-culture {
+        grid-template-columns: 1fr 1fr 1.1fr;
+        gap: 14px;
+    }
+    .belief-visual h2 {
+        font-size: 19px;
+    }
+    .belief-visual h2 strong {
+        font-size: 33px;
+    }
+    .present-trace {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .legend-timeline {
+        grid-template-columns: 230px 1fr;
+        gap: 15px;
+        padding-inline: 3%;
+    }
+    .legend-timeline ol {
+        gap: 20px;
+    }
+    .timeline-picture {
+        width: 94px;
+        height: 94px;
+    }
+    .legend-timeline li:not(:last-child)::after {
+        left: calc(50% + 50px);
+        top: 40px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 1199px) {
+    .legend-page .main-navigation {
+        margin-right: 20px;
+        gap: 6px;
+    }
+    .legend-page .brand strong {
+        font-size: 16px;
+    }
+    .legend-search-button {
+        width: 55px;
+    }
+    .legend-hero-inner {
+        margin: 0 5%;
+    }
+    .legend-quote {
+        margin-right: 0;
+    }
+    .legend-stories {
+        grid-template-columns: 1fr;
+    }
+    .legend-part-two {
+        min-height: 290px;
+    }
+    .legend-part-two .second-version-art {
+        right: 0;
+        width: 30%;
+    }
+    .version-events {
+        margin-right: 34%;
+        font-size: 15px;
+    }
+    .legend-culture {
+        grid-template-columns: 1fr 1fr;
+    }
+    .present-trace {
+        grid-column: 1/-1;
+        grid-template-columns: 1fr;
+    }
+    .legend-timeline {
+        grid-template-columns: 230px 1fr;
+    }
+    .legend-timeline ol {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .legend-timeline a {
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+    }
+    .legend-timeline li:not(:last-child)::after {
+        content: "";
+        left: 47px;
+        top: 94px;
+        width: 1px;
+        height: 23px;
+        background: #c79b4b;
+    }
+    .timeline-picture {
+        flex-shrink: 0;
+    }
+    .legend-timeline header {
+        align-self: start;
+        position: sticky;
+        top: 25px;
+    }
+    .legend-search-dialog {
+        max-height: 85vh;
+    }
+}
+@media (max-width: 768px) {
+    .legend-page .site-header {
+        height: 76px;
+    }
+    .legend-page .nav-container {
+        margin: 0 16px;
+        gap: 8px;
+    }
+    .legend-page .brand-icon {
+        width: 34px;
+        height: 48px;
+    }
+    .legend-page .brand strong {
+        font-size: 14px;
+    }
+    .legend-page .brand small {
+        font-size: 11px;
+    }
+    .legend-page .main-navigation {
+        margin: 0;
+        left: -16px;
+        right: -16px;
+        gap: 0;
+    }
+    .legend-page .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .legend-page .main-navigation a::after {
+        bottom: 6px;
+    }
+    .legend-page .main-navigation a[aria-current]::before {
+        display: none;
+    }
+    .legend-search-button {
+        width: 36px;
+        height: 36px;
+        padding: 7px;
+        order: 2;
+    }
+    .legend-page .menu-toggle {
+        order: 3;
+        width: 36px;
+        height: 36px;
+    }
+    .legend-hero {
+        background-position: 62% center;
+    }
+    .legend-hero-inner {
+        min-height: 0;
+        display: block;
+        margin: 0;
+        padding: 30px 22px 35px;
+        background: linear-gradient(90deg, #000c, #0004);
+    }
+    .legend-introduction {
+        width: 100%;
+        max-width: 500px;
+    }
+    .legend-title-group {
+        width: 100%;
+        margin: 0;
+    }
+    .legend-title-group h1 span {
+        font-size: 33px;
+    }
+    .legend-title-group h1 strong {
+        font-size: 71px;
+    }
+    .legend-title-group > p {
+        font-size: 24px;
+    }
+    .legend-divider {
+        max-width: 330px;
+    }
+    .legend-lead {
+        font-size: 16px;
+    }
+    .legend-intro-copy {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    .legend-quote {
+        font-size: 17px;
+        width: auto;
+        margin: 20px 0 0;
+        text-align: right;
+        line-height: 1.6;
+    }
+    .legend-quote > span {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .legend-paper {
+        padding: 18px 20px 0;
+    }
+    .legend-section-header {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    .legend-section-header h2 {
+        font-size: 22px;
+        white-space: normal;
+    }
+    .part-badge {
+        min-width: 95px;
+        font-size: 16px;
+    }
+    .section-rule {
+        display: none;
+    }
+    .legend-card-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .legend-scene {
+        height: auto;
+        aspect-ratio: 2.2;
+    }
+    .legend-card-copy {
+        padding: 14px 16px 18px;
+    }
+    .legend-card h3 {
+        font-size: 19px;
+    }
+    .legend-card p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+    .legend-card p + p {
+        margin-top: 9px;
+    }
+    .legend-part-two {
+        margin-top: 12px;
+    }
+    .legend-part-two h2 {
+        font-size: 21px;
+    }
+    .version-events {
+        margin: 20px 0 15px 9px;
+        padding-right: 0;
+    }
+    .second-version-art {
+        display: none;
+    }
+    .legend-culture {
+        grid-template-columns: 1fr;
+        margin-top: 12px;
+        gap: 23px;
+        padding-bottom: 25px;
+    }
+    .belief-visual {
+        min-height: 160px;
+    }
+    .belief-visual h2 {
+        font-size: 23px;
+    }
+    .belief-visual h2 strong {
+        font-size: 39px;
+    }
+    .legend-culture p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+    .legend-culture h2:not(#belief-title) {
+        font-size: 20px;
+    }
+    .belief-copy {
+        padding-left: 35px;
+    }
+    .present-trace {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+    .legend-timeline {
+        grid-template-columns: 1fr;
+        padding: 26px 24px;
+        gap: 23px;
+    }
+    .legend-timeline header {
+        position: static;
+    }
+    .legend-timeline header p {
+        font-size: 20px;
+    }
+    .legend-timeline ol {
+        max-width: 370px;
+        width: 100%;
+        margin: auto;
+    }
+    .legend-timeline li {
+        font-size: 16px;
+    }
+    .legend-timeline a {
+        gap: 24px;
+    }
+    .legend-page .site-header::before,
+    .legend-page .site-header::after {
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .timeline-picture {
+        transition: outline-offset 0.2s;
+    }
+}

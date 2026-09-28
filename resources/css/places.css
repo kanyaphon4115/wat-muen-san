@@ -1,0 +1,920 @@
+.places-page {
+    background: #f4ead5;
+    color: #14231b;
+}
+.places-page .site-header {
+    height: 74px;
+    background: #06271f;
+    overflow: visible;
+}
+.places-page .site-header::before,
+.places-page .site-header::after {
+    display: none;
+}
+.places-page .nav-container {
+    max-width: none;
+    margin: 0 3.6% 0 7%;
+    gap: 0;
+}
+.places-page .brand {
+    gap: 22px;
+}
+.places-page .brand-icon {
+    height: 62px;
+    width: 48px;
+}
+.places-page .brand strong {
+    font-size: 19px;
+    font-weight: 500;
+}
+.places-page .brand small {
+    font-size: 17px;
+}
+.places-page .main-navigation {
+    gap: 35px;
+    margin-left: 115px;
+    color: #fff5e4;
+}
+.places-page .main-navigation a {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 24px 6px;
+}
+.places-page .main-navigation a::after {
+    bottom: 10px;
+}
+.places-page .main-navigation a[aria-current]::before {
+    content: "❖";
+    position: absolute;
+    bottom: -13px;
+    left: calc(50% - 10px);
+    font-size: 25px;
+    color: #d8ac59;
+}
+.places-search-button {
+    margin-left: auto;
+    border: 1px solid #c5a361;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    width: 47px;
+    height: 47px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.places-search-button svg {
+    width: 27px;
+    height: 27px;
+}
+.cultural-map {
+    height: 659px;
+    position: relative;
+    isolation: isolate;
+    background: #f4ead5 url("/images/paper.svg");
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 450px;
+    gap: 20px;
+    padding: 0 20px 0 0;
+}
+.map-canvas {
+    position: relative;
+    min-width: 0;
+    height: 100%;
+    isolation: isolate;
+}
+.map-heading {
+    position: absolute;
+    left: 4.3%;
+    top: 34px;
+    z-index: 3;
+}
+.map-heading h1 {
+    font-family: var(--sans);
+    font-size: 52px;
+    line-height: 1.13;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    color: #10271e;
+}
+.map-heading h1 span {
+    display: block;
+    color: #563116;
+    font-size: 43px;
+    line-height: 1.25;
+}
+.map-heading p {
+    font-size: 19px;
+    line-height: 1.35;
+    margin-top: 17px;
+    color: #181c16;
+}
+.map-landscape,
+.map-paths {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+.map-temple {
+    position: absolute;
+    left: 44%;
+    top: 34.5%;
+    width: 32%;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map-temple img {
+    width: 100%;
+    height: 208px;
+    object-fit: cover;
+    mask-image: radial-gradient(ellipse, #000 52%, transparent 73%);
+}
+.map-temple > span {
+    margin-top: -2px;
+    padding: 4px 32px;
+    border: 1px solid #d3a458;
+    background: linear-gradient(#fbe9bd, #ebce95);
+    box-shadow: 0 4px 9px #79522326;
+    font: 600 21px var(--serif);
+    clip-path: polygon(
+        5% 0,
+        95% 0,
+        100% 25%,
+        100% 75%,
+        95% 100%,
+        5% 100%,
+        0 75%,
+        0 25%
+    );
+    white-space: nowrap;
+}
+.location-card {
+    position: absolute;
+    width: 21%;
+    height: 178px;
+    padding: 0;
+    border: 0;
+    border-radius: 18px;
+    background: #f5dfad;
+    box-shadow: 0 5px 15px #462d1433;
+    cursor: pointer;
+    text-align: center;
+    color: #171b12;
+    font: 500 18px var(--sans);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+    isolation: isolate;
+}
+.location-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px #462d1445;
+}
+.location-card[aria-pressed="true"] {
+    box-shadow:
+        0 0 0 2px #d3a95b70,
+        0 5px 15px #462d1433;
+}
+.location-card > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 141px;
+    object-fit: cover;
+    border: 4px solid #fffaef;
+    border-radius: 18px 18px 11px 11px;
+}
+.location-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 55px;
+    padding: 14px 8px 9px;
+    background: linear-gradient(110deg, #fff0cc, #f2d9a8);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+}
+.location-label small {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+}
+.map-pin {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(130deg, #863615, #591803);
+    border: 3px solid #fff1ce;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    color: #fff;
+    font: 600 19px var(--sans);
+    flex-shrink: 0;
+}
+.map-pin > span {
+    transform: rotate(45deg);
+}
+.location-label .map-pin {
+    position: absolute;
+    left: 15px;
+    top: -27px;
+}
+.location-h1 {
+    left: 49%;
+    top: 36px;
+    height: 169px;
+}
+.location-h2 {
+    left: 29%;
+    top: 456px;
+}
+.location-h3 {
+    left: 77%;
+    top: 211px;
+    width: 19.5%;
+    height: 195px;
+}
+.location-h3 .location-label {
+    min-height: 72px;
+    padding-top: 16px;
+}
+.location-h4 {
+    left: 17.6%;
+    top: 251px;
+}
+.location-h5 {
+    left: 69%;
+    top: 456px;
+}
+.map-temple-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 135px;
+    height: 250px;
+    color: #c6a365;
+    opacity: 0.17;
+    z-index: -1;
+}
+.place-detail {
+    align-self: start;
+    margin-top: 28px;
+    height: 609px;
+    padding: 18px 26px 19px;
+    background: #fffaf0e8;
+    border: 1px solid #f8ebd8;
+    border-radius: 19px;
+    box-shadow: 0 8px 25px #50371421;
+    color: #151b16;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.place-detail[hidden] {
+    display: none;
+}
+.place-detail header {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    min-height: 60px;
+    margin-bottom: 0;
+}
+.detail-pin {
+    width: 46px;
+    height: 46px;
+    border: 0;
+    margin: 0 4px 5px 5px;
+    font-size: 20px;
+}
+.place-detail h2 {
+    font: 600 31px var(--sans);
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+    padding-right: 10px;
+}
+.detail-close {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    background: transparent;
+    border: 0;
+    color: #182019;
+    font-size: 33px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+}
+.detail-main-image {
+    display: block;
+    width: 100%;
+    height: 238px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.detail-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+    margin-top: 9px;
+}
+.detail-thumbnails button {
+    height: 82px;
+    min-width: 0;
+    border: 0;
+    padding: 0;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+.detail-thumbnails button[aria-pressed="true"] {
+    outline: 3px solid #b98d43;
+    outline-offset: 2px;
+}
+.detail-thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.place-detail #detail-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2d241b;
+    margin: 17px 0 17px;
+}
+.detail-cta {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 60px;
+    border: 1px solid #c8953b;
+    border-radius: 19px;
+    color: #fff0d6;
+    background: linear-gradient(120deg, #8d390d, #541a0b);
+    font-size: 23px;
+    box-shadow: inset 0 0 0 1px #d8ab4b55;
+}
+.detail-cta svg {
+    width: 35px;
+    height: 35px;
+}
+.detail-cta > span:last-child {
+    font-size: 30px;
+}
+.detail-cta:hover {
+    filter: brightness(1.12);
+}
+#detail-subtitle {
+    font-size: 14px;
+    margin: -3px 0 7px 75px;
+}
+.places-closing {
+    position: relative;
+    isolation: isolate;
+    height: 291px;
+    background: #06271f;
+    color: #fff2ca;
+    overflow: hidden;
+}
+.closing-temple {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+    mask-image: linear-gradient(90deg, #000 60%, transparent 100%);
+    z-index: -1;
+}
+.places-closing::before {
+    content: "";
+    position: absolute;
+    left: 39%;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background: url("/images/ornament.svg") center/135px;
+    opacity: 0.2;
+    z-index: -1;
+}
+.closing-copy {
+    margin-left: 48%;
+    padding: 19px 3% 20px 0;
+    text-align: center;
+}
+.closing-copy h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.45;
+    white-space: nowrap;
+}
+.closing-divider {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: #c99a43;
+    max-width: 445px;
+    margin: 6px auto;
+}
+.closing-divider span {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, #c99a43);
+}
+.closing-divider span:last-child {
+    transform: rotate(180deg);
+}
+.closing-copy > p {
+    font-size: 18px;
+    line-height: 1.45;
+    color: #fff9e7;
+}
+.closing-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 21px;
+}
+.closing-actions button,
+.closing-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 55px;
+    padding: 0 28px;
+    border: 1px solid #e2be71;
+    border-radius: 40px;
+    background: linear-gradient(120deg, #f0d398, #dfbd80);
+    color: #171e12;
+    font: 18px var(--sans);
+    cursor: pointer;
+    white-space: nowrap;
+}
+.closing-actions #restart-map > span {
+    font-size: 37px;
+    line-height: 1;
+}
+.closing-actions .tiktok-button {
+    background: #000b;
+    color: #fff;
+}
+.tiktok-button svg {
+    width: 31px;
+    height: 31px;
+}
+.tiktok-button > span {
+    font-size: 24px;
+}
+.closing-temple-line {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 155px;
+    height: 220px;
+    color: #bf9343;
+    opacity: 0.28;
+    z-index: -1;
+}
+#tiktok-status {
+    font-size: 13px;
+    margin-top: 5px;
+}
+#places-search-dialog {
+    background: #fff6e5;
+    color: #16251b;
+    border: 1px solid #bf9753;
+    border-radius: 16px;
+    padding: 25px;
+    width: min(470px, calc(100% - 32px));
+    font-family: var(--sans);
+}
+#places-search-dialog::backdrop {
+    background: #041710c9;
+}
+#places-search-dialog h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#places-search-dialog label {
+    display: block;
+    margin-bottom: 6px;
+}
+#places-search-dialog input {
+    font: inherit;
+    width: 70%;
+    padding: 9px;
+    border: 1px solid #bda16f;
+    border-radius: 6px;
+}
+#places-search-dialog button {
+    font: inherit;
+    background: #06271f;
+    color: #fff2ca;
+    border: 1px solid #bda16f;
+    padding: 9px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#places-search-results {
+    list-style: none;
+    padding: 0;
+    max-height: 40vh;
+    overflow: auto;
+}
+#places-search-results li {
+    margin: 8px 0;
+}
+#places-search-results button {
+    width: 100%;
+    text-align: left;
+}
+#places-search-status {
+    margin-top: 12px;
+}
+@media (min-width: 1600px) {
+    .cultural-map {
+        grid-template-columns: minmax(0, 1fr) 450px;
+    }
+    .map-canvas {
+        max-width: 1200px;
+    }
+    .closing-copy h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 1399px) {
+    .places-page .nav-container {
+        margin: 0 4%;
+    }
+    .places-page .main-navigation {
+        margin-left: auto;
+        gap: 18px;
+    }
+    .places-search-button {
+        margin-left: 35px;
+    }
+    .places-page .brand strong {
+        font-size: 17px;
+    }
+    .places-page .brand small {
+        font-size: 14px;
+    }
+    .cultural-map {
+        grid-template-columns: minmax(0, 1fr) 385px;
+        gap: 12px;
+        padding-right: 15px;
+    }
+    .map-heading h1 {
+        font-size: 42px;
+    }
+    .map-heading h1 span {
+        font-size: 35px;
+    }
+    .map-heading p {
+        font-size: 16px;
+    }
+    .place-detail {
+        padding-inline: 19px;
+    }
+    .place-detail h2 {
+        font-size: 27px;
+    }
+    .place-detail header {
+        gap: 14px;
+    }
+    .place-detail #detail-description {
+        font-size: 16px;
+    }
+    .detail-cta {
+        font-size: 20px;
+        gap: 16px;
+    }
+    .location-card {
+        font-size: 15px;
+    }
+    .location-label small {
+        font-size: 12px;
+    }
+    .location-label .map-pin {
+        left: 10px;
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+    .map-temple {
+        left: 42%;
+        width: 35%;
+    }
+    .map-temple > span {
+        font-size: 18px;
+        padding-inline: 25px;
+    }
+    .closing-copy h2 {
+        font-size: 19px;
+    }
+    .closing-copy > p {
+        font-size: 17px;
+    }
+    .closing-actions {
+        gap: 15px;
+    }
+    .closing-actions button,
+    .closing-actions a {
+        padding-inline: 20px;
+        font-size: 16px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+    .cultural-map {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 0 20px 25px;
+        gap: 0;
+    }
+    .map-canvas {
+        height: 660px;
+    }
+    .place-detail {
+        margin: 10px auto 0;
+        width: 450px;
+        height: auto;
+        min-height: 609px;
+    }
+    .places-page .main-navigation {
+        gap: 8px;
+    }
+    .places-page .main-navigation a {
+        font-size: 14px;
+    }
+    .places-page .brand {
+        gap: 8px;
+    }
+    .places-search-button {
+        margin-left: 16px;
+        width: 38px;
+        height: 38px;
+    }
+    .places-closing {
+        height: 300px;
+    }
+    .closing-copy {
+        margin-left: 40%;
+        padding-right: 20px;
+    }
+    .closing-copy h2 {
+        white-space: normal;
+    }
+    .closing-actions {
+        gap: 10px;
+    }
+    .closing-actions button,
+    .closing-actions a {
+        padding-inline: 15px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .places-page .site-header {
+        height: 76px;
+    }
+    .places-page .nav-container {
+        margin: 0 15px;
+        gap: 8px;
+    }
+    .places-page .brand {
+        gap: 8px;
+    }
+    .places-page .brand-icon {
+        width: 33px;
+        height: 48px;
+    }
+    .places-page .brand strong {
+        font-size: 13px;
+    }
+    .places-page .brand small {
+        font-size: 11px;
+    }
+    .places-page .menu-toggle {
+        order: 3;
+        width: 36px;
+        height: 36px;
+    }
+    .places-search-button {
+        order: 2;
+        margin-left: auto;
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+    .places-search-button svg {
+        width: 21px;
+        height: 21px;
+    }
+    .places-page .main-navigation {
+        margin: 0;
+        gap: 0;
+        left: -15px;
+        right: -15px;
+        top: 76px;
+    }
+    .places-page .main-navigation a {
+        padding: 13px 10px;
+        font-size: 16px;
+    }
+    .places-page .main-navigation a::after {
+        bottom: 6px;
+    }
+    .places-page .main-navigation a[aria-current]::before {
+        display: none;
+    }
+    .cultural-map {
+        height: auto;
+        display: block;
+        padding: 0 20px 25px;
+    }
+    .map-canvas {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 30px 0 0;
+    }
+    .map-heading {
+        position: static;
+        align-self: stretch;
+    }
+    .map-heading h1 {
+        font-size: 39px;
+        letter-spacing: -1px;
+    }
+    .map-heading h1 span {
+        font-size: 34px;
+    }
+    .map-heading p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 12px;
+    }
+    .map-landscape {
+        opacity: 0.6;
+    }
+    .map-paths {
+        display: none;
+    }
+    .map-temple {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: 235px;
+        margin-bottom: 7px;
+    }
+    .map-temple img {
+        height: 205px;
+    }
+    .map-temple > span {
+        font-size: 21px;
+    }
+    .location-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        max-width: 380px;
+        height: 225px;
+        font-size: 19px;
+    }
+    .location-card > img {
+        height: 184px;
+    }
+    .location-label {
+        min-height: 62px;
+    }
+    .location-h3 .location-label {
+        min-height: 68px;
+    }
+    .location-label small {
+        font-size: 15px;
+    }
+    .location-label .map-pin {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        left: 16px;
+        top: -29px;
+    }
+    .map-temple-line {
+        display: none;
+    }
+    .place-detail {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        min-height: 0;
+        margin: 30px auto 0;
+        padding: 18px;
+    }
+    .place-detail header {
+        min-height: 63px;
+        gap: 13px;
+    }
+    .place-detail h2 {
+        font-size: 26px;
+        padding-right: 18px;
+    }
+    .detail-close {
+        right: 12px;
+        top: 13px;
+        font-size: 29px;
+    }
+    .detail-main-image {
+        height: 215px;
+    }
+    .detail-thumbnails button {
+        height: 67px;
+    }
+    .place-detail #detail-description {
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 17px 0;
+    }
+    .detail-cta {
+        font-size: 20px;
+        gap: 16px;
+        min-height: 56px;
+    }
+    .detail-cta svg {
+        width: 29px;
+    }
+    .places-closing {
+        height: auto;
+        min-height: 540px;
+        padding-top: 205px;
+    }
+    .closing-temple {
+        width: 100%;
+        height: 245px;
+        object-position: center;
+        mask-image: linear-gradient(180deg, #000 65%, transparent 100%);
+    }
+    .closing-copy {
+        margin: 0;
+        padding: 20px 22px 28px;
+    }
+    .closing-copy h2 {
+        font-size: 20px;
+        line-height: 1.6;
+        white-space: normal;
+    }
+    .closing-copy > p {
+        font-size: 16px;
+    }
+    .closing-actions {
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 23px;
+    }
+    .closing-actions button,
+    .closing-actions a {
+        width: 100%;
+        max-width: 320px;
+        font-size: 17px;
+    }
+    .closing-temple-line {
+        opacity: 0.15;
+    }
+    .places-page main {
+        overflow-x: clip;
+    }
+    .places-closing::before {
+        left: 0;
+        width: 100%;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .location-card:hover {
+        transform: none;
+    }
+}
