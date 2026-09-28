@@ -1,0 +1,13 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": null,
+    "buildCommand": "",
+    "installCommand": "",
+    "outputDirectory": "deploy-static",
+    "trailingSlash": false,
+    "rewrites": [
+        { "source": "/tiger-legend", "destination": "/tiger-legend.html" },
+        { "source": "/history", "destination": "/history.html" },
+        { "source": "/places", "destination": "/places.html" }
+    ]
+}
